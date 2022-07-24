@@ -1,6 +1,10 @@
 import React from 'react';
 import style from './style.module.scss';
 
+import quiz from '../../assets/images/quiz.jpg';
+import feet from '../../assets/images/feet.jpg';
+import podiatrist from '../../assets/images/podiatrist.jpg';
+
 const HomeScreen = () => {
 
   return (
@@ -23,6 +27,66 @@ const HomeScreen = () => {
         and never disregard professional medical advice or delay in seeking it 
         because of something you have read on this website.</details>
       </p>
+
+      <section className={style.popularPages}>
+        <div className={style.footAilments}>
+          <table className={style.imgLeft}>
+            <tr>
+              <td>
+                <img src={feet} />
+              </td>
+              <td>
+                <h3>Foot Ailments</h3>
+                <p>
+                  Having pain in your foot? Bumps on your feet? 
+                  Something more unusual? Visit the foot ailments page 
+                  for more information.
+                </p>
+                <button>Learn More</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div className={style.quiz}>
+          <table className={style.imgRight}>
+            <tr>
+              <td>
+                <h3>Take a Quiz</h3>
+                <p>
+                  Not sure if what you're experiencing is 
+                  a foot injury listed here? Take our quiz 
+                  to help you learn about your problem.
+                </p>
+                <button>Learn More</button>
+              </td>
+              <td>
+                <img src={quiz} />
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div className={style.podiatrists}>
+          <table className={style.imgLeft}>
+            <tr>
+              <td>
+                <img src={podiatrist} />
+              </td>
+              <td>
+                <h3>Find Podiatrists Near You</h3>
+                <p>
+                  We list a lot of information here, but 
+                  it's always important to consult your 
+                  doctor. Find one near you here.
+                </p>
+                <button>Learn More</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
     </div>
   );
 }
