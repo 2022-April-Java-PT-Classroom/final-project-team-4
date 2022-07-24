@@ -42,7 +42,9 @@ const HomeScreen = () => {
                   Something more unusual? Visit the foot ailments page 
                   for more information.
                 </p>
-                <button>Learn More</button>
+                <div className={style.centerText}>
+                  <button>Learn More</button>
+                </div>
               </td>
             </tr>
           </table>
@@ -58,7 +60,9 @@ const HomeScreen = () => {
                   a foot injury listed here? Take our quiz 
                   to help you learn about your problem.
                 </p>
-                <button>Learn More</button>
+                <div className={style.centerText}>
+                  <button>Learn More</button>
+                </div>
               </td>
               <td>
                 <img src={quiz} />
@@ -78,9 +82,11 @@ const HomeScreen = () => {
                 <p>
                   We list a lot of information here, but 
                   it's always important to consult your 
-                  doctor. Find one near you here.
+                  doctor (and we are not doctors). Find one near you here.
                 </p>
-                <button>Learn More</button>
+                <div className={style.centerText}>
+                  <button>Learn More</button>
+                </div>
               </td>
             </tr>
           </table>
