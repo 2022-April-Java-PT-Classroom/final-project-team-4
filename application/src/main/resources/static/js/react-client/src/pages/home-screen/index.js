@@ -9,7 +9,7 @@ const HomeScreen = () => {
 
   return (
     <div className={style.homeScreen}>
-      <h2>Welcome to Footpolis</h2>
+      <h2>Welcome to Footopolis</h2>
       <p>
         At Footpolis, our aim is to provide information and recommendations to help relieve various foot ailments. 
         Our feet are the driving force to get us from point A to point B, so it is important that they are in tip-top 
