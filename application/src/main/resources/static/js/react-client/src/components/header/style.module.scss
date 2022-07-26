@@ -11,20 +11,20 @@ body{
   margin-top: -45px;
   background-color: #3e3a3c;
   background-image: url("../../assets/images/header.jpg"); 
-  background-position: 0% 86%;
+  background-position: 0% 38%;
   background-size: cover;
   width: 100%;
   z-index: 1;
-  border-end-end-radius: 30%;
-  border-bottom-left-radius: 30%;
 
   h1 {
     font-family: 'Lora', serif;
     font-size: 64px;
     color: #f1f1f1;
     text-align: center;
-    text-shadow: 1px 1px #442235;
+    text-shadow: 2px 2px #00664b, -2px -2px #442235, 
+                 2px -2px #00664b, -2px 2px #442235;
     padding-top: 10px;
+    background-image: radial-gradient(#d7e4df, transparent);
   }
 
   .bigger {
@@ -39,10 +39,11 @@ body{
     font-family: 'Playfair Display', sans-serif;
     font-weight: bold;
     font-size: 16px;
+    border-bottom: 2px solid #3e3a3c;
 
     .dropbtn {
       background-color: #fff;
-      background-image: linear-gradient(#fff, #9e8993);
+      background-image: linear-gradient(#d7e4df, #9e8993);
       font-family: 'Playfair Display', sans-serif;
       font-weight: bold;
       text-shadow: 1px 1px #f1f1f1;
@@ -50,9 +51,18 @@ body{
       padding: 16px;
       font-size: 20px;
       width: 200px;
-      border: none;
-      border-top-left-radius: 50%;
-      border-top-right-radius: 50%;
+      border-top: 2px solid #3e3a3c;
+      border-left: none;
+      border-right: none;
+      border-bottom: none;
+    }
+
+    #firstBtn {
+      border-left: 2px solid #3e3a3c;
+    }
+
+    #lastBtn {
+      border-right: 2px solid #3e3a3c;
     }
     
     .dropdown {
@@ -63,11 +73,12 @@ body{
     .dropdownContent {
       display: none;
       position: absolute;
-      background-image: linear-gradient(#9e8993, #fff);
+      background-image: linear-gradient(#9e8993, #d7e4df);
       z-index: 1;
       width: 200px;
-      border-bottom-left-radius: 25%;
-      border-bottom-right-radius: 25%;
+      border-left: 2px solid #3e3a3c;
+      border-right: 2px solid #3e3a3c;
+      border-bottom: 2px solid #3e3a3c;
     }
     
     .dropdownContent a {
@@ -78,8 +89,7 @@ body{
     }
 
     .dropdownContent a:hover {
-      background-color: #3e3a3c;
-      color: #fff;
+      border: 3px dotted #3e3a3c;
       border-radius: 50%;
     }
 

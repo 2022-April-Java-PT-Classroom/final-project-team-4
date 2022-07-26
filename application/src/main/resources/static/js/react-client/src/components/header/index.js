@@ -10,7 +10,7 @@ const Header = () => {
       <nav>
 
       <div className={style.dropdown}>
-        <button className={style.dropbtn}>Foot Problems</button>
+        <button className={style.dropbtn} id={style.firstBtn}>Foot Problems</button>
         <div className={style.dropdownContent}>
           <a href="#">Injuries</a>
           <a href="#">Growths</a>
@@ -35,7 +35,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className={style.dropdown}>
+      <div className={style.dropdown} id={style.lastBtn}>
         <button className={style.dropbtn}>About Us</button>
         <div className={style.dropdownContent}>
           <a href="#">Contact Us</a>
