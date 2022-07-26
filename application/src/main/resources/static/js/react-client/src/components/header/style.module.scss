@@ -8,7 +8,7 @@ body{
 .header {
   position: sticky;
   top: 0;
-  margin-top: -45px;
+  // margin-top: -45px;
   background-color: #3e3a3c;
   background-image: url("../../assets/images/header.jpg"); 
   background-position: 0% 38%;
@@ -17,20 +17,35 @@ body{
   z-index: 1;
 
   h1 {
+    position: absolute;
     font-family: 'Lora', serif;
     font-size: 64px;
     color: #f1f1f1;
     text-align: center;
-    text-shadow: 2px 2px #00664b, -2px -2px #442235, 
-                 2px -2px #00664b, -2px 2px #442235;
-    padding-top: 10px;
-    background-image: radial-gradient(#d7e4df, transparent);
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-top: 25px;
   }
 
-  .bigger {
+  #bigger {
     font-family: 'Great Vibes', cursive;
+    text-shadow: 1px 1px #f1f1f1, -1px -1px #f1f1f1;
     font-size: 86px;
     padding-right: 5px;
+  }
+
+  .trapezoid {
+    position: relative;
+    border-bottom: 150px solid #3e3a3c;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    height: 0;
+    width: 350px;
+    margin: 0 auto;
+    opacity: .975;
   }
 
   nav {
@@ -39,19 +54,19 @@ body{
     font-family: 'Playfair Display', sans-serif;
     font-weight: bold;
     font-size: 16px;
-    border-bottom: 2px solid #3e3a3c;
+    border-bottom: 5px solid #3e3a3c;
+    opacity: .975;
 
     .dropbtn {
-      background-color: #fff;
-      background-image: linear-gradient(#d7e4df, #9e8993);
+      background-color: transparent;
+      background-image: repeating-linear-gradient(transparent 0 20px, #3e3a3c 20px 40px);
       font-family: 'Playfair Display', sans-serif;
       font-weight: bold;
-      text-shadow: 1px 1px #f1f1f1;
-      color: #412f39;
+      color: #f1f1f1;
       padding: 16px;
       font-size: 20px;
       width: 200px;
-      border-top: 2px solid #3e3a3c;
+      border-top: 5px solid #3e3a3c;
       border-left: none;
       border-right: none;
       border-bottom: none;
@@ -64,6 +79,10 @@ body{
     #lastBtn {
       border-right: 2px solid #3e3a3c;
     }
+
+    #lastDropdown {
+      width: 198px;
+    }
     
     .dropdown {
       position: relative;
@@ -73,12 +92,20 @@ body{
     .dropdownContent {
       display: none;
       position: absolute;
-      background-image: linear-gradient(#9e8993, #d7e4df);
       z-index: 1;
       width: 200px;
+      border-top: 5px solid #3e3a3c;
       border-left: 2px solid #3e3a3c;
       border-right: 2px solid #3e3a3c;
-      border-bottom: 2px solid #3e3a3c;
+      border-bottom: 5px solid #3e3a3c;
+    }
+
+    #green {
+      background-color: #b0cabf;
+    }
+
+    #purple, #lastDropdown {
+      background-color: #9e8993;
     }
     
     .dropdownContent a {
@@ -89,16 +116,12 @@ body{
     }
 
     .dropdownContent a:hover {
-      border: 3px dotted #3e3a3c;
-      border-radius: 50%;
+      background-color: #f1f1f1;
+      transition: .25s;
     }
 
     .dropdown:hover .dropdownContent {
       display: block;
-    }
-
-    .dropdown:hover .dropbtn {
-      background-color: #fff;
     }
   }
 }
