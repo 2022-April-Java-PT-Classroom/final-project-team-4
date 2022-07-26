@@ -10,12 +10,28 @@ const Header = () => {
       <nav>
 
       <div className={style.dropdown}>
-        <button className={style.dropbtn}>Foot Information</button>
+        <button className={style.dropbtn}>Foot Problems</button>
         <div className={style.dropdownContent}>
-          <a href="#">Foot Ailments</a>
+          <a href="#">Injuries</a>
+          <a href="#">Growths</a>
+          <a href="#">Diseases</a>
+        </div>
+      </div>
+
+      <div className={style.dropdown}>
+        <button className={style.dropbtn}>Foot Solutions</button>
+        <div className={style.dropdownContent}>
+          <a href="#">Conventional Treatments</a>
+          <a href="#">Alternative Treatments</a>
           <a href="#">Foot Massage Techniques</a>
+        </div>
+      </div>
+
+      <div className={style.dropdown}>
+        <button className={style.dropbtn}>Your Feet</button>
+        <div className={style.dropdownContent}>
           <a href="#">Foot Injury Quiz</a>
-          <a href="#">Podiatrist Locator</a>
+          <a href="#">Local Podiatrist Locator</a>
         </div>
       </div>
 
