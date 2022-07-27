@@ -39,3 +39,44 @@
     padding-bottom: 1px;
   }
 }
+
+.modal {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  top: 50%;
+  left: 50%;
+  overflow: auto;
+  border-top: 5px solid #3e3a3c;
+  border-bottom: 5px solid #3e3a3c;
+  border-left: 2px solid #3e3a3c;
+  border-right: 2px solid #3e3a3c;
+  background-color: #f1f1f1; 
+  text-align: center;
+
+  h3 {
+    font-family: 'Cormorant SC', serif;
+  }
+
+  p {
+    font-family: 'Ubuntu', sans-serif;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+}
+
+.close {
+  text-align: center;
+
+  button {
+    border: none;
+    background: transparent;
+  }
+}
