@@ -26,7 +26,7 @@ const Footer = () => {
       <div className={style.disclaimer}>
         <Modal className={style.modal} overlayClassName={style.overlay} isOpen={isOpen} onRequestClose={toggleModal} contentLabel='Disclaimer'>
           <h3>
-            THIS WEBSITE DOES NOT PROVIDE MEDICAL ADVICE.
+            THIS WEBSITE DOES NOT PROVIDE MEDICAL ADVICE
           </h3>
           <p>
             The information, including but not limited to, text, graphics, images 
