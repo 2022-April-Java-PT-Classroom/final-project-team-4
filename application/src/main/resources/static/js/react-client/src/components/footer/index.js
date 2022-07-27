@@ -10,8 +10,9 @@ const Footer = () => {
     <div className={style.footer}>
       <div className={style.small}>
         <small>
-          <button onClick={scrollToTop}>Return to Top of the Page </button>| 
-              &copy; Footopolis 2022 | <button>Disclaimer</button>
+          <button onClick={scrollToTop}>Return to Top of the Page </button>
+          <span className={style.copyright}>| &copy; Footopolis 2022 | </span>
+          <button>Disclaimer</button>
         </small>
       </div>
     </div>

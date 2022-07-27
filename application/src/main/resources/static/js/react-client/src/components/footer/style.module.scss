@@ -12,14 +12,30 @@
   .small {
     border-left: 2px solid #3e3a3c;
     border-right: 2px solid #3e3a3c;
-    // background-color: #3e3a3c;
-    // margin: 0px;
+    background-color: transparent;
+    color: #f1f1f1;
     display: inline-block;
+    font-size: 18px;
   }
 
   button {
     border: none;
-    background-color: transparent;
+    background-color: #3e3a3c;
+    color: #f1f1f1;
     font-family: 'Playfair Display', sans-serif;
+    font-size: 14px;
+    margin-bottom: 3px;
+  }
+
+  button:hover {
+    cursor: pointer;
+    background-color: #f1f1f1;
+    color: #3e3a3c;
+    transition: .25s;
+  }
+
+  .copyright {
+    background-color: #3e3a3c;
+    padding-bottom: 1px;
   }
 }
