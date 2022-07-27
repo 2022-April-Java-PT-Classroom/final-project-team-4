@@ -34,11 +34,7 @@ const AboutUs = () => {
                    <h3>C.M Rimal</h3>
                     <a href="https://github.com/cmsrimsson">GitHub</a>
                     <a href="https://www.linkedin.com/">LinkedIn</a>
-                    <p>My passion for tech started as kid and hasn't stopped evolving. After starting my own Web Design & IT
-                    business that focused on developing small businesses in my rural hometown. I took an opportunity to move to
-                    the Harrisburg area and start at Amazon. Amazon has provided me the space to grow my career in Information
-                    Technology and continually expand my knowledge. I am currently pursuing Full Stack Development through WCCI
-                    and cannot wait to see what awaits.</p>
+                    <p></p>
                     </div>
 
                     <div>
@@ -61,12 +57,7 @@ const AboutUs = () => {
                     <h3>Jalyn Jenkins</h3>
                     <a href=  "https://github.com/jalynjenkins">GitHub</a>
                     <a href=  "https://www.linkedin.com/in/jalynjenkins">LinkedIn</a>
-                    <p>Full stack developer.
-                       Currently taking “WCCI Bootcamp” - completion date: August 2022.Previously, I usualy worked on
-                       Client/Server Databases: coding, providing php-mysql soulutions and support for various
-                       Information Systems. For 15 years I have designed, developed and maintained different systems,
-                       specifically commercial websites, CRM(customer relationship management) and software. I have
-                       advanced experience in code analysis, written by other developers, particularly in PHP.</p>
+                    <p></p>
                        </div>
 
                     <div>
