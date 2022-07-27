@@ -8,10 +8,12 @@ const Footer = () => {
 
   return (
     <div className={style.footer}>
-      <small>
-        <button onClick={scrollToTop}>Return to Top of the Page </button>| 
-            &copy; Footopolis 2022 | <button>Disclaimer</button>
-      </small>
+      <div className={style.small}>
+        <small>
+          <button onClick={scrollToTop}>Return to Top of the Page </button>| 
+              &copy; Footopolis 2022 | <button>Disclaimer</button>
+        </small>
+      </div>
     </div>
   );
 }

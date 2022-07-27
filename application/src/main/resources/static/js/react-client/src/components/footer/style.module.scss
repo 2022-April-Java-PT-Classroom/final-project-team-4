@@ -1,0 +1,25 @@
+.footer {
+  text-align: center;
+  margin-top: 10px;
+  background-color: #aaa;
+  background-image: url("../../assets/images/header.jpg"); 
+  border-top: 5px solid #3e3a3c;
+  font-family: 'Playfair Display', sans-serif;
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+
+  .small {
+    border-left: 2px solid #3e3a3c;
+    border-right: 2px solid #3e3a3c;
+    // background-color: #3e3a3c;
+    // margin: 0px;
+    display: inline-block;
+  }
+
+  button {
+    border: none;
+    background-color: transparent;
+    font-family: 'Playfair Display', sans-serif;
+  }
+}
