@@ -8,6 +8,7 @@ import org.wecancodeit.serverside.Repository.TreatmentRepository;
 
 import javax.annotation.Resource;
 import java.util.Collection;
+import java.util.Optional;
 
 @RestController
 @CrossOrigin
@@ -16,17 +17,19 @@ public class TreatmentRestController {
     @Resource
     private TreatmentRepository treatmentRepo;
 
-    @GetMapping("/api/treatment")
-    public Collection<Treatment>getTreatment(){
-        return (Collection<Treatment>) treatmentRepo.findAll();
+    @GetMapping("/api/treatment/{id}")
+    public Treatment singleTreatment(@PathVariable Long id) throws JSONException{
+        Optional<Treatment> treatment = treatmentRepo.findById(id);
+        return treatment.get();
     }
 
-    @PostMapping("/api/treatments")
+    @GetMapping("/api/treatments")
+    public Iterable<Treatment> allTreatments(){
+        return treatmentRepo.findAll();
+    }
 
-    public Collection<Treatment>addTreatment(@RequestBody String body) throws JSONException {
-        JSONObject newTreatment = new JSONObject(body);
-        String addTreatmentName = newTreatment.getString("name");
-
-        return (Collection<Treatment>) treatmentRepo.findAll();
+    @GetMapping("/api/ailment/{id}/treatments")
+    public Iterable<Treatment> treatmentsByAilment(@PathVariable Long id){
+        return treatmentRepo.findByAilments_id(id);
     }
 }
