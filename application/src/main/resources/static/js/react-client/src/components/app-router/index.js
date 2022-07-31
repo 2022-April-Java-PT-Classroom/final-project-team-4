@@ -1,5 +1,6 @@
 import { Route, Switch } from 'react-router-dom';
 
+import ContactPage from '../../pages/contact-us';
 import HomeScreen from '../../pages/home-screen';
 import initMap from '../../pages/podiatrist-finder/GgleMap';
 

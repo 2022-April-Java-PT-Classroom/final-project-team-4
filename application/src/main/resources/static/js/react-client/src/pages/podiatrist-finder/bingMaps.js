@@ -7,8 +7,8 @@ const BingMap = ({  }) => {
 
     
     return (
-      <div key={index}>
-        
+      <div>
+        <p>map should go here</p>
       </div>
     );
   });

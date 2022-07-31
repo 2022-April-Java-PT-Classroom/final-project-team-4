@@ -32,7 +32,7 @@ const Header = () => {
         <button className={style.dropbtn}>Your Feet</button>
         <div className={style.dropdownContent} id={style.green}>
           <a href="#">Foot Injury Quiz</a>
-          <a href="#">Local Podiatrist Locator</a>
+          <a href="/map">Local Podiatrist Locator</a>
         </div>
       </div>
 
