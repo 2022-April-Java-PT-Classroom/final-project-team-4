@@ -5,7 +5,6 @@ const BingMap = ({  }) => {
  
   return (() => {
 
-    
     return (
       <div>
         <p>map should go here</p>
