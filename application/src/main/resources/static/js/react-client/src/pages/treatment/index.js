@@ -2,34 +2,38 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import style from './style.module.scss';
 import {useParams} from "react-router-dom";
+import {Link} from 'react-router-dom'
 
-const Treatment = () => {
+export
+const TreatmentsPage = () => {
 
     const [loading, setLoading] = useState(true),
-        [treatmentData, setTreatmentData] = useState([]);
+        [ailment, setAilment] = useState(null);
 
         const {id} = useParams()
 
     useEffect(() => {
         const fetchData = async () => {
-            const result = await axios.get(`/api/ailment/${id}/treatments`
+            const result = await axios.get(`/api/ailment/${id}`
             );
-            setTreatmentData(result.data);
+            setAilment(result.data);
         }
         fetchData()
     }, [id]);
 
+    if(!ailment)
+    return null
+    console.log(ailment)
     return (
         <div>
             <div>
-                {treatmentData.map(treatment =>
+                {ailment.name}
+            </div>
+            <div>
+                {ailment.treatments.map(treatment =>
                     <div>
                         <div>
-                            <h2>{treatment.name}</h2>
-                        </div>
-                        <div>
-                            <p>{treatment.description}</p>
-                            <p>{treatment.benefits}</p>
+                        <Link to={`/treatment/${treatment.id}`}>{treatment.name}</Link>
                         </div>
                     </div>
                 )}
@@ -40,4 +44,29 @@ const Treatment = () => {
     );
 }
 
-export default Treatment;
+export
+const TreatmentPage = () => {
+
+    const [loading, setLoading] = useState(true),
+        [treatment, setTreatment] = useState(null);
+
+        const {id} = useParams()
+
+    useEffect(() => {
+        const fetchData = async () => {
+            const result = await axios.get(`/api/treatment/${id}`
+            );
+            setTreatment(result.data);
+        }
+        fetchData()
+    }, [id]);
+
+    return (
+        <div>
+           <p> {treatment.name}</p>
+           <p>{treatment.description}</p>
+           <p>{treatment.benefits}</p>
+        </div>
+    )
+
+}

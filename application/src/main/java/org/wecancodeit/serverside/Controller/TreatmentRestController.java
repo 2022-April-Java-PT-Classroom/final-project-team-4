@@ -23,11 +23,6 @@ public class TreatmentRestController {
         return treatment.get();
     }
 
-    @GetMapping("/api/treatments")
-    public Iterable<Treatment> allTreatments(){
-        return treatmentRepo.findAll();
-    }
-
     @GetMapping("/api/ailment/{id}/treatments")
     public Iterable<Treatment> treatmentsByAilment(@PathVariable Long id){
         return treatmentRepo.findByAilments_id(id);

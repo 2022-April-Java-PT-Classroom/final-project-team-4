@@ -20,22 +20,7 @@ public class populator implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-        Ailment plantarFisciitis = new Ailment("Plantar Fasciitis");
-        Ailment diabeticNeuropathy = new Ailment("Diabetic Neuropathy");
-        Ailment supination = new Ailment("Supination");
-        Ailment pronation = new Ailment("Pronation");
-        Ailment heelSpur = new Ailment("Heel Spur");
-        Ailment hammerToe = new Ailment("Hammer Toe");
-        Ailment bunions = new Ailment("Bunions");
-        Ailment mortonNeuroma = new Ailment("Morton Neuroma");
-        ailmentRepo.save(plantarFisciitis);
-        ailmentRepo.save(diabeticNeuropathy);
-        ailmentRepo.save(supination);
-        ailmentRepo.save(pronation);
-        ailmentRepo.save(heelSpur);
-        ailmentRepo.save(hammerToe);
-        ailmentRepo.save(bunions);
-        ailmentRepo.save(mortonNeuroma);
+
 
         Treatment painRelieverNsaid = new Treatment("Non-Steroidal Anti Inflammatory Drugs", "These include over the counter drugs, such as Ibuprofen and Aleve.", "These drugs can help ease the pain and lower inflammation, which can provide temporary relief.");
         Treatment nightSplints = new Treatment("Night Splints", "A physical therapist might recommend a splint that holds the plantar fascia and Achilles tendon in a lengthened position overnight.", "Promotes stretching of the Achilles tendon, and plantar fascia. This reduces muscle contracture, inflammation, and associated pain.");
@@ -69,6 +54,23 @@ public class populator implements CommandLineRunner {
         treatmentRepo.save(steroidInjections);
         treatmentRepo.save(rest);
         treatmentRepo.save(decompressionSurgery);
+
+        Ailment plantarFisciitis = new Ailment("Plantar Fasciitis", painRelieverNsaid, nightSplints, physicalTherapy, ice);
+        Ailment diabeticNeuropathy = new Ailment("Diabetic Neuropathy", diabetesManagement, antiSeizureDrugs, physicalTherapy, weightLoss);
+        Ailment supination = new Ailment("Supination", orthoticInsoles, physicalTherapy, fittedShoes);
+        Ailment pronation = new Ailment("Pronation", orthoticInsoles, physicalTherapy, fittedShoes);
+        Ailment heelSpur = new Ailment("Heel Spur", spurSurgery, ice, fittedShoes, orthoticInsoles, weightLoss, rest);
+        Ailment hammerToe = new Ailment("Hammer Toe", toeSplint, fittedShoes, hammertoePads);
+        Ailment bunions = new Ailment("Bunions", bunionPads, painRelieverNsaid, ice, fittedShoes);
+        Ailment mortonNeuroma = new Ailment("Morton Neuroma", rest, decompressionSurgery, physicalTherapy, fittedShoes, painRelieverNsaid, steroidInjections);
+        ailmentRepo.save(plantarFisciitis);
+        ailmentRepo.save(diabeticNeuropathy);
+        ailmentRepo.save(supination);
+        ailmentRepo.save(pronation);
+        ailmentRepo.save(heelSpur);
+        ailmentRepo.save(hammerToe);
+        ailmentRepo.save(bunions);
+        ailmentRepo.save(mortonNeuroma);
 
 
 
