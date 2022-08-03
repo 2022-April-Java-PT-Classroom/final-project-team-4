@@ -13,9 +13,9 @@ const Header = () => {
       <div className={style.dropdown}>
         <button className={style.dropbtn} id={style.firstBtn}>Foot Problems</button>
         <div className={style.dropdownContent} id={style.green}>
-          <a href="#">Injuries</a>
-          <a href="#">Growths</a>
-          <a href="#">Diseases</a>
+          <a href="/ailment">Injuries</a>
+          <a href="/ailment">Growths</a>
+          <a href="/ailment">Diseases</a>
         </div>
       </div>
 
