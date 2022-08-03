@@ -8,15 +8,20 @@ function MyMapApp() {
     <BingMapsReact
       bingMapsKey="Ak_-nVsKEjzxTXWPi28M53qN1Pm6bwFSYms9Ix4EISh80YP36lu8THZknQFF_HdN"
       height="700px"
-      mapOptions={{
+      mapOptions={
+        {
         navigationBarMode: "square",
-      }}
+      }
+    }
       width="1000px"
-      viewOptions={{
-        center: { latitude: 42.360081, longitude: -71.058884 },
-        mapTypeId: "grayscale",
-      }}
-    /></div>
+      viewOptions={
+        {
+        center: { latitude: 39.983334, longitude: -82.983330 },
+        // mapTypeId: "grayscale",
+      }
+    }
+    />
+    </div>
   );
 }
 
