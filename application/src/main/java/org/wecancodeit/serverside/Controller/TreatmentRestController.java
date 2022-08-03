@@ -3,7 +3,9 @@ package org.wecancodeit.serverside.Controller;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.springframework.web.bind.annotation.*;
+import org.wecancodeit.serverside.Model.Ailment;
 import org.wecancodeit.serverside.Model.Treatment;
+import org.wecancodeit.serverside.Repository.AilmentRepository;
 import org.wecancodeit.serverside.Repository.TreatmentRepository;
 
 import javax.annotation.Resource;
@@ -16,6 +18,7 @@ public class TreatmentRestController {
 
     @Resource
     private TreatmentRepository treatmentRepo;
+    private AilmentRepository ailmentRepo;
 
     @GetMapping("/api/treatment/{id}")
     public Treatment singleTreatment(@PathVariable Long id) throws JSONException{
@@ -24,7 +27,8 @@ public class TreatmentRestController {
     }
 
     @GetMapping("/api/ailment/{id}/treatments")
-    public Iterable<Treatment> treatmentsByAilment(@PathVariable Long id){
-        return treatmentRepo.findByAilments_id(id);
+    public Collection<Treatment> treatmentsByAilment(@PathVariable Long id){
+        Ailment ailmentToFind = ailmentRepo.findById(id).get();
+        return ailmentToFind.getTreatments();
     }
 }
