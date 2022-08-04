@@ -18,7 +18,9 @@ const TreatmentPage = () => {
         }
         fetchData()
     }, [id]);
-
+    if(!treatment)
+    return null
+    console.log(treatment)
     return (
         <div>
            <p> {treatment.name}</p>
