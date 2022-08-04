@@ -21,7 +21,10 @@ const Joke = () => {
 
   return (
     <div className={style.joke}>
-      <p>{jokeArray[randomJoke]}</p>
+      {/* <p>{jokeArray[randomJoke]}</p> */}
+      <div className={style.container}>
+        {jokeArray.map(paragraph => <p className={style.marquee}>{paragraph}</p>)}
+      </div>
     </div>
   );
 }
