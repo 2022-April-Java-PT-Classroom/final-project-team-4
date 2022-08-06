@@ -13,7 +13,7 @@ const AboutUs = () => {
     return (
 
                 <div className ={style.aboutUs}>
-                    <h2>About Us</h2>
+                    <h2>Meet the Developers</h2>
                     <div className={style.bios}>
                     <div>
                     <img src={aisha} height="200" width="200"></img>
@@ -28,9 +28,9 @@ const AboutUs = () => {
                          </div>
 
                          <div>
-
-                    <h3> Andera Fells</h3>
+               
                     <img src={sade} height="200" width="200"></img>
+                    <h3> Andera Fells</h3>
                     <a href="https://github.com/anderafells">GitHub</a>
                     <a href="https://www.linkedin.com/in/anderafells/">LinkedIn</a>
                     <p> Andera is a full stack developer currently located in Columbus, OH. Her love for learning,and taking
