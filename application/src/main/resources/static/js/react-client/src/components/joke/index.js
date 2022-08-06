@@ -17,11 +17,8 @@ const Joke = () => {
   "The gingerbread man goes to the doctor and tells him he really hurt his foot. The doctor says 'Have you tried icing it?'", 
   "What do you call a frog with a broken foot? Un-hoppy!"];
 
-  let randomJoke = Math.floor(Math.random() * 14);
-
   return (
     <div className={style.joke}>
-      {/* <p>{jokeArray[randomJoke]}</p> */}
       <div className={style.container}>
         {jokeArray.map(paragraph => <p className={style.marquee}>{paragraph}</p>)}
       </div>
