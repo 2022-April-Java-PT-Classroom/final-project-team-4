@@ -14,6 +14,18 @@ function MyMapApp() {
   
   return (
     <div className={style.bingMap}>
+      <form>
+        <label for="city">City</label>
+        <br></br>
+        <input type="text" id="city" name="city"/>
+        <br></br>
+        <label for="state">State </label>
+        <input type="text" id="state" name="state"/>
+        <br></br>
+        <label for="zipCode">zipcode</label>
+        <input type="text" id="zipCode" name="zipCode"/>
+        <button>Search</button>
+      </form>
     <BingMapsReact
       onMapReady = {
         ({ map }) => {
