@@ -1,0 +1,25 @@
+.joke {
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-style: italic;
+
+  .container {
+    height: 25px;
+    overflow: hidden;
+    background: transparent;
+  }
+
+  .marquee {
+    position: relative;
+    animation: marquee 100s linear infinite;
+  }
+
+  @keyframes marquee {
+    0%   { top: 25px }
+    100% { top: -500px }
+  }
+
+  p {
+    padding-bottom: 5px;
+  }
+}

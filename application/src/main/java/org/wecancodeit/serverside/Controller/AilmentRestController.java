@@ -7,18 +7,17 @@ import org.wecancodeit.serverside.Repository.AilmentRepository;
 import javax.annotation.Resource;
 import java.util.Collection;
 
-@CrossOrigin("*")
-@RequestMapping
+@CrossOrigin
 @RestController
 public class AilmentRestController {
 
     @Resource
     private AilmentRepository ailmentRepo;
 
-    @GetMapping("/ailment")
+    @GetMapping("/api/ailment")
     public Collection<Ailment> getAilment(){return (Collection<Ailment>) ailmentRepo.findAll(); }
 
-    @GetMapping ("/ailment/{id}")
+    @GetMapping ("/api/ailment/{id}")
     public Ailment getAilment(@PathVariable Long id){return ailmentRepo.findById(id).get();}
 
 }

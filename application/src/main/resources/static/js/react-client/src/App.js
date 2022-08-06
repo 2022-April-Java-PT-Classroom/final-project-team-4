@@ -3,6 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 import AppRouter from './components/app-router';
 import Footer from './components/footer';
 import Header from './components/header';
+import Joke from './components/joke';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <div>
         <AppRouter />
       </div>
+      <Joke />
       <Footer />
       </BrowserRouter>
     </div>
