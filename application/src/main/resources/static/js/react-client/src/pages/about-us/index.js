@@ -1,5 +1,13 @@
 import React from 'react';
 import style from './style.module.scss';
+import aisha from '../../assets/images/Aisha.jpg';
+import sade from '../../assets/images/Sade.jpg';
+import jason from '../../assets/images/Jason.jpg';
+import zach from '../../assets/images/Zach.jpg';
+import CM from '../../assets/images/CM.jpg';
+
+
+
 
 const AboutUs = () => {
     return (
@@ -8,7 +16,7 @@ const AboutUs = () => {
                     <h2>About Us</h2>
                     <div className={style.bios}>
                     <div>
-                    <img src="images/Aisha.jpg" height="200" width="200"></img>
+                    <img src={aisha} height="200" width="200"></img>
                     <h3>Aisha Bluem</h3>
                     <a href="https://github.com/acbluem">GitHub</a>
                     <a href="https://www.linkedin.com/in/aishabluem/">LinkedIn</a>
@@ -20,8 +28,9 @@ const AboutUs = () => {
                          </div>
 
                          <div>
-                    <img src="images/Sade.jpg" height="200" width="200"></img>
+
                     <h3> Andera Fells</h3>
+                    <img src={sade} height="200" width="200"></img>
                     <a href="https://github.com/anderafells">GitHub</a>
                     <a href="https://www.linkedin.com/in/anderafells/">LinkedIn</a>
                     <p> Andera is a full stack developer currently located in Columbus, OH. Her love for learning,and taking
@@ -32,7 +41,7 @@ const AboutUs = () => {
                     </div>
 
                    <div>
-                   <img src="images/CM.jpg" height="200" width="200"></img>
+                   <img src={CM} height="200" width="200"></img>
                    <h3>C.M Rimal</h3>
                     <a href="https://github.com/cmsrimsson">GitHub</a>
                     <a href="https://www.linkedin.com/in/chuda-rimal-318b33201/">LinkedIn</a>
@@ -48,7 +57,7 @@ const AboutUs = () => {
                     </div>
 
                     <div>
-                    <img src="images/Jason.jpg" height="200" width="200"></img>
+                    <img src={jason} height="200" width="200"></img>
                     <h3>Jason Mirwald</h3>
                     <a href="https://github.com/jjmirwaldjr">GitHub</a>
                     <a href="https://www.linkedin.com/in/jason-mirwald-jr-8694a1236/">LinkedIn</a>
@@ -63,7 +72,7 @@ const AboutUs = () => {
                        </div>
 
                        <div>
-                    <img src="images/" height="200" width="200"></img>
+
                     <h3>Jalyn Jenkins</h3>
                     <a href=  "https://github.com/jalynjenkins">GitHub</a>
                     <a href=  "https://www.linkedin.com/in/jalynjenkins">LinkedIn</a>
@@ -74,7 +83,7 @@ const AboutUs = () => {
                        </div>
 
                     <div>
-                    <img src="images/Zach.jpg" height="200" width="200"></img>
+                    <img src={zach} height="200" width="200"></img>
                     <h3>Zachary Martin</h3>
                     <a href="https://github.com/zm102905">GitHub</a>
                     <a href="https://www.linkedin.com/in/zachary-d-martin/">LinkedIn</a>
