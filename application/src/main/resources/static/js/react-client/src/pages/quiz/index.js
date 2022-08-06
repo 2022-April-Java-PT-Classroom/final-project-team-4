@@ -2,122 +2,158 @@ import React from 'react';
 import style from './style.module.scss';
 
 const Quiz = () => {
-// addPoint = (ailment) => {
-//   ailments.ailment++;
-// }
 
-// const ailments = {
-//   "Plantar Fasciitis":0,
-//   "Diabetic Neuropathy":0, 
-//   "Supination":0, 
-//   "Pronation":0, 
-//   "Heel Spur":0, 
-//   "Hammertoe":0, 
-//   "Bunion":0, 
-//   "Morton Neuroma":0
-// }
+function addPoint(choice) {
+  if(choice == "plant") {
+    ailments["Plantar Fasciitis"]++;
+  }
 
-return (
-  <div className={style.quiz}>
-    <h2>Foot Ailment Quiz</h2>
-    <p>Take this quiz if you are experiencing any unusual foot-related symptoms to see what we think might be the likeliest issue.</p>
+  if(choice == "dia") {
+    ailments["Diabetic Neuropathy"]++;
+  }
 
-    <h3>If you are experiencing constant pain, where on your feet is it located?</h3>
-    <input type="radio" />
-    <label for="heel">Heel</label><br />
-    <input type="radio" />
-    <label for="arch">Arch</label><br />
-    <input type="radio" />
-    <label for="ankle">Ankle</label><br />
-    <input type="radio" />
-    <label for="ball">Ball</label><br />
-    <input type="radio" />
-    <label for="toe">Toe (or between toes)</label><br />
-    <input type="radio" />
-    <label for="everywhere">Everywhere</label><br />
-    <input type="radio" />
-    <label for="none">I am not in constant pain or the pain comes and goes</label><br />
+  if(choice == "sup") {
+    ailments["Supination"]++;
+  }
 
-    <h3>If you are experiencing swelling, where on your feet is it located?</h3>
-    <input type="radio" />
-    <label for="heel">Heel</label><br />
-    <input type="radio" />
-    <label for="arch">Joint</label><br />
-    <input type="radio" />
-    <label for="ankle">Between toes</label><br />
-    <input type="radio" />
-    <label for="none">I do not appear to be swelling anywhere</label><br />
+  if(choice == "pro") {
+    ailments["Pronation"]++;
+  }
 
-    <h3>Are you experiencing any numbness or tingling sensation in your feet?</h3>
-    <input type="radio" />
-    <label for="yes">Yes</label><br />
-    <input type="radio" />
-    <label for="no">No</label><br />
+  if(choice == "heel") {
+    ailments["Heel Spur"]++;
+  }
 
-    <h3>Do you have any corns or calluses on your feet?</h3>
-    <input type="radio" />
-    <label for="yes">Yes</label><br />
-    <input type="radio" />
-    <label for="no">No</label><br />
+  if(choice == "ham") {
+    ailments["Hammertoe"]++;
+  }
 
-    <h3>Do you have a protrusion on your foot?</h3>
-    <input type="radio" />
-    <label for="yes">Yes</label><br />
-    <input type="radio" />
-    <label for="no">No</label><br />
+  if(choice == "bun") {
+    ailments["Bunion"]++;
+  }
 
-    <h3>Do you have limited joint mobility?</h3>
-    <input type="radio" />
-    <label for="yes">Yes</label><br />
-    <input type="radio" />
-    <label for="no">No</label><br />
+  if(choice == "mor") {
+    ailments["Morton Neuroma"]++;
+  }
+}
 
-    <h3>Do you have a burning sensation in your feet?</h3>
-    <input type="radio" />
-    <label for="yes">Yes</label><br />
-    <input type="radio" />
-    <label for="no">No</label><br />
+const ailments = {
+  "Plantar Fasciitis":0,
+  "Diabetic Neuropathy":0, 
+  "Supination":0, 
+  "Pronation":0, 
+  "Heel Spur":0, 
+  "Hammertoe":0, 
+  "Bunion":0, 
+  "Morton Neuroma":0
+}
 
-    <h3>Are you experiencing any muscle weakness in your feet?</h3>
-    <input type="radio" />
-    <label for="yes">Yes</label><br />
-    <input type="radio" />
-    <label for="no">No</label><br />
+  return (
+    <div className={style.quiz}>
+      <h2>Foot Ailment Quiz</h2>
+      <p>Take this quiz if you are experiencing any unusual foot-related symptoms to see what we think might be the likeliest issue.</p>
 
-    <h3>Do you have a tight Achilles tendon?</h3>
-    <input type="radio" />
-    <label for="yes">Yes</label><br />
-    <input type="radio" />
-    <label for="no">No</label><br />
+      <h3>If you are experiencing constant pain, where on your feet is it located?</h3>
+      <input type="radio" id="plant pro" />
+      <label for="heel">Heel</label><br />
+      <input type="radio" id="plant pro" />
+      <label for="arch">Arch</label><br />
+      <input type="radio" id="sup" />
+      <label for="ankle">Ankle</label><br />
+      <input type="radio" id="sup ham" />
+      <label for="ball">Ball</label><br />
+      <input type="radio" id="ham mor" />
+      <label for="toe">Toe (or between toes)</label><br />
+      <input type="radio" id="dia" />
+      <label for="everywhere">Everywhere</label><br />
+      <input type="radio" id="none" />
+      <label for="none">I am not in constant pain or the pain comes and goes</label><br />
 
-    <h3>Are your feet sensitive to touch?</h3>
-    <input type="radio" />
-    <label for="yes">Yes</label><br />
-    <input type="radio" />
-    <label for="no">No</label><br />
+      <h3>If you are experiencing swelling, where on your feet is it located?</h3>
+      <input type="radio" />
+      <label for="heel">Heel</label><br />
+      <input type="radio" />
+      <label for="arch">Joint</label><br />
+      <input type="radio" />
+      <label for="ankle">Between toes</label><br />
+      <input type="radio" />
+      <label for="none">I do not appear to be swelling anywhere</label><br />
 
-    <h3>Do you have flat feet?</h3>
-    <input type="radio" />
-    <label for="yes">Yes</label><br />
-    <input type="radio" />
-    <label for="no">No</label><br />
+      <h3>Are you experiencing any numbness or tingling sensation in your feet?</h3>
+      <input type="radio" />
+      <label for="yes">Yes</label><br />
+      <input type="radio" />
+      <label for="no">No</label><br />
 
-    <h3>Do you experience a sensation of having a rock under your foot when standing?</h3>
-    <input type="radio" />
-    <label for="yes">Yes</label><br />
-    <input type="radio" />
-    <label for="no">No</label><br />
+      <h3>Do you have any corns or calluses on your feet?</h3>
+      <input type="radio" />
+      <label for="yes">Yes</label><br />
+      <input type="radio" />
+      <label for="no">No</label><br />
 
-    <h3>Do you have a sprain or shin splints?</h3>
-    <input type="radio" />
-    <label for="yes">Yes</label><br />
-    <input type="radio" />
-    <label for="no">No</label><br />
-    <br />
-    <button>Get Results</button>
-  </div>
-);
+      <h3>Do you have a protrusion on your foot?</h3>
+      <input type="radio" />
+      <label for="yes">Yes</label><br />
+      <input type="radio" />
+      <label for="no">No</label><br />
 
+      <h3>Do you have limited joint mobility?</h3>
+      <input type="radio" />
+      <label for="yes">Yes</label><br />
+      <input type="radio" />
+      <label for="no">No</label><br />
+
+      <h3>Do you have a burning sensation in your feet?</h3>
+      <input type="radio" />
+      <label for="yes">Yes</label><br />
+      <input type="radio" />
+      <label for="no">No</label><br />
+
+      <h3>Are you experiencing any muscle weakness in your feet?</h3>
+      <input type="radio" />
+      <label for="yes">Yes</label><br />
+      <input type="radio" />
+      <label for="no">No</label><br />
+
+      <h3>Do you have a tight Achilles tendon?</h3>
+      <input type="radio" />
+      <label for="yes">Yes</label><br />
+      <input type="radio" />
+      <label for="no">No</label><br />
+
+      <h3>Are your feet sensitive to touch?</h3>
+      <input type="radio" />
+      <label for="yes">Yes</label><br />
+      <input type="radio" />
+      <label for="no">No</label><br />
+
+      <h3>Do you have flat feet?</h3>
+      <input type="radio" />
+      <label for="yes">Yes</label><br />
+      <input type="radio" />
+      <label for="no">No</label><br />
+
+      <h3>Do you experience a sensation of having a rock under your foot when standing?</h3>
+      <input type="radio" />
+      <label for="yes">Yes</label><br />
+      <input type="radio" />
+      <label for="no">No</label><br />
+
+      <h3>Do you have a sprain or shin splints?</h3>
+      <input type="radio" />
+      <label for="yes">Yes</label><br />
+      <input type="radio" />
+      <label for="no">No</label><br />
+      <br />
+      <button>Get Results</button>
+
+      {
+        Object.entries(ailments).map(([key, val]) => 
+          <p key={key}>{key}: {val}</p>
+        )
+      }
+    </div>
+  );
 }
 
 export default Quiz;
