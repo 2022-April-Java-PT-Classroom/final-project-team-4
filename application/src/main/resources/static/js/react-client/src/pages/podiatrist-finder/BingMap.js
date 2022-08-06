@@ -4,13 +4,13 @@ import BingMapsReact from "bingmaps-react";
 import style from "./style.module.scss";
 
 function MyMapApp() {
-  const [mapReady, setMapReady] = useState(false);
+  const [bingMapReady, setBingMapReady] = useState(false)
   
   useEffect(() => {
-    if (mapReady) {
+    if (bingMapReady) {
       // addPushPin();
     }
-  }, [mapReady]);
+  }, [bingMapReady]);
   
   return (
     <div className={style.bingMap}>
@@ -29,7 +29,7 @@ function MyMapApp() {
     <BingMapsReact
       onMapReady = {
         ({ map }) => {
-        setMapReady(true);
+        setBingMapReady(true);
         }
       }
       bingMapsKey="Ak_-nVsKEjzxTXWPi28M53qN1Pm6bwFSYms9Ix4EISh80YP36lu8THZknQFF_HdN"
