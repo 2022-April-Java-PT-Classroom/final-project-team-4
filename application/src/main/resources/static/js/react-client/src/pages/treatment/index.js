@@ -24,6 +24,7 @@ const TreatmentPage = () => {
     return (
         <div>
            <p> {treatment.name}</p>
+           <img className={style.treatmentimage} src={treatment.image} />
            <p>{treatment.description}</p>
            <p>{treatment.benefits}</p>
         </div>
