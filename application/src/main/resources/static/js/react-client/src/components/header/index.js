@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from "react-router-dom";
 import style from './style.module.scss';
 
 const Header = () => {
@@ -6,41 +7,42 @@ const Header = () => {
     <div className={style.header}>
       <div className={style.trapezoid}></div>
       <h1>
-        <span id={style.bigger}>F</span>ootopolis
+        <NavLink to={'/'}>
+          <span id={style.bigger}>F</span>ootopolis
+        </NavLink>
       </h1>
       <nav>
 
       <div className={style.dropdown}>
         <button className={style.dropbtn} id={style.firstBtn}>Foot Problems</button>
         <div className={style.dropdownContent} id={style.green}>
-          <a href="/ailment">Injuries</a>
-          <a href="/ailment">Growths</a>
-          <a href="/ailment">Diseases</a>
+          <NavLink to={'/ailment'}>Ailments</NavLink>
+          <NavLink to={'/bad-practices'}>Bad Practices</NavLink>
         </div>
       </div>
 
       <div className={style.dropdown}>
         <button className={style.dropbtn}>Foot Solutions</button>
         <div className={style.dropdownContent} id={style.purple}>
-          <a href="#">Conventional Treatments</a>
-          <a href="#">Alternative Treatments</a>
-          <a href="#">Foot Massage Techniques</a>
+          <NavLink to={'/ailment/:id'}>Conventional Treatments</NavLink>
+          <NavLink to={'/alternative-treatments'}>Alternative Treatments</NavLink>
+          <NavLink to={'/massage'}>Foot Massage Techniques</NavLink> 
         </div>
       </div>
 
       <div className={style.dropdown}>
         <button className={style.dropbtn}>Your Feet</button>
         <div className={style.dropdownContent} id={style.green}>
-          <a href="#">Foot Injury Quiz</a>
-          <a href="/map">Local Podiatrist Locator</a>
+          <NavLink to={'/quiz'}>Foot Ailment Quiz</NavLink>
+          <NavLink to={'/map'}>Local Podiatrist Locator</NavLink>
         </div>
       </div>
 
       <div className={style.dropdown}>
         <button className={style.dropbtn} id={style.lastBtn}>About Us</button>
         <div className={style.dropdownContent} id={style.lastDropdown}>
-          <a href="#">Contact Us</a>
-          <a href="#">Meet the Developers</a>
+          <NavLink to={'/contact'}>Contact Us</NavLink>
+          <NavLink to={'/about-us'}>Meet the Developers</NavLink>
         </div>
       </div>
 
