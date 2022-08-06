@@ -12,11 +12,11 @@ const AboutUs = () => {
                     <h3>Aisha Bluem</h3>
                     <a href="https://github.com/acbluem">GitHub</a>
                     <a href="https://www.linkedin.com/in/aishabluem/">LinkedIn</a>
-                    <p> Hi! My name is Aisha (phonetic spelling: ay-zhuh).
-                       I am a junior full-stack software developer pursuing my passion in coding, reigniting the days of my youth
-                        where I'd make front-end websites of my favorite cartoon/video game characters in the early and late 2000s.
-                         I am a highly focused problem solver with excellent research and troubleshooting skills, committed to
-                         breaking into the tech industry.</p>
+                    <p> Aisha (phonetic spelling: ay-zhuh).
+                       Aisha is a junior full-stack software developer pursuing her passion in coding, reigniting the
+                       days of her youth where she'd make front-end websites of her favorite cartoon/video game characters
+                       in the early and late 2000s. She is a highly focused problem solver with excellent research and
+                       troubleshooting skills, committed to breaking into the tech industry.</p>
                          </div>
 
                          <div>
@@ -24,9 +24,11 @@ const AboutUs = () => {
                     <h3> Andera Fells</h3>
                     <a href="https://github.com/anderafells">GitHub</a>
                     <a href="https://www.linkedin.com/in/anderafells/">LinkedIn</a>
-                    <p> I am a full stack developer currently located in Columbus, OH. My love for learning,and taking on challenging task has set me on the path of coding. I love to see projects come "alive". I am a dedicated team
-                    player, but I also work well on my own. Outside of development I enjoy researching anything that catches
-                    my attention from music,dance, how the mind works etc.. Most importantly I love spending time with my family!</p>
+                    <p> Andera is a full stack developer currently located in Columbus, OH. Her love for learning,and taking
+                    on challenging task has set her on the path of coding. She loves to see projects come "alive". Andera is a
+                    dedicated team player, but she also works well on her own. Outside of development she enjoys researching
+                    anything that catches her attention from music,dance, how the mind works etc.. Most importantly Andera
+                    love spending time with her family!</p>
                     </div>
 
                    <div>
@@ -34,15 +36,14 @@ const AboutUs = () => {
                    <h3>C.M Rimal</h3>
                     <a href="https://github.com/cmsrimsson">GitHub</a>
                     <a href="https://www.linkedin.com/in/chuda-rimal-318b33201/">LinkedIn</a>
-                    <p>Hello, this is Chuda Rimal. I am a Full-Stack web developer and
-                       mostly I am passionate on web coding. I’m quite expert in using
-                       coding and markuplanguages like:
+                    <p> Chuda Rimal is a Full-Stack web developer and he is mostly passionate on web coding. He is quite
+                    expert in using coding and markup languages like:
                        Java • Spring • Thymeleaf • JavaScript • MVC • HTML •
                        CSS • TDD • Agile (Scrum) • Object Oriented Programming (OOP) •
                        JSON • REST APIs • Responsive Design / Mobile • Relational Databases
                        • Source Control / GitHub.
-                       Highly motivated, efficient and quick learner  reskilling to switch careers
-                       into software development. Consistently recognized for superior  problem-solving
+                       Chuda is a highly motivated, efficient and quick learner upskilling to switch careers
+                       into software development. Consistently recognized for superior problem-solving
                        skills, strong work ethic and passion for serving others at Amazon.</p>
                     </div>
 
@@ -51,14 +52,14 @@ const AboutUs = () => {
                     <h3>Jason Mirwald</h3>
                     <a href="https://github.com/jjmirwaldjr">GitHub</a>
                     <a href="https://www.linkedin.com/in/jason-mirwald-jr-8694a1236/">LinkedIn</a>
-                    <p>I am a Military Veteran, Served in the US navy as a Logistic Specialist. I was Honorably
-                       Discharged. I spent the next few years working in the customer service industry and
-                       developing management skills through working different part-time jobs. Now I work at
-                       Amazon. I also have technical experience, between Graphics design and media editing. I am
-                       now working on developing my coding skills through the We Can Code It boot camp. I have
-                       done a few years at the art institute to learn many different skills, Graphics design, Media
-                       Editing, 3D modeling and animations, 2D animation and Photoshop skills. Now I'm looking to
-                       continue to expand my skills by picking up both back end and front end development. </p>
+                    <p>Jason is a Military Veteran who served in the US navy as a Logistic Specialist. He was Honorably
+                       Discharged. Jason spent the next few years working in the customer service industry and
+                       developing management skills through working different part-time jobs. He now works at
+                       Amazon. Also having technical experience, between graphics design and media editing. Jason is
+                       now working on developing his coding skills through the We Can Code It boot camp. He completed
+                       a few years at the art institute to learn many different skills, Graphics design, Media
+                       Editing, 3D modeling and animations, 2D animation and Photoshop skills. Jason is now looking to
+                       continue to expand his skills by picking up both back end and front end development. </p>
                        </div>
 
                        <div>
@@ -66,7 +67,10 @@ const AboutUs = () => {
                     <h3>Jalyn Jenkins</h3>
                     <a href=  "https://github.com/jalynjenkins">GitHub</a>
                     <a href=  "https://www.linkedin.com/in/jalynjenkins">LinkedIn</a>
-                    <p></p>
+                    <p>Jalyn is a fullstack software developer from Columbus, Ohio. He enjoys taking complex problems
+                    and turning them into simple and beautiful digital designs and concepts. When not coding Jalyn
+                    enjoys spending time with his family, watching F1 racing and keeping up to date on the latest
+                    fashion news.</p>
                        </div>
 
                     <div>
