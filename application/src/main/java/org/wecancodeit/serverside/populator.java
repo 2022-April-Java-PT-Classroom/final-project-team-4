@@ -55,14 +55,14 @@ public class populator implements CommandLineRunner {
         treatmentRepo.save(rest);
         treatmentRepo.save(decompressionSurgery);
 
-        Ailment plantarFisciitis = new Ailment("Plantar Fasciitis", painRelieverNsaid, nightSplints, physicalTherapy, ice);
-        Ailment diabeticNeuropathy = new Ailment("Diabetic Neuropathy", diabetesManagement, antiSeizureDrugs, physicalTherapy, weightLoss);
-        Ailment supination = new Ailment("Supination", orthoticInsoles, physicalTherapy, fittedShoes);
-        Ailment pronation = new Ailment("Pronation", orthoticInsoles, physicalTherapy, fittedShoes);
-        Ailment heelSpur = new Ailment("Heel Spur", spurSurgery, ice, fittedShoes, orthoticInsoles, weightLoss, rest);
-        Ailment hammerToe = new Ailment("Hammer Toe", toeSplint, fittedShoes, hammertoePads);
-        Ailment bunions = new Ailment("Bunions", bunionPads, painRelieverNsaid, ice, fittedShoes);
-        Ailment mortonNeuroma = new Ailment("Morton Neuroma", rest, decompressionSurgery, physicalTherapy, fittedShoes, painRelieverNsaid, steroidInjections);
+        Ailment plantarFisciitis = new Ailment("Plantar Fasciitis","An inflammation of a thick band of tissue that connects the heel bone to the toes. The inflamed tissue runs across the bottom of the foot." ,painRelieverNsaid, nightSplints, physicalTherapy, ice);
+        Ailment diabeticNeuropathy = new Ailment("Diabetic Neuropathy","A type of nerve damage that can occur with diabetes. The condition most often affects the legs and feet. ", diabetesManagement, antiSeizureDrugs, physicalTherapy, weightLoss);
+        Ailment supination = new Ailment("Supination", "Supination (or under-pronation) is the outward roll of the foot during normal motion.", orthoticInsoles, physicalTherapy, fittedShoes);
+        Ailment pronation = new Ailment("Pronation","Pronation is a natural movement of the foot that occurs during foot landing while running or walking. ", orthoticInsoles, physicalTherapy, fittedShoes);
+        Ailment heelSpur = new Ailment("Heel Spur","A bony growth that develops around the heel bone, often caused by ill-fitting shoes, and sometimes causing pain.", spurSurgery, ice, fittedShoes, orthoticInsoles, weightLoss, rest);
+        Ailment hammerToe = new Ailment("Hammer Toe","A foot condition in which the toe has an abnormal bend in the middle joint. A hammer toe is usually caused by wearing shoes with high heels or narrow toe boxes.", toeSplint, fittedShoes, hammertoePads);
+        Ailment bunions = new Ailment("Bunions", "A bony bump that forms on the joint at the base of the big toe. A bunion is formed when the big toe pushes against the next toe. ", bunionPads, painRelieverNsaid, ice, fittedShoes);
+        Ailment mortonNeuroma = new Ailment("Morton's Neuroma","A thickening of the tissue around a nerve leading to the toes.", rest, decompressionSurgery, physicalTherapy, fittedShoes, painRelieverNsaid, steroidInjections);
         ailmentRepo.save(plantarFisciitis);
         ailmentRepo.save(diabeticNeuropathy);
         ailmentRepo.save(supination);
