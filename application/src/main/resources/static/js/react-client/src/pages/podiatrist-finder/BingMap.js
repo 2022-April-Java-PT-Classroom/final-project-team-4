@@ -27,7 +27,7 @@ function MyMapApp() {
         navigationBarMode: "square",
         }
       }
-      width="1000px"
+      width="1500px"
       viewOptions={
         {
           center: { latitude: 39.983334, longitude: -82.983330 },
