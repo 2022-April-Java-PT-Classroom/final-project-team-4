@@ -14,18 +14,9 @@ const Header = () => {
       <nav>
 
       <div className={style.dropdown}>
-        <button className={style.dropbtn} id={style.firstBtn}>Foot Problems</button>
+        <button className={style.dropbtn} id={style.firstBtn}>Issues & Remedies</button>
         <div className={style.dropdownContent} id={style.green}>
           <NavLink to={'/ailment'}>Ailments</NavLink>
-          <NavLink to={'/bad-practices'}>Bad Practices</NavLink>
-        </div>
-      </div>
-
-      <div className={style.dropdown}>
-        <button className={style.dropbtn}>Foot Solutions</button>
-        <div className={style.dropdownContent} id={style.purple}>
-          <NavLink to={'/ailment/:id'}>Conventional Treatments</NavLink>
-          <NavLink to={'/alternative-treatments'}>Alternative Treatments</NavLink>
           <NavLink to={'/massage'}>Foot Massage Techniques</NavLink> 
         </div>
       </div>
