@@ -14,10 +14,10 @@ public class AilmentRestController {
     @Resource
     private AilmentRepository ailmentRepo;
 
-    @GetMapping("/api/ailment")
+    @GetMapping("/ailment")
     public Collection<Ailment> getAilment(){return (Collection<Ailment>) ailmentRepo.findAll(); }
 
-    @GetMapping ("/api/ailment/{id}")
+    @GetMapping ("/ailment/{id}")
     public Ailment getAilment(@PathVariable Long id){return ailmentRepo.findById(id).get();}
 
 }

@@ -32,6 +32,7 @@ const AilmentScreen = () => {
     }, [ailment]);
 
         console.log(ailment);
+      
 
     return (
         <div>
@@ -42,7 +43,8 @@ const AilmentScreen = () => {
                        <div key = {ailment.id}>
                        {/* <a href={`ailment/${ailment.id}` }>{ailment.name}</a> */}
                        <h1 className="ailment_name"><a href={`ailment/${ailment.id}` }>{ailment.name}</a></h1>
-                       </div>
+                       <h2 className="ailment_description"><a> {ailment.description}</a></h2>
+                    </div>
                     ))}
                     </div> 
 
