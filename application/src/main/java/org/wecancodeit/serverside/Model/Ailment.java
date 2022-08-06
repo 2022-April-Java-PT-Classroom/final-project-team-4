@@ -2,10 +2,9 @@ package org.wecancodeit.serverside.Model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 
 @Entity
@@ -15,19 +14,19 @@ public class Ailment {
     @GeneratedValue
     private Long id;
     private String name;
-    @OneToMany(mappedBy = "ailment")
-    @JsonIgnore
-    private Collection<Ailment> ailment;
+    @ManyToMany
+    private Collection<Treatment> treatments;
 
     public Long getID(){return id;}
 
     public String getName() {return name;}
 
-    public Collection<Ailment> getAilment() {return ailment;}
+    public Collection<Treatment> getTreatments() {return treatments;}
 
     public Ailment(){}
 
-    public Ailment(String name){
+    public Ailment(String name, Treatment... treatments){
         this.name = name;
+        this.treatments=new ArrayList<>(Arrays.asList(treatments));
     }
 }
