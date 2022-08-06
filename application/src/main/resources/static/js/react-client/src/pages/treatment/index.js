@@ -25,7 +25,9 @@ const TreatmentPage = () => {
     <div className={style.treatment}>
         <div className={style.head}>
            <h1 className={style.treatmentTitle}> {treatment.name}</h1>
+           <div className={style.image}>
            <img className={style.treatmentImage} src={treatment.image} />
+           </div>
         </div>
         <div className={style.description}>
             <h2 className={style.descriptionTitle}>Description of Treatment</h2>
