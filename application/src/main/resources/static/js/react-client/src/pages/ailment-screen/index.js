@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
 
-// import ReactSwitch from "react-switch";
-import style from './style.module.scss';
 import Axios from "axios";
+import style from './style.module.scss';
+
+// import ReactSwitch from "react-switch";
+
+
 
 const AilmentScreen = () => {
 
@@ -12,7 +15,7 @@ const AilmentScreen = () => {
     useEffect(()=> {
         
         const fetchAilmentData = async () => {
-            const result = await Axios ('http://localhost:8080/ailment');
+            const result = await Axios ('http://localhost:8080/api/ailment');
             setAilment(result.data);
         }
 

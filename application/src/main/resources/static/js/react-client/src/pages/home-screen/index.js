@@ -1,9 +1,8 @@
 import React from 'react';
-import style from './style.module.scss';
-
-import quiz from '../../assets/images/quiz.jpg';
 import feet from '../../assets/images/feet.jpg';
 import podiatrist from '../../assets/images/podiatrist.jpg';
+import quiz from '../../assets/images/quiz.jpg';
+import style from './style.module.scss';
 
 const HomeScreen = () => {
 
@@ -42,7 +41,7 @@ const HomeScreen = () => {
                   Something more unusual? Visit the foot ailments page 
                   for more information.
                 </p>
-                <button>Learn More</button>
+                <button><a href='/ailment'>Learn More</a></button>
               </td>
             </tr>
           </table>
@@ -80,7 +79,7 @@ const HomeScreen = () => {
                   it's always important to consult your 
                   doctor (and we are not doctors). Find one near you here.
                 </p>
-                <button>Learn More</button>
+                <button><a href='/map'>Learn More</a></button>
               </td>
             </tr>
           </table>
