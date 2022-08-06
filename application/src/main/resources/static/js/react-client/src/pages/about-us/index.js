@@ -30,11 +30,20 @@ const AboutUs = () => {
                     </div>
 
                    <div>
-                   <img src="images/" height="200" width="200"></img>
+                   <img src="images/CM.jpg" height="200" width="200"></img>
                    <h3>C.M Rimal</h3>
                     <a href="https://github.com/cmsrimsson">GitHub</a>
-                    <a href="https://www.linkedin.com/">LinkedIn</a>
-                    <p></p>
+                    <a href="https://www.linkedin.com/in/chuda-rimal-318b33201/">LinkedIn</a>
+                    <p>Hello, this is Chuda Rimal. I am a Full-Stack web developer and
+                       mostly I am passionate on web coding. I’m quite expert in using
+                       coding and markuplanguages like:
+                       Java • Spring • Thymeleaf • JavaScript • MVC • HTML •
+                       CSS • TDD • Agile (Scrum) • Object Oriented Programming (OOP) •
+                       JSON • REST APIs • Responsive Design / Mobile • Relational Databases
+                       • Source Control / GitHub.
+                       Highly motivated, efficient and quick learner  reskilling to switch careers
+                       into software development. Consistently recognized for superior  problem-solving
+                       skills, strong work ethic and passion for serving others at Amazon.</p>
                     </div>
 
                     <div>
@@ -61,19 +70,17 @@ const AboutUs = () => {
                        </div>
 
                     <div>
-                    <img src="images/" height="200" width="200"></img>
+                    <img src="images/Zach.jpg" height="200" width="200"></img>
                     <h3>Zachary Martin</h3>
                     <a href="https://github.com/zm102905">GitHub</a>
                     <a href="https://www.linkedin.com/in/zachary-d-martin/">LinkedIn</a>
-                    <p>Zachary Martin is a Columbus-based full-stack software developer with a passion for travel, the outdoors,
-                       gardening, and technology. His passion for technology started very early, when he took an interest in
-                       gaming. In his early 20's, he built his first gaming pc, and computers for his father's law practice.
-                       From there, his interest in hardware and software design grew. Though his passion was in technology,
-                       it was his love for the outdoors and interest in life science that drove his to pursue a Bachelors degree
-                       in Biology at Ohio University, which he completed in 2009. After years of working in healthcare, Zach
-                       decided he wanted to turn his interest in technology into a career, and to leave his career in healthcare
-                       behind! Zach is enthusiastic about growing and gaining new skills as a software developer and is
-                       looking forward to a future in the field of IT!</p>
+                    <p>Zachary Martin is a Columbus-based full-stack software developer with a passion for travel, the
+                    outdoors, gardening, and technology. His passion for technology started very early, when he took an
+                    interest in gaming and computers. From there, his interest in hardware and software design grew.
+                    Though his passion was in technology, it was his love for the outdoors and interest in life science
+                    that drove him to pursue a Bachelors degree in Biology at Ohio University, which he completed in
+                    2009. Zach is enthusiastic about growing and gaining new skills as a software developer and is
+                    looking forward to a future in the field of IT!</p>
                         </div>
                 </div>
                 </div>
