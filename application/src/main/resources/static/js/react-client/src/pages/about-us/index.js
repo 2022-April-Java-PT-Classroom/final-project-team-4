@@ -6,6 +6,11 @@ import jason from '../../assets/images/Jason.jpg';
 import zach from '../../assets/images/Zach.jpg';
 import CM from '../../assets/images/CM.jpg';
 
+import Github from '../../assets/images/Github.png';
+import LinkedIn from '../../assets/images/LinkedIn.png';
+
+
+
 
 
 
@@ -13,13 +18,15 @@ const AboutUs = () => {
     return (
 
                 <div className ={style.aboutUs}>
-                    <h2>About Us</h2>
+                    <h2>Meet the Developers</h2>
                     <div className={style.bios}>
                     <div>
                     <img src={aisha} height="200" width="200"></img>
                     <h3>Aisha Bluem</h3>
-                    <a href="https://github.com/acbluem">GitHub</a>
-                    <a href="https://www.linkedin.com/in/aishabluem/">LinkedIn</a>
+                    <div class="socials">   
+<a href="https://github.com/acbluem"><img src={Github} width="40"></img></a>
+<a href="https://www.linkedin.com/in/aishabluem/"><img src={LinkedIn} width="40"></img></a>
+</div>
                     <p> Aisha (phonetic spelling: ay-zhuh).
                        Aisha is a junior full-stack software developer pursuing her passion in coding, reigniting the
                        days of her youth where she'd make front-end websites of her favorite cartoon/video game characters
@@ -28,11 +35,13 @@ const AboutUs = () => {
                          </div>
 
                          <div>
-
-                    <h3> Andera Fells</h3>
+               
                     <img src={sade} height="200" width="200"></img>
-                    <a href="https://github.com/anderafells">GitHub</a>
-                    <a href="https://www.linkedin.com/in/anderafells/">LinkedIn</a>
+                    <h3> Andera Fells</h3>
+                    <div class="socials">   
+<a href="https://github.com/anderafells"><img src={Github} width="40"></img></a>
+<a href="https://www.linkedin.com/in/anderafells/"><img src={LinkedIn} width="40"></img></a>
+</div>
                     <p> Andera is a full stack developer currently located in Columbus, OH. Her love for learning,and taking
                     on challenging task has set her on the path of coding. She loves to see projects come "alive". Andera is a
                     dedicated team player, but she also works well on her own. Outside of development she enjoys researching
@@ -43,8 +52,10 @@ const AboutUs = () => {
                    <div>
                    <img src={CM} height="200" width="200"></img>
                    <h3>C.M Rimal</h3>
-                    <a href="https://github.com/cmsrimsson">GitHub</a>
-                    <a href="https://www.linkedin.com/in/chuda-rimal-318b33201/">LinkedIn</a>
+                   <div class="socials">   
+<a href="https://github.com/cmsrimsson"><img src={Github} width="40"></img></a>
+<a href="https://www.linkedin.com/in/chuda-rimal-318b33201/"><img src={LinkedIn} width="40"></img></a>
+</div>
                     <p> Chuda Rimal is a Full-Stack web developer and he is mostly passionate on web coding. He is quite
                     expert in using coding and markup languages like:
                        Java • Spring • Thymeleaf • JavaScript • MVC • HTML •
@@ -59,8 +70,10 @@ const AboutUs = () => {
                     <div>
                     <img src={jason} height="200" width="200"></img>
                     <h3>Jason Mirwald</h3>
-                    <a href="https://github.com/jjmirwaldjr">GitHub</a>
-                    <a href="https://www.linkedin.com/in/jason-mirwald-jr-8694a1236/">LinkedIn</a>
+                    <div class="socials">   
+<a href="https://github.com/jjmirwaldjr"><img src={Github} width="40"></img></a>
+<a href="https://www.linkedin.com/in/jason-mirwald-jr-8694a1236/"><img src={LinkedIn} width="40"></img></a>
+</div>
                     <p>Jason is a Military Veteran who served in the US navy as a Logistic Specialist. He was Honorably
                        Discharged. Jason spent the next few years working in the customer service industry and
                        developing management skills through working different part-time jobs. He now works at
@@ -74,8 +87,10 @@ const AboutUs = () => {
                        <div>
 
                     <h3>Jalyn Jenkins</h3>
-                    <a href=  "https://github.com/jalynjenkins">GitHub</a>
-                    <a href=  "https://www.linkedin.com/in/jalynjenkins">LinkedIn</a>
+                    <div class="socials">   
+<a href="https://github.com/jalynjenkins"><img src={Github} width="40"></img></a>
+<a href="https://www.linkedin.com/in/jalynjenkins"><img src={LinkedIn} width="40"></img></a>
+</div>
                     <p>Jalyn is a fullstack software developer from Columbus, Ohio. He enjoys taking complex problems
                     and turning them into simple and beautiful digital designs and concepts. When not coding Jalyn
                     enjoys spending time with his family, watching F1 racing and keeping up to date on the latest
@@ -85,8 +100,10 @@ const AboutUs = () => {
                     <div>
                     <img src={zach} height="200" width="200"></img>
                     <h3>Zachary Martin</h3>
-                    <a href="https://github.com/zm102905">GitHub</a>
-                    <a href="https://www.linkedin.com/in/zachary-d-martin/">LinkedIn</a>
+                    <div class="socials">   
+<a href="https://github.com/zm102905"><img src={Github} width="40"></img></a>
+<a href="https://www.linkedin.com/in/zachary-d-martin/"><img src={LinkedIn} width="40"></img></a>
+</div>
                     <p>Zachary Martin is a Columbus-based full-stack software developer with a passion for travel, the
                     outdoors, gardening, and technology. His passion for technology started very early, when he took an
                     interest in gaming and computers. From there, his interest in hardware and software design grew.
@@ -97,6 +114,7 @@ const AboutUs = () => {
                         </div>
                 </div>
                 </div>
+              
 
 
             );
