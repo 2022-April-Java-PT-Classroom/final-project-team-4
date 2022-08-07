@@ -2,6 +2,17 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import style from './style.module.scss';
 
+const ailments = {
+  "Plantar Fasciitis":0,
+  "Diabetic Neuropathy":0, 
+  "Supination":0, 
+  "Pronation":0, 
+  "Heel Spur":0, 
+  "Hammertoe":0, 
+  "Bunion":0, 
+  "Morton Neuroma":0
+}
+
 class Quiz extends Component {
   constructor() {
     super();
@@ -25,21 +36,13 @@ class Quiz extends Component {
     this.onSubmit = this.onSubmit.bind(this);
   }
 
-// function addPoint(choice) {
-//   if(choice == "plant") {
-//     ailments["Plantar Fasciitis"]++;
-//   }
-// }
-// const ailments = {
-//   "Plantar Fasciitis":0,
-//   "Diabetic Neuropathy":0, 
-//   "Supination":0, 
-//   "Pronation":0, 
-//   "Heel Spur":0, 
-//   "Hammertoe":0, 
-//   "Bunion":0, 
-//   "Morton Neuroma":0
-// }
+addPoint = (name, answer) => {
+  if(name == "pain") {
+    if(answer == "yes") {
+      ailments["Plantar Fasciitis"]++;
+    }
+  }
+}
 
 onRadioChange = (e) => {
   this.setState({
@@ -50,6 +53,7 @@ onRadioChange = (e) => {
 onSubmit = (e) => {
   e.preventDefault();
   console.log(this.state);
+  console.log(ailments);
 }
 
 render() {
