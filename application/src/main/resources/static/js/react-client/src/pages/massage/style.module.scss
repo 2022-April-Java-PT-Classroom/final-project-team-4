@@ -32,14 +32,31 @@
         margin: 0;
         
       }
+
+      div {
+        text-align: center;
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 0 40px;
+    
+        -webkit-column-count: 8;
+        -webkit-column-gap: 10px;
+         font-size: auto;
+    
+         @media(max-width: 710px){
+           display: flex;
+           flex-direction: column;
+    }
     
       p {
         font-family: 'Lora', serif;
-        text-align:start;
+        text-align:center;
         letter-spacing: 1px;
         line-height: 35px;
         margin: 0;
         margin-bottom: 70px;
+       
       }
 
       a:visited {
@@ -53,24 +70,10 @@
         text-decoration:none;
         
       }
-      
-      .videos{
-        text-align: center;
-        display:grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        padding: 0 40px;
-    
-        -webkit-column-count: 6;
-        -webkit-column-gap: 10px;
-         font-size: auto;
-    
-         @media(max-width: 710px){
-           display: flex;
-           flex-direction: column;
-         }
+
     }
-    }
+}
+    
     
     
     

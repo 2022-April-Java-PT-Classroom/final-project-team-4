@@ -11,7 +11,7 @@ const Massage = () => {
 <div className={style.techniques}>
 <div>
 {/* <img src={} height="200" width="200"></img> */}
-<h3>Plantar Fasciitis</h3>
+<h3>Plantar Fasciitis</h3> 
 <div class="videos">   
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0RdOFprqVHU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
@@ -41,8 +41,8 @@ const Massage = () => {
 <div>
 {/* <img src={} height="200" width="200"></img> */}
 <h3>Supination</h3>
-<div class="videos">    
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uEUSP6kUrrk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="wrap-element">    
+<iframe class="wrapped-iframe" width="560" height="315" src="https://www.youtube.com/embed/uEUSP6kUrrk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in augue neque. Maecenas fermentum facilisis neque, congue 
     ullamcorper mauris mattis at. Phasellus dictum sollicitudin arcu in elementum. Suspendisse ornare porttitor neque, vel 
