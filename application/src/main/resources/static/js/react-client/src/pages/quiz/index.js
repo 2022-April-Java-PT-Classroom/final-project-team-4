@@ -60,131 +60,131 @@ render() {
 
       <form onSubmit={this.onSubmit}>
         <h3>Are you experiencing constant pain?</h3>
-        <input type="radio" name="pain" 
+        <input type="radio" name="pain" value="yes" 
               checked={this.state.pain === "yes"} 
               onChange={this.onRadioChange}/>
         <label for="yes">Yes</label><br />
-        <input type="radio" name="pain"
+        <input type="radio" name="pain" value="no" 
               checked={this.state.pain === "no"} 
               onChange={this.onRadioChange}/>
         <label for="no">No</label><br />
 
         <h3>Do you have any swelling?</h3>
-        <input type="radio" name="swell"
+        <input type="radio" name="swell" value="yes" 
               checked={this.state.swell === "yes"} 
               onChange={this.onRadioChange}/>
         <label for="yes">Yes</label><br />
-        <input type="radio" name="swell" 
+        <input type="radio" name="swell" value="no" 
               checked={this.state.swell === "no"} 
               onChange={this.onRadioChange}/>
         <label for="no">No</label><br />
 
         <h3>Are you experiencing any numbness or tingling sensation in your feet?</h3>
-        <input type="radio" name="numb" 
+        <input type="radio" name="numb" value="yes" 
               checked={this.state.numb === "yes"} 
               onChange={this.onRadioChange}/>
         <label for="yes">Yes</label><br />
-        <input type="radio" name="numb" 
+        <input type="radio" name="numb" value="no" 
               checked={this.state.numb === "no"} 
               onChange={this.onRadioChange}/>
         <label for="no">No</label><br />
 
         <h3>Do you have any corns or calluses on your feet?</h3>
-        <input type="radio" name="corn" 
+        <input type="radio" name="corn" value="yes" 
               checked={this.state.corn === "yes"} 
               onChange={this.onRadioChange}/>
         <label for="yes">Yes</label><br />
-        <input type="radio" name="corn" 
+        <input type="radio" name="corn" value="no" 
               checked={this.state.corn === "no"} 
               onChange={this.onRadioChange}/>
         <label for="no">No</label><br />
 
         <h3>Do you have a protrusion on your foot?</h3>
-        <input type="radio" name="protrusion" 
+        <input type="radio" name="protrusion" value="yes" 
               checked={this.state.protrusion === "yes"} 
               onChange={this.onRadioChange}/>
         <label for="yes">Yes</label><br />
-        <input type="radio" name="protrusion" 
+        <input type="radio" name="protrusion" value="no" 
               checked={this.state.protrusion === "no"} 
               onChange={this.onRadioChange}/>
         <label for="no">No</label><br />
 
         <h3>Do you have limited joint mobility?</h3>
-        <input type="radio" name="mobility" 
+        <input type="radio" name="mobility" value="yes" 
               checked={this.state.mobility === "yes"} 
               onChange={this.onRadioChange}/>
         <label for="yes">Yes</label><br />
-        <input type="radio" name="mobility" 
+        <input type="radio" name="mobility" value="no" 
               checked={this.state.mobility === "no"} 
               onChange={this.onRadioChange}/>
         <label for="no">No</label><br />
 
         <h3>Do you have a burning sensation in your feet?</h3>
-        <input type="radio" name="burn" 
+        <input type="radio" name="burn" value="yes" 
               checked={this.state.burn === "yes"} 
               onChange={this.onRadioChange}/>
         <label for="yes">Yes</label><br />
-        <input type="radio" name="burn" 
+        <input type="radio" name="burn" value="no" 
               checked={this.state.turn === "no"} 
               onChange={this.onRadioChange}/>
         <label for="no">No</label><br />
 
         <h3>Are you experiencing any muscle weakness in your feet?</h3>
-        <input type="radio" name="weak" 
+        <input type="radio" name="weak" value="yes" 
               checked={this.state.weak === "yes"} 
               onChange={this.onRadioChange}/>
         <label for="yes">Yes</label><br />
-        <input type="radio" name="weak" 
+        <input type="radio" name="weak" value="no" 
               checked={this.state.weak === "no"} 
               onChange={this.onRadioChange}/>
         <label for="no">No</label><br />
 
         <h3>Do you have a tight Achilles tendon?</h3>
-        <input type="radio" name="tendon" 
+        <input type="radio" name="tendon" value="yes" 
               checked={this.state.tendon === "yes"} 
               onChange={this.onRadioChange}/>
         <label for="yes">Yes</label><br />
-        <input type="radio" name="tendon" 
+        <input type="radio" name="tendon" value="no" 
               checked={this.state.tendon === "no"} 
               onChange={this.onRadioChange}/>
         <label for="no">No</label><br />
 
         <h3>Are your feet sensitive to touch?</h3>
-        <input type="radio" name="sensitive" 
+        <input type="radio" name="sensitive" value="yes" 
               checked={this.state.sensitive === "yes"} 
               onChange={this.onRadioChange}/>
         <label for="yes">Yes</label><br />
-        <input type="radio" name="sensitive" 
+        <input type="radio" name="sensitive" value="no" 
               checked={this.state.sensitive === "no"} 
               onChange={this.onRadioChange}/>
         <label for="no">No</label><br />
 
         <h3>Do you have flat feet?</h3>
-        <input type="radio" name="flat" 
+        <input type="radio" name="flat" value="yes" 
               checked={this.state.flat === "yes"} 
               onChange={this.onRadioChange}/>
         <label for="yes">Yes</label><br />
-        <input type="radio" name="flat" 
+        <input type="radio" name="flat" value="no" 
               checked={this.state.flat === "no"} 
               onChange={this.onRadioChange}/>
         <label for="no">No</label><br />
 
         <h3>Do you experience a sensation of having a rock under your foot when standing?</h3>
-        <input type="radio" name="rock" 
+        <input type="radio" name="rock" value="yes" 
               checked={this.state.rock === "yes"} 
               onChange={this.onRadioChange}/>
         <label for="yes">Yes</label><br />
-        <input type="radio" name="rock" 
+        <input type="radio" name="rock" value="no" 
               checked={this.state.rock === "no"} 
               onChange={this.onRadioChange}/>
         <label for="no">No</label><br />
 
         <h3>Do you have a sprain or shin splints?</h3>
-        <input type="radio" name="shin" 
+        <input type="radio" name="shin" value="yes" 
               checked={this.state.shin === "yes"} 
               onChange={this.onRadioChange}/>
         <label for="yes">Yes</label><br />
-        <input type="radio" name="shin" 
+        <input type="radio" name="shin" value="no" 
               checked={this.state.shin === "no"} 
               onChange={this.onRadioChange}/>
         <label for="no">No</label><br />
