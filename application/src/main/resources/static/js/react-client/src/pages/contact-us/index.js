@@ -18,8 +18,6 @@ const ContactPage = () => {
           e.target.reset();
       };
     
-
-
     return (
       <div className={style.contactPage}>
        
