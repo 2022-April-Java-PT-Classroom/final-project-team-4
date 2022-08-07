@@ -38,10 +38,10 @@ const AilmentScreen = () => {
       
 
     return (
-        <div>
+        <div className={style.dropdown}>
+            <button className={style.dropDwnBtn}>Ailment's</button>
             <section className={style.ailmentSection}>
                 <div className={style.ailmentText}>
-                  <h3>Ailment Page</h3>  
                     {loading ? <h3>Loading...</h3> : ailment.map(ailment => (
                        <div key = {ailment.id}>
                        {/* <a href={`ailment/${ailment.id}` }>{ailment.name}</a> */}
@@ -50,7 +50,6 @@ const AilmentScreen = () => {
                     </div>
                     ))}
                     </div> 
-
             </section>
         </div>
     )
