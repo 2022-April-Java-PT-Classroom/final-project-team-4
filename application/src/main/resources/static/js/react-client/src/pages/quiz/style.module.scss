@@ -3,4 +3,37 @@
   max-width: 40%;
   margin: 0 auto;
   
+  h2 {
+    font-family: 'Cormorant SC', serif;
+    font-size: 36px;
+    color: #442235;
+    text-align: center;
+    text-shadow: 1px 1px #aaa;
+  }
+
+  p, label, button {
+    font-size: 20px;
+  }
+
+  input {
+    outline: 1px dashed #442235;
+    background-color: #442235;
+  }
+
+  button {
+    font-family: 'Ubuntu', sans-serif;
+    border: 1px dashed #442235;
+    background-color: transparent;
+    font-weight: bold;
+  }
+
+  button:hover {
+    background-color: #442235;
+    color: #aaa;
+    transition: .25s;
+  }
+
+  .submit {
+    text-align: center;
+  }
 }

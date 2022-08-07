@@ -283,7 +283,9 @@ render() {
               onChange={this.onRadioChange}/>
         <label for="no">No</label><br />
         <br />
-        <button type="submit">Get Results</button>
+        <div className={style.submit}>
+          <button type="submit">Get Results</button>
+        </div>
       </form>
 
       <h3>Results:</h3>
