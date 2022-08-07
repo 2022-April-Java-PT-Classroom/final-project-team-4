@@ -20,42 +20,16 @@ class Quiz extends Component {
       rock: '', 
       shin: ''
     };
+    
+    this.onRadioChange = this.onRadioChange.bind(this);
+    this.onSubmit = this.onSubmit.bind(this);
   }
 
 // function addPoint(choice) {
 //   if(choice == "plant") {
 //     ailments["Plantar Fasciitis"]++;
 //   }
-
-//   if(choice == "dia") {
-//     ailments["Diabetic Neuropathy"]++;
-//   }
-
-//   if(choice == "sup") {
-//     ailments["Supination"]++;
-//   }
-
-//   if(choice == "pro") {
-//     ailments["Pronation"]++;
-//   }
-
-//   if(choice == "heel") {
-//     ailments["Heel Spur"]++;
-//   }
-
-//   if(choice == "ham") {
-//     ailments["Hammertoe"]++;
-//   }
-
-//   if(choice == "bun") {
-//     ailments["Bunion"]++;
-//   }
-
-//   if(choice == "mor") {
-//     ailments["Morton Neuroma"]++;
-//   }
 // }
-
 // const ailments = {
 //   "Plantar Fasciitis":0,
 //   "Diabetic Neuropathy":0, 
@@ -66,6 +40,18 @@ class Quiz extends Component {
 //   "Bunion":0, 
 //   "Morton Neuroma":0
 // }
+
+onRadioChange = (e) => {
+  this.setState({
+    [e.target.name]: e.target.value
+  });
+}
+
+onSubmit = (e) => {
+  e.preventDefault();
+  console.log(this.state);
+}
+
 render() {
   return (
     <div className={style.quiz}>
