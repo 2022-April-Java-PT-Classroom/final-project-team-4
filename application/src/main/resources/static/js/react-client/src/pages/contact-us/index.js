@@ -4,20 +4,19 @@ import style from "./style.module.scss";
 
 
 const ContactPage = () => {
-
+   
     const post = (e) => {
         e.preventDefault();
 
         emailjs.sendForm("service_7t8gegw", "template_efxnhoi", e.target, "XGpCd75LuoPDxCnTt")
         // emailjs.sendForm("service_7t8gegw","template_efxnhoi","XGpCd75LuoPDxCnTt")
-          .then((result) => {
-              console.log(result.text);
-          }, (error) => {
-              console.log(error.text);
-          });
-          e.target.reset();
+        
+        alert("Hello" + " " + " Guest," +"\nYour messeege is succesufully send.\nCheck your email for futher information. ");
+    
+        e.target.reset();
       };
     
+
     return (
       <div className={style.contactPage}>
        
@@ -30,9 +29,7 @@ const ContactPage = () => {
             <button id="send">Send</button>
 
         </form>
-        
-        </div>
-
+       </div>
     )
 
 }
