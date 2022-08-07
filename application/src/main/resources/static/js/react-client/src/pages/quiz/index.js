@@ -147,6 +147,7 @@ onSubmit = (e) => {
   this.calculatePercentages();
   console.log(totalPoints);
   console.log(ailments);
+  this.setState(ailments);
 }
 
 render() {
@@ -289,11 +290,13 @@ render() {
         <button type="submit">Get Results</button>
       </form>
 
-      {
-        Object.entries(ailments).map(([key, val]) => 
-          <p key={key}>{key}: {val}</p>
-        )
-      }
+      <div className={style.ailmentsList}>
+        {
+          Object.entries(ailments).map(([key, val]) => 
+            <p key={key}>{key}: {val}%</p>
+          )
+        }
+      </div>
     </div>
   );
 }
