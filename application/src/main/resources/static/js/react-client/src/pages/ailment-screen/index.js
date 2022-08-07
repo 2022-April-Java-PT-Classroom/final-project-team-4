@@ -9,7 +9,7 @@ import style from './style.module.scss';
 
 const AilmentScreen = () => {
 
-    const [ailment, setAilment] = useState([]);
+    const [ailment, setAilment] = useState(null);
     const [loading, setLoading] = useState(true);
 
     useEffect(()=> {
