@@ -9,6 +9,22 @@ const Massage = () => {
                     <h2>Massage Techniques</h2>
                     </div>
 
+// // <!-- Feature item -->
+// <div class="container">
+//     {/* <!-- Image --> */}
+//     <div class="container__image">
+//         {/* ... */}
+//     </div>
+
+//     {/* <!-- Right side --> */}
+//     <div class="container__feature">
+//         ...
+//     </div>
+// </div>
+
+
+// <!-- Repeated items -->
+
 );
 }
                    
