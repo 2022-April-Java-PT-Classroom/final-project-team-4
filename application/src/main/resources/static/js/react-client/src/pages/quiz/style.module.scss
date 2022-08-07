@@ -28,12 +28,22 @@
   }
 
   button:hover {
+    border: 1px dashed #fff;
     background-color: #442235;
-    color: #aaa;
+    color: #fff;
     transition: .25s;
   }
 
   .submit {
     text-align: center;
+  }
+
+  hr {
+    border: 1px dashed #442235;
+  }
+
+  .results {
+    width: 80%;
+    margin: 0 auto;
   }
 }

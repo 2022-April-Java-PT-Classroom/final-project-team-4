@@ -288,17 +288,21 @@ render() {
         </div>
       </form>
 
-      <h3>Results:</h3>
-      <p>The higher the percentage, the greater the chance of this being your issue.
-        However, this is a not a diagnosis.
-      </p>
+      <hr />
 
-      <div className={style.ailmentsList}>
-        {
-          Object.entries(ailments).map(([key, val]) => 
-            <p key={key}>{key}: {val}%</p>
-          )
-        }
+      <div className={style.results}>
+        <h3>Results:</h3>
+        <p>The higher the percentage, the greater the chance of this being your issue.
+          However, this is a not a diagnosis.
+        </p>
+
+        <div className={style.ailmentsList}>
+          {
+            Object.entries(ailments).map(([key, val]) => 
+              <p key={key}>{key}: {val}%</p>
+            )
+          }
+        </div>
       </div>
     </div>
   );
