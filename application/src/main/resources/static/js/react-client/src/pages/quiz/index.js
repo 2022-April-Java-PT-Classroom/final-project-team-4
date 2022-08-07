@@ -53,96 +53,82 @@ const ailments = {
       <h2>Foot Ailment Quiz</h2>
       <p>Take this quiz if you are experiencing any unusual foot-related symptoms to see what we think might be the likeliest issue.</p>
 
-      <h3>If you are experiencing constant pain, where on your feet is it located?</h3>
-      <input type="radio" id="plant pro" />
-      <label for="heel">Heel</label><br />
-      <input type="radio" id="plant pro" />
-      <label for="arch">Arch</label><br />
-      <input type="radio" id="sup" />
-      <label for="ankle">Ankle</label><br />
-      <input type="radio" id="sup ham" />
-      <label for="ball">Ball</label><br />
-      <input type="radio" id="ham mor" />
-      <label for="toe">Toe (or between toes)</label><br />
-      <input type="radio" id="dia" />
-      <label for="everywhere">Everywhere</label><br />
-      <input type="radio" id="none" />
-      <label for="none">I am not in constant pain or the pain comes and goes</label><br />
+      <h3>Are you experiencing constant pain?</h3>
+      <input type="radio" name="pain" />
+      <label for="yes">Yes</label><br />
+      <input type="radio" name="pain" />
+      <label for="no">No</label><br />
 
-      <h3>If you are experiencing swelling, where on your feet is it located?</h3>
-      <input type="radio" />
-      <label for="heel">Heel</label><br />
-      <input type="radio" />
-      <label for="arch">Joint</label><br />
-      <input type="radio" />
-      <label for="ankle">Between toes</label><br />
-      <input type="radio" />
-      <label for="none">I do not appear to be swelling anywhere</label><br />
+      <h3>Do you have any swelling?</h3>
+      <input type="radio" name="swell" />
+      <label for="yes">Yes</label><br />
+      <input type="radio" name="swell" />
+      <label for="no">No</label><br />
 
       <h3>Are you experiencing any numbness or tingling sensation in your feet?</h3>
-      <input type="radio" />
+      <input type="radio" name="numb" />
       <label for="yes">Yes</label><br />
-      <input type="radio" />
+      <input type="radio" name="numb" />
       <label for="no">No</label><br />
 
       <h3>Do you have any corns or calluses on your feet?</h3>
-      <input type="radio" />
+      <input type="radio" name="corn" />
       <label for="yes">Yes</label><br />
-      <input type="radio" />
+      <input type="radio" name="corn" />
       <label for="no">No</label><br />
 
       <h3>Do you have a protrusion on your foot?</h3>
-      <input type="radio" />
+      <input type="radio" name="protrusion" />
       <label for="yes">Yes</label><br />
-      <input type="radio" />
+      <input type="radio" name="protrusion" />
       <label for="no">No</label><br />
 
       <h3>Do you have limited joint mobility?</h3>
-      <input type="radio" />
+      <input type="radio" name="mobility" />
       <label for="yes">Yes</label><br />
-      <input type="radio" />
+      <input type="radio" name="mobility" />
       <label for="no">No</label><br />
 
       <h3>Do you have a burning sensation in your feet?</h3>
-      <input type="radio" />
+      <input type="radio" name="burn" />
       <label for="yes">Yes</label><br />
-      <input type="radio" />
+      <input type="radio" name="burn" />
       <label for="no">No</label><br />
 
       <h3>Are you experiencing any muscle weakness in your feet?</h3>
-      <input type="radio" />
+      <input type="radio" name="weak" />
       <label for="yes">Yes</label><br />
-      <input type="radio" />
+      <input type="radio" name="weak" />
       <label for="no">No</label><br />
 
       <h3>Do you have a tight Achilles tendon?</h3>
-      <input type="radio" />
+      <input type="radio" name="tendon" />
       <label for="yes">Yes</label><br />
-      <input type="radio" />
+      <input type="radio" name="tendon" />
       <label for="no">No</label><br />
 
       <h3>Are your feet sensitive to touch?</h3>
-      <input type="radio" />
+      <input type="radio" name="sensitive" />
       <label for="yes">Yes</label><br />
-      <input type="radio" />
+      <input type="radio" name="sensitive" />
       <label for="no">No</label><br />
 
       <h3>Do you have flat feet?</h3>
-      <input type="radio" />
+      <input type="radio" name="flat" />
       <label for="yes">Yes</label><br />
-      <input type="radio" />
+      <input type="radio" name="flat" />
       <label for="no">No</label><br />
 
       <h3>Do you experience a sensation of having a rock under your foot when standing?</h3>
-      <input type="radio" />
+      <input type="radio" name="rock" />
       <label for="yes">Yes</label><br />
-      <input type="radio" />
+      <input type="radio" name="rock" />
       <label for="no">No</label><br />
 
       <h3>Do you have a sprain or shin splints?</h3>
-      <input type="radio" />
+      <input type="radio" name="shin" />
       <label for="yes">Yes</label><br />
-      <input type="radio" />
+      <input type="radio" name="shin" />
       <label for="no">No</label><br />
       <br />
       <button>Get Results</button>
