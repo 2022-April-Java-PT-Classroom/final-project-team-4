@@ -63,49 +63,49 @@ addPoint = () => {
     ailments["Morton Neuroma"]++;
   }
 
-  if(this.state.corn == "corn") {
+  if(this.state.corn == "yes") {
     ailments["Supination"]++;
     ailments["Pronation"]++;
     ailments["Hammertoe"]++;
     ailments["Bunion"]++;
   }
 
-  if(this.state.protrusion == "protrusion") {
+  if(this.state.protrusion == "yes") {
     ailments["Heel Spur"]++;
     ailments["Bunion"]++;
   }
 
-  if(this.state.mobility == "mobility") {
+  if(this.state.mobility == "yes") {
     ailments["Hammertoe"]++;
     ailments["Bunion"]++;
   }
 
-  if(this.state.burn == "burn") {
+  if(this.state.burn == "yes") {
     ailments["Diabetic Neuropathy"]++;
     ailments["Heel Spur"]++;
   }
 
-  if(this.state.weak == "weak") {
+  if(this.state.weak == "yes") {
     ailments["Diabetic Neuropathy"]++;
   }
 
-  if(this.state.tendon == "tendon") {
+  if(this.state.tendon == "yes") {
     ailments["Plantar Fasciitis"]++;
   }
 
-  if(this.state.sensitive == "sensitive") {
+  if(this.state.sensitive == "yes") {
     ailments["Diabetic Neuropathy"]++;
   }
 
-  if(this.state.flat == "flat") {
+  if(this.state.flat == "yes") {
     ailments["Pronation"]++;
   }
 
-  if(this.state.rock == "rock") {
+  if(this.state.rock == "yes") {
     ailments["Morton Neuroma"]++;
   }
 
-  if(this.state.shin == "shin") {
+  if(this.state.shin == "yes") {
     ailments["Supination"]++;
   }
 }
