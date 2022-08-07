@@ -122,6 +122,15 @@ calculatePercentages = () => {
     ailments["Hammertoe"]+
     ailments["Bunion"]+
     ailments["Morton Neuroma"];
+
+    ailments["Plantar Fasciitis"] = (ailments["Plantar Fasciitis"] / totalPoints) * 100;
+    ailments["Diabetic Neuropathy"] = (ailments["Diabetic Neuropathy"] / totalPoints) * 100;
+    ailments["Supination"] = (ailments["Supination"] / totalPoints) * 100;
+    ailments["Pronation"] = (ailments["Pronation"] / totalPoints) * 100;
+    ailments["Heel Spur"] = (ailments["Heel Spur"] / totalPoints) * 100;
+    ailments["Hammertoe"] = (ailments["Hammertoe"] / totalPoints) * 100;
+    ailments["Bunion"] = (ailments["Bunion"] / totalPoints) * 100;
+    ailments["Morton Neuroma"] = (ailments["Morton Neuroma"] / totalPoints) * 100;
 }
 
 onRadioChange = (e) => {
@@ -137,6 +146,7 @@ onSubmit = (e) => {
   console.log(ailments);
   this.calculatePercentages();
   console.log(totalPoints);
+  console.log(ailments);
 }
 
 render() {
@@ -279,11 +289,11 @@ render() {
         <button type="submit">Get Results</button>
       </form>
 
-      {/* // {
-      //   Object.entries(ailments).map(([key, val]) => 
-      //     <p key={key}>{key}: {val}</p>
-      //   )
-      // } */}
+      {
+        Object.entries(ailments).map(([key, val]) => 
+          <p key={key}>{key}: {val}</p>
+        )
+      }
     </div>
   );
 }
