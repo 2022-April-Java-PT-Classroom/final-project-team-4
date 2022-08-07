@@ -36,11 +36,77 @@ class Quiz extends Component {
     this.onSubmit = this.onSubmit.bind(this);
   }
 
-addPoint = (name, answer) => {
-  if(name == "pain") {
-    if(answer == "yes") {
-      ailments["Plantar Fasciitis"]++;
-    }
+addPoint = () => {
+  if(this.state.pain == "yes") {
+    ailments["Plantar Fasciitis"]++;
+    ailments["Diabetic Neuropathy"]++;
+    ailments["Supination"]++;
+    ailments["Pronation"]++;
+    ailments["Heel Spur"]++;
+    ailments["Hammertoe"]++;
+    ailments["Morton Neuroma"]++;
+  }
+
+  if(this.state.swell == "yes") {
+    ailments["Plantar Fasciitis"]++;
+    ailments["Diabetic Neuropathy"]++;
+    ailments["Supination"]++;
+    ailments["Heel Spur"]++;
+    ailments["Hammertoe"]++;
+    ailments["Bunion"]++;
+    ailments["Morton Neuroma"]++;
+  }
+
+  if(this.state.numb == "yes") {
+    ailments["Plantar Fasciitis"]++;
+    ailments["Diabetic Neuropathy"]++;
+    ailments["Morton Neuroma"]++;
+  }
+
+  if(this.state.corn == "corn") {
+    ailments["Supination"]++;
+    ailments["Pronation"]++;
+    ailments["Hammertoe"]++;
+    ailments["Bunion"]++;
+  }
+
+  if(this.state.protrusion == "protrusion") {
+    ailments["Heel Spur"]++;
+    ailments["Bunion"]++;
+  }
+
+  if(this.state.mobility == "mobility") {
+    ailments["Hammertoe"]++;
+    ailments["Bunion"]++;
+  }
+
+  if(this.state.burn == "burn") {
+    ailments["Diabetic Neuropathy"]++;
+    ailments["Heel Spur"]++;
+  }
+
+  if(this.state.weak == "weak") {
+    ailments["Diabetic Neuropathy"]++;
+  }
+
+  if(this.state.tendon == "tendon") {
+    ailments["Plantar Fasciitis"]++;
+  }
+
+  if(this.state.sensitive == "sensitive") {
+    ailments["Diabetic Neuropathy"]++;
+  }
+
+  if(this.state.flat == "flat") {
+    ailments["Pronation"]++;
+  }
+
+  if(this.state.rock == "rock") {
+    ailments["Morton Neuroma"]++;
+  }
+
+  if(this.state.shin == "shin") {
+    ailments["Supination"]++;
   }
 }
 
@@ -53,6 +119,7 @@ onRadioChange = (e) => {
 onSubmit = (e) => {
   e.preventDefault();
   console.log(this.state);
+  this.addPoint();
   console.log(ailments);
 }
 
@@ -129,7 +196,7 @@ render() {
               onChange={this.onRadioChange}/>
         <label for="yes">Yes</label><br />
         <input type="radio" name="burn" value="no" 
-              checked={this.state.turn === "no"} 
+              checked={this.state.burn === "no"} 
               onChange={this.onRadioChange}/>
         <label for="no">No</label><br />
 
