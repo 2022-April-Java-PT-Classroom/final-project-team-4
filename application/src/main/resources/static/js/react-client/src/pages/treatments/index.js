@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
+
+import {Link} from 'react-router-dom'
 import axios from 'axios';
 import style from './style.module.scss';
 import {useParams} from "react-router-dom";
-import {Link} from 'react-router-dom'
 
 const TreatmentsPage = () => {
 
@@ -29,11 +30,13 @@ const TreatmentsPage = () => {
                 <h1 className={style.ailmentTitle}>{ailment.name}</h1>
             </div>
             <div className={style.treatmentsList}>
-                {ailment.treatments.map(treatment =>
-                    <div className={style.individualTreatment}>
-                        <Link to={`/treatment/${treatment.id}`} className={style.treatmentLink}>{treatment.name}</Link>
-                    </div>
-                )}   
+                {
+                    ailment.treatments.map(treatment =>
+                        <div className={style.individualTreatment}>
+                            <Link to={`/treatment/${treatment.id}`} className={style.treatmentLink}>{treatment.name}</Link>
+                        </div>
+                        )
+                }   
             </div>
 
         </div>
