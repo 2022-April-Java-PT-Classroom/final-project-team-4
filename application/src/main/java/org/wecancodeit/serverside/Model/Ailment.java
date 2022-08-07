@@ -14,7 +14,10 @@ public class Ailment {
     @GeneratedValue
     private Long id;
     private String name;
+    private String image;
     private String description;
+    @Lob
+    private String longDescription;
     @ManyToMany
     private Collection<Treatment> treatments;
 
@@ -22,15 +25,21 @@ public class Ailment {
 
     public String getName() {return name;}
 
+    public String getImage() {return image;}
+
     public String getDescription() {return description;}
+
+    public String getLongDescription() {return longDescription;}
 
     public Collection<Treatment> getTreatments() {return treatments;}
 
     public Ailment(){}
 
-    public Ailment(String name,String description, Treatment... treatments){
+    public Ailment(String name,String image, String description,String longDescription, Treatment... treatments){
         this.name = name;
+        this.image = image;
         this.description = description;
+        this.longDescription = longDescription;
         this.treatments=new ArrayList<>(Arrays.asList(treatments));
     }
 }

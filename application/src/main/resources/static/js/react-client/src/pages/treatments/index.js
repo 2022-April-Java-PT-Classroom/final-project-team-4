@@ -13,7 +13,7 @@ const TreatmentsPage = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const result = await axios.get(`/api/ailment/${id}`
+            const result = await axios.get(`/ailment/${id}`
             );
             setAilment(result.data);
         }
@@ -24,19 +24,16 @@ const TreatmentsPage = () => {
     return null
     console.log(ailment)
     return (
-        <div>
-            <div>
-                {ailment.name}
+        <div className={style.treatments}>
+            <div className={style.ailment}>
+                <h1 className={style.ailmentTitle}>{ailment.name}</h1>
             </div>
-            <div>
+            <div className={style.treatmentsList}>
                 {ailment.treatments.map(treatment =>
-                    <div>
-                        <div>
-                        <Link to={`/treatment/${treatment.id}`}>{treatment.name}</Link>
-                        </div>
+                    <div className={style.individualTreatment}>
+                        <Link to={`/treatment/${treatment.id}`} className={style.treatmentLink}>{treatment.name}</Link>
                     </div>
-                )}
-                
+                )}   
             </div>
 
         </div>

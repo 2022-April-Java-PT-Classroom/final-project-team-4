@@ -7,6 +7,7 @@ import MyMapApp from '../../pages/podiatrist-finder/BingMap';
 import AilmentScreen from '../../pages/ailment-screen';
 import AboutUs from '../../pages/about-us';
 import Quiz from '../../pages/quiz';
+import Massage from '../../pages/massage';
 
 
 const AppRouter = () => {
@@ -20,6 +21,7 @@ const AppRouter = () => {
           <Route exact path={'/ailment'} component={AilmentScreen} />
           <Route exact path={'/about-us'} component={AboutUs} />
           <Route exact path={'/quiz'} component={Quiz} />
+          <Route exact path={'/massage'} component={Massage} />
 
       </Switch>
   );

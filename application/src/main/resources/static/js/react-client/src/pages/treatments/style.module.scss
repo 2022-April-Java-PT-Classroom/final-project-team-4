@@ -1,0 +1,44 @@
+.treatments{
+    font-family: 'Ubuntu', sans-serif;
+    width: 80%;
+    margin: 0 auto;
+
+.ailmentTitle {
+    display:flex;
+    justify-content: center;
+    padding-bottom:40px;
+}
+.image {
+    display:flex;
+    justify-content: center;
+}
+.ailmentImage{
+    max-width: 200px;
+    display:flex;
+    justify-content: center;
+    padding:40px;
+}
+
+h1{
+    font-family: 'Cormorant SC', serif;
+    font-size: 36px;
+    color: #442235;
+}
+
+p {
+    font-size: 20px;
+  }
+
+.treatmentsList{
+    text-align:center;
+    padding-top:20px;
+    padding-bottom:20px;
+    background-color: #8ab1a0;
+}
+
+.treatmentLink {
+    text-decoration: none;
+    color: #000;
+
+}
+}
