@@ -11,7 +11,7 @@
     display: inline-block;
   }
   
-.ailmentSection {
+.ailmentText {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
@@ -20,15 +20,15 @@
     z-index: 1;
   }
   
-.ailmentSection a {
+.ailmentText a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
   
-  .ailmentSection a:hover {background-color: #ddd;}
+.ailmentText a:hover {background-color: #ddd;}
   
-  .dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .ailmentText {display: block;}
   
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropDwnBtn {background-color: #3e8e41;}
