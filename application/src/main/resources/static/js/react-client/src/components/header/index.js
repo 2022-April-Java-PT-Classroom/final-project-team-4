@@ -14,9 +14,9 @@ const Header = () => {
       <nav>
 
       <div className={style.dropdown}>
-        <button className={style.dropbtn} id={style.firstBtn}>Issues & Remedies</button>
+        <button className={style.dropbtn} id={style.firstBtn}>Ailments & Treatments</button>
         <div className={style.dropdownContent} id={style.green}>
-          <NavLink to={'/ailment'}>Ailments</NavLink>
+          <NavLink to={'/ailment'}>Ailments & Suggested Treatment Options</NavLink>
           <NavLink to={'/massage'}>Foot Massage Techniques</NavLink> 
         </div>
       </div>
