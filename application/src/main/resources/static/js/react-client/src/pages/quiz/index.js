@@ -141,12 +141,8 @@ onRadioChange = (e) => {
 
 onSubmit = (e) => {
   e.preventDefault();
-  console.log(this.state);
   this.addPoint();
-  console.log(ailments);
   this.calculatePercentages();
-  console.log(totalPoints);
-  console.log(ailments);
   this.setState(ailments);
 }
 
@@ -289,6 +285,11 @@ render() {
         <br />
         <button type="submit">Get Results</button>
       </form>
+
+      <h3>Results:</h3>
+      <p>The higher the percentage, the greater the chance of this being your issue.
+        However, this is a not a diagnosis.
+      </p>
 
       <div className={style.ailmentsList}>
         {
