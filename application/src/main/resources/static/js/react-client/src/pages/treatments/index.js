@@ -13,7 +13,7 @@ const TreatmentsPage = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const result = await axios.get(`/api/ailment/${id}`
+            const result = await axios.get(`/ailment/${id}`
             );
             setAilment(result.data);
         }
