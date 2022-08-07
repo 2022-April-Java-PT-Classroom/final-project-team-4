@@ -15,7 +15,7 @@ const AilmentScreen = () => {
     useEffect(()=> {
         
         const fetchAilmentData = async () => {
-            const result = await Axios ('http://localhost:8080/api/ailment');
+            const result = await Axios ('http://localhost:8080/ailment');
             setAilment(result.data);
         }
 
