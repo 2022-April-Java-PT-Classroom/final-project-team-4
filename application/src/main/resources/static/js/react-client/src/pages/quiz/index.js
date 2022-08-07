@@ -13,6 +13,8 @@ const ailments = {
   "Morton Neuroma":0
 }
 
+let totalPoints = 0;
+
 class Quiz extends Component {
   constructor() {
     super();
@@ -110,6 +112,18 @@ addPoint = () => {
   }
 }
 
+calculatePercentages = () => {
+  totalPoints = 
+    ailments["Plantar Fasciitis"]+
+    ailments["Diabetic Neuropathy"]+
+    ailments["Supination"]+
+    ailments["Pronation"]+
+    ailments["Heel Spur"]+
+    ailments["Hammertoe"]+
+    ailments["Bunion"]+
+    ailments["Morton Neuroma"];
+}
+
 onRadioChange = (e) => {
   this.setState({
     [e.target.name]: e.target.value
@@ -121,6 +135,8 @@ onSubmit = (e) => {
   console.log(this.state);
   this.addPoint();
   console.log(ailments);
+  this.calculatePercentages();
+  console.log(totalPoints);
 }
 
 render() {
