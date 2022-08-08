@@ -1,7 +1,18 @@
+.quizContainer {
+  background-color: #442235;
+  background: radial-gradient(ellipse at bottom, #442235, transparent),
+              radial-gradient(ellipse at top, #8ab1a0, transparent);
+
+}
+
 .quiz {
   font-family: 'Ubuntu', sans-serif;
   max-width: 40%;
   margin: 0 auto;
+  background-color: #fff;
+  opacity: .9;
+  border-right: 1px dashed #442235;
+  border-left: 1px dashed #442235;
   
   h2 {
     font-family: 'Cormorant SC', serif;
@@ -32,6 +43,7 @@
     background-color: #442235;
     color: #fff;
     transition: .25s;
+    cursor: pointer;
   }
 
   .submit {

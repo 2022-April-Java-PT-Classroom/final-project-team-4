@@ -148,6 +148,7 @@ onSubmit = (e) => {
 
 render() {
   return (
+    <div className={style.quizContainer}>
     <div className={style.quiz}>
       <h2>Foot Ailment Quiz</h2>
       <p>Take this quiz if you are experiencing any unusual foot-related symptoms to see what we think might be the likeliest issue.</p>
@@ -304,6 +305,7 @@ render() {
           }
         </div>
       </div>
+    </div>
     </div>
   );
 }
