@@ -2,17 +2,21 @@
   background-color: #442235;
   background: radial-gradient(ellipse at bottom, #442235, transparent),
               radial-gradient(ellipse at top, #8ab1a0, transparent);
-
+  margin-top: -30px;
+  margin-bottom: -13px;
+  padding: 0;
 }
 
 .quiz {
   font-family: 'Ubuntu', sans-serif;
   max-width: 40%;
   margin: 0 auto;
+  padding: 10px;
   background-color: #fff;
   opacity: .9;
   border-right: 1px dashed #442235;
   border-left: 1px dashed #442235;
+  outline: 1px solid #442235;
   
   h2 {
     font-family: 'Cormorant SC', serif;
@@ -22,13 +26,18 @@
     text-shadow: 1px 1px #aaa;
   }
 
-  p, label, button {
-    font-size: 20px;
+  img {
+    max-width: 300px;
+    border: 1px dashed #442235;
+    outline: 1px solid #442235;
   }
 
-  input {
-    outline: 1px dashed #442235;
-    background-color: #442235;
+  .centerImg {
+    text-align: center;
+  }
+
+  p, label, button {
+    font-size: 20px;
   }
 
   button {
