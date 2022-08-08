@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom';
 import style from './style.module.scss';
 import brokenFoot from '../../assets/images/brokenfoot.jpg';
 
@@ -147,6 +146,10 @@ onSubmit = (e) => {
   this.setState(ailments);
 }
 
+reload = () => {
+  window.location.reload();
+}
+
 render() {
   return (
     <div className={style.quizContainer}>
@@ -289,16 +292,15 @@ render() {
         <label for="no">No</label><br />
         <br />
         <div className={style.submit}>
-          <button type="submit">Get Results</button>
+          <button type="submit">Generate Results</button>
+          <button onClick={this.reload}>Refresh</button>
         </div>
       </form>
 
-      <hr />
-
       <div className={style.results}>
-        <h3>Results:</h3>
+        <p className={style.note}>If you need to retake the quiz, please refresh the page first.</p>
         <p>The higher the percentage, the greater the chance of this being your issue.
-          However, this is a not a diagnosis.
+          <strong> However, this is a not a diagnosis.</strong>
         </p>
 
         <div className={style.ailmentsList}>

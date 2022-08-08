@@ -14,26 +14,33 @@
   padding: 10px;
   background-color: #fff;
   opacity: .9;
-  border-right: 1px dashed #442235;
-  border-left: 1px dashed #442235;
-  outline: 1px solid #442235;
+  border-right: 3px double #3e3a3c;
+  border-left: 3px double #3e3a3c;
+  outline: 1px solid #3e3a3c;
   
   h2 {
     font-family: 'Cormorant SC', serif;
     font-size: 36px;
-    color: #442235;
+    color: #f1f1f1;
     text-align: center;
-    text-shadow: 1px 1px #aaa;
+    text-shadow: 1px 1px #000;
+    background-color: #3e3a3c;
+    margin-left: -11px;
+    margin-right: -11px;
   }
 
   img {
     max-width: 300px;
-    border: 1px dashed #442235;
-    outline: 1px solid #442235;
+    border: 3px double #3e3a3c;
+    outline: 1px solid #3e3a3c;
   }
 
-  .centerImg {
+  .centerImg, .ailmentsList, .note {
     text-align: center;
+  }
+
+  .note {
+    font-size: 16px;
   }
 
   p, label, button {
@@ -42,14 +49,17 @@
 
   button {
     font-family: 'Ubuntu', sans-serif;
-    border: 1px dashed #442235;
+    border: 3px double #3e3a3c;
+    outline: 1px solid #3e3a3c;
     background-color: transparent;
     font-weight: bold;
+    margin: 5px;
   }
 
   button:hover {
-    border: 1px dashed #fff;
-    background-color: #442235;
+    border: 3px double #fff;
+    outline: 1px solid #fff;
+    background-color: #3e3a3c;
     color: #fff;
     transition: .25s;
     cursor: pointer;
@@ -57,10 +67,6 @@
 
   .submit {
     text-align: center;
-  }
-
-  hr {
-    border: 1px dashed #442235;
   }
 
   .results {
