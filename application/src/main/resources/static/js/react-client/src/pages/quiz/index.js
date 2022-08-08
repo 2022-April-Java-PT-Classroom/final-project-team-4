@@ -297,8 +297,9 @@ render() {
         </div>
       </form>
 
+      <p className={style.note}>If you need to retake the quiz, please refresh the page first.</p>
+
       <div className={style.results}>
-        <p className={style.note}>If you need to retake the quiz, please refresh the page first.</p>
         <p>The higher the percentage, the greater the chance of this being your issue.
           <strong> However, this is a not a diagnosis.</strong>
         </p>

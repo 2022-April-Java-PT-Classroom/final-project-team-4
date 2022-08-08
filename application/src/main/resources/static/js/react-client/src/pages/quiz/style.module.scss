@@ -13,6 +13,7 @@
   margin: 0 auto;
   padding: 10px;
   background-color: #fff;
+  background: repeating-linear-gradient(to right, #f8f7f7, #f8f7f7 10px, #fff 10px, #fff 20px);
   opacity: .9;
   border-right: 3px double #3e3a3c;
   border-left: 3px double #3e3a3c;
@@ -30,7 +31,7 @@
   }
 
   img {
-    max-width: 300px;
+    max-width: 40%;
     border: 3px double #3e3a3c;
     outline: 1px solid #3e3a3c;
   }
@@ -70,7 +71,16 @@
   }
 
   .results {
-    width: 80%;
     margin: 0 auto;
+    padding: 20px;
+  }
+
+  .ailmentsList {
+    p {
+      background-color: #3e3a3c;
+      color: #f1f1f1;
+      margin-left: -30px;
+      margin-right: -30px;
+    }
   }
 }
