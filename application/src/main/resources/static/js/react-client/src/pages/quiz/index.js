@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom';
 import style from './style.module.scss';
+import brokenFoot from '../../assets/images/brokenfoot.jpg';
 
 const ailments = {
   "Plantar Fasciitis":0,
@@ -146,11 +146,19 @@ onSubmit = (e) => {
   this.setState(ailments);
 }
 
+reload = () => {
+  window.location.reload();
+}
+
 render() {
   return (
+    <div className={style.quizContainer}>
     <div className={style.quiz}>
       <h2>Foot Ailment Quiz</h2>
-      <p>Take this quiz if you are experiencing any unusual foot-related symptoms to see what we think might be the likeliest issue.</p>
+      <div className={style.centerImg}>
+        <img src={brokenFoot} />
+      </div>
+      <p className={style.para}>Take this quiz if you are experiencing any unusual foot-related symptoms to see what we think might be the likeliest issue.</p>
 
       <form onSubmit={this.onSubmit}>
         <h3>Are you experiencing constant pain?</h3>
@@ -283,21 +291,28 @@ render() {
               onChange={this.onRadioChange}/>
         <label for="no">No</label><br />
         <br />
-        <button type="submit">Get Results</button>
+        <div className={style.submit}>
+          <button type="submit">Generate Results</button>
+          <button onClick={this.reload}>Refresh</button>
+        </div>
       </form>
 
-      <h3>Results:</h3>
-      <p>The higher the percentage, the greater the chance of this being your issue.
-        However, this is a not a diagnosis.
-      </p>
+      <p className={style.note}>If you need to retake the quiz, please refresh the page first.</p>
 
-      <div className={style.ailmentsList}>
-        {
-          Object.entries(ailments).map(([key, val]) => 
-            <p key={key}>{key}: {val}%</p>
-          )
-        }
+      <div className={style.results}>
+        <p>The higher the percentage, the greater the chance of this being your issue.
+          <strong> However, this is a not a diagnosis.</strong>
+        </p>
+
+        <div className={style.ailmentsList}>
+          {
+            Object.entries(ailments).map(([key, val]) => 
+              <p key={key}>{key}: {val}%</p>
+            )
+          }
+        </div>
       </div>
+    </div>
     </div>
   );
 }
