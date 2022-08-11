@@ -102,7 +102,7 @@ const quizQuestions = [
       {
         type: ["Diabetic Neuropathy", 
                 "Heel Spur"],
-        content: "No"
+        content: "Yes"
       },
       {
         type: "None",

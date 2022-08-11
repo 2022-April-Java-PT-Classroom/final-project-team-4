@@ -8,6 +8,7 @@ import AilmentScreen from '../../pages/ailment-screen';
 import AboutUs from '../../pages/about-us';
 import Quiz from '../../pages/quiz';
 import Massage from '../../pages/massage';
+import quizPage from '../../pages/quiz/newIndex';
 
 
 const AppRouter = () => {
@@ -20,7 +21,7 @@ const AppRouter = () => {
           <Route exact path={'/treatment/:id'} component={TreatmentPage}/>
           <Route exact path={'/ailment'} component={AilmentScreen} />
           <Route exact path={'/about-us'} component={AboutUs} />
-          <Route exact path={'/quiz'} component={Quiz} />
+          <Route exact path={'/quiz'} component={quizPage} />
           <Route exact path={'/massage'} component={Massage} />
 
       </Switch>

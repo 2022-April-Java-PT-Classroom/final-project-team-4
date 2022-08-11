@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Quiz from "../../components/quiz/quiz";
 import quizQuestions from "../../components/quiz/quizQuestions";
 import Result from "../../components/quiz/result";
+import style from "./style.module.scss";
 
-class quizPage {
+class quizPage extends Component {
   constructor(props) {
     super(props);
 
