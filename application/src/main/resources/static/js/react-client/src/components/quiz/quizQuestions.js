@@ -3,17 +3,35 @@ const quizQuestions = [
     question: "Are you experiencing constant pain?",
     answers: [
       {
-        type: ["Plantar Fasciitis", 
-                "Diabetic Neuropathy", 
-                "Supination", 
-                "Pronation", 
-                "Heel Spur", 
-                "Hammertoe", 
-                "Morton Neuroma"], 
-        content: "Yes"
+        type: "Plantar Fasciitis", 
+        content: "Yes, on my arch and ball of heel"
       }, 
       {
-        type: "None",
+        type: "Pronation",
+        content: "Yes, on my arch and ball of heel with hip pain"
+      },
+      {
+        type: "Heel Spur",
+        content: "Yes, just on my heel"
+      },
+      {
+        type: "Supination",
+        content: "Yes, on the ankle and ball of heel"
+      },
+      {
+        type: "Hammertoe",
+        content: "Yes, on the ball and between my toes"
+      },
+      {
+        type: "Morton Neuroma",
+        content: "Yes, but just between my toes"
+      },
+      {
+        type: "Diabetic Neuropathy",
+        content: "Yes, the pain is all over my foot"
+      },
+      {
+        type: "A",
         content: "No"
       }
     ]
@@ -22,17 +40,27 @@ const quizQuestions = [
     question: "Do you have any swelling?", 
     answers: [
       {
-        type: ["Plantar Fasciitis", 
-                "Diabetic Neuropathy", 
-                "Supination", 
-                "Heel Spur", 
-                "Hammertoe", 
-                "Bunion", 
-                "Morton Neuroma"], 
-        content: "Yes"
+        type: "Plantar Fasciitis",
+        content: "Yes, on my heel and ankle"
       }, 
       {
-        type: "None", 
+        type: "Heel Spur",
+        content: "Yes, just on my heel"
+      },
+      {
+        type: "Hammertoe",
+        content: "Yes, on a toe joint"
+      },
+      {
+        type: "Bunion",
+        content: "Yes, on my big toe specifically"
+      },
+      {
+        type: "Morton Neuroma",
+        content: "Yes, between my toes"
+      },
+      {
+        type: "B", 
         content: "No"
       }
     ]
@@ -41,13 +69,19 @@ const quizQuestions = [
     question: "Are you experiencing any numbness or tingling sensation in your feet?",
     answers: [
       {
-        type: ["Plantar Fasciitis", 
-                "Diabetic Neuropathy", 
-                "Morton Neuroma"],
-        content: "Yes"
+        type: "Plantar Fasciitis",
+        content: "Yes, on the bottom inside of the heel"
       },
       {
-        type: "None",
+        type: "Diabetic Neuropathy",
+        content: "Yes, on legs, feet, and/or hands"
+      },
+      {
+        type: "Morton Neuroma",
+        content: "Yes, on my toes"
+      },
+      {
+        type: "C",
         content: "No"
       }
     ]
@@ -56,14 +90,23 @@ const quizQuestions = [
     question: "Do you have any corns or calluses on your feet?",
     answers: [
       {
-        type: ["Supination",
-                "Pronation", 
-                "Hammertoe", 
-                "Bunion"],
-        content: "Yes"
+        type: "Supination",
+        content: "Yes, under the border of the outside of the foot"
       },
       {
-        type: "None",
+        type: "Pronation",
+        content: "Yes, inside of the big toe"
+      },
+      {
+        type: "Hammertoe",
+        content: "Yes, on the top of the middle joint of the toe or on the tip of the toe"
+      },
+      {
+        type: "Bunion",
+        content: "Yes, on the joint at the base of the big toe"
+      },
+      {
+        type: "D",
         content: "No"
       }
     ]
@@ -72,12 +115,15 @@ const quizQuestions = [
     question: "Do you have a protrusion on your foot?",
     answers: [
       {
-        type: ["Heel Spur", 
-                "Bunion"],
-        content: "Yes"
+        type: "Heel Spur", 
+        content: "Yes, on the underside of the heel bone"
       },
       {
-        type: "None",
+        type: "Bunion",
+        content: "Yes, and I have a bump on the joint at the base of the big toe"
+      },
+      {
+        type: "E",
         content: "No"
       }
     ]
@@ -86,12 +132,15 @@ const quizQuestions = [
     question: "Do you have limited joint mobility?",
     answers: [
       {
-        type: ["Hammertoe",
-                "Bunion"],
-        content: "Yes"
+        type: "Hammertoe",
+        content: "Yes, in my toes"
       },
       {
-        type: "None",
+        type: "Bunion",
+        content: "Yes, but it's very little"
+      },
+      {
+        type: "F",
         content: "No"
       }
     ]
@@ -100,12 +149,15 @@ const quizQuestions = [
     question: "Do you have a burning sensation in your feet?",
     answers: [
       {
-        type: ["Diabetic Neuropathy", 
-                "Heel Spur"],
-        content: "Yes"
+        type: "Diabetic Neuropathy", 
+        content: "Yes, in my feet and hands"
       },
       {
-        type: "None",
+        type: "Heel Spur",
+        content: "Yes, in my heel"
+      },
+      {
+        type: "G",
         content: "No"
       }
     ]
@@ -118,7 +170,7 @@ const quizQuestions = [
         content: "Yes"
       },
       {
-        type: "None",
+        type: "H",
         content: "No"
       }
     ]
@@ -131,7 +183,7 @@ const quizQuestions = [
         content: "Yes"
       },
       {
-        type: "None",
+        type: "I",
         content: "No"
       }
     ]
@@ -144,7 +196,7 @@ const quizQuestions = [
         content: "Yes"
       },
       {
-        type: "None",
+        type: "J",
         content: "No"
       }
     ]
@@ -157,7 +209,7 @@ const quizQuestions = [
         content: "Yes"
       },
       {
-        type: "None",
+        type: "K",
         content: "No"
       }
     ]
@@ -170,7 +222,7 @@ const quizQuestions = [
         content: "Yes"
       },
       {
-        type: "None",
+        type: "L",
         content: "No"
       }
     ]
@@ -183,7 +235,7 @@ const quizQuestions = [
         content: "Yes"
       },
       {
-        type: "None",
+        type: "M",
         content: "No"
       }
     ]
