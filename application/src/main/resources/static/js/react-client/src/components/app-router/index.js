@@ -6,9 +6,8 @@ import HomeScreen from '../../pages/home-screen';
 import MyMapApp from '../../pages/podiatrist-finder/BingMap';
 import AilmentScreen from '../../pages/ailment-screen';
 import AboutUs from '../../pages/about-us';
-import Quiz from '../../pages/quiz';
 import Massage from '../../pages/massage';
-import quizPage from '../../pages/quiz/newIndex';
+import quizPage from '../../pages/quiz/index';
 
 
 const AppRouter = () => {
