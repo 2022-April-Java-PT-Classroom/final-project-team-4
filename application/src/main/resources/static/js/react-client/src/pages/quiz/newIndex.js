@@ -1,7 +1,7 @@
 import React from 'react';
-
 import Quiz from "../../components/quiz/quiz";
 import quizQuestions from "../../components/quiz/quizQuestions";
+import Result from "../../components/quiz/result";
 
 class quizPage {
   constructor(props) {
@@ -75,20 +75,32 @@ class quizPage {
     }
   }
 
+  renderQuiz() {
+    return (
+      <Quiz
+        answer={this.state.answer}
+        answerOptions={this.state.answerOptions}
+        questionId={this.state.questionId}
+        question={this.state.question}
+        questionTotal={quizQuestions.length}
+        onAnswerSelected={this.handleAnswerSelected}
+      />
+    );
+  }
+  
+  renderResult() {
+    return (
+      <Result quizResult={this.state.result} />
+    );
+  }
+
   render() {
     return (
       <div className={style.quiz}>
         <div className={style.header}>
           <h2>Foot Ailment Quiz</h2>
         </div>
-        <Quiz
-          answer={this.state.answer}
-          answerOptions={this.state.answerOptions}
-          questionId={this.state.questionId}
-          question={this.state.question}
-          questionTotal={quizQuestions.length}
-          onAnswerSelected={this.handleAnswerSelected}
-        />
+        {this.state.result ? this.renderResult() : this.renderQuiz()}
       </div>
     );
   }
