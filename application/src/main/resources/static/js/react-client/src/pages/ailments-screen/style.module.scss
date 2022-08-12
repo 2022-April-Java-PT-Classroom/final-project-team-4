@@ -1,0 +1,115 @@
+
+.ailmentsBody{
+  font-family: 'Ubuntu', sans-serif;
+  width: 100%;
+  background-color: #8ab1a0;
+  height:2000px;
+  
+  .heroImage{
+  width:100%;
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  position:relative;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight:bolder;
+    border:black solid 5px;
+    padding:10px;
+    color:black;
+    background-color:white;
+    border-radius:10px
+  }
+  
+  
+  .ailmentText {
+    display:grid;
+    // grid-template-columns: 1fr,1fr,1fr,1fr;
+    grid-template-columns:auto auto auto auto;
+    text-align: center;
+    margin:10px;
+    // overflow-y: auto;
+    grid-gap:10px;
+  }
+  
+  .ailment_block {
+    border: black solid;
+    background-color: #d2e2db;
+
+  }
+  
+  .dropdownButton {
+    background-color: #045AAA;
+    color: rgb(145, 233, 214);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    margin-bottom:10px;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .individualTreatment {
+    display: none;
+    position: absolute;
+    background-color: #F1F1F1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border:black solid;
+    text-decoration: none;
+  }
+  
+  .treatmentLink {
+    text-decoration: none;
+    color:black;
+    font-weight:bold;
+  }
+  
+  .ailment_name {
+    font-family: 'Cormorant SC', serif;
+    text-decoration: none;
+    font-size: 30px;
+    color:black;
+  }
+  
+  
+  .individualTreatment a:hover {background-color: rgb(62, 167, 106);}
+  .dropdown:hover .individualTreatment {display: block;}
+  
+li{
+  list-style-type: none;
+}
+  .header_selfcare {
+    display:flex;
+    justify-content: center;
+  }
+
+  .selfcareTitle{
+    display:flex;
+    justify-content: center;
+    font-family: 'Cormorant SC', serif;
+    text-decoration: none;
+    font-size: 30px;
+    color:black;
+  }
+
+  .selfcareList{
+    text-align: center;
+    background-color: #d2e2db;
+    width:90%;
+    margin:auto;
+    padding:20px;
+    border:black solid 3px;
+    font-weight: bolder;
+  }
+  
+}
+
