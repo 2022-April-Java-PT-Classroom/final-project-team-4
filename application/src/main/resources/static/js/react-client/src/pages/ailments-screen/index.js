@@ -40,34 +40,8 @@ const AilmentScreen = () => {
 
     }, [ailment]);
 
-    useEffect(() => {
-        const fetchTreatmentData = async () =>{
-            const treatmentResult = await Axios ('http://localhost:8080/treatments')
-            setTreatment(treatmentResult.data);
-        }
-        if(treatment) {
-            setLoading(false);
-        }
-        const treatmentTimer = setTimeout(() => {
-            !treatment && fetchTreatmentData();
-        }, 1000);
-        
-           return ()=> clearTimeout(treatmentTimer);
-    }, [treatment]);
-
-    useEffect(() => {
-        const fetchData = async () => {
-            const result = await Axios.get(`/ailment/${id}`
-            );
-            setAilment(result.data);
-        }
-        fetchData()
-    }, [id]);
-
-    if(!ailment)
-    return null
-       
-
+    
+    
     return (
         <div className={style.ailmentsBody}>
             <div >
