@@ -26,6 +26,9 @@ public class TreatmentRestController {
         return treatment.get();
     }
 
+    @GetMapping("/treatments")
+    public Collection<Treatment> getTreatments(){return (Collection<Treatment>) treatmentRepo.findAll();}
+
     @GetMapping("/api/ailment/{id}/treatments")
     public Collection<Treatment> treatmentsByAilment(@PathVariable Long id){
         Ailment ailmentToFind = ailmentRepo.findById(id).get();
