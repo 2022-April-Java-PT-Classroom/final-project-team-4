@@ -19,16 +19,16 @@ const ContactPage = () => {
 
     return (
       <div className={style.contactPage}>
-       
-        <form onSubmit={post}>
-            <input type="text" placeholder="Name" id="name" name="name" autoComplete="on"/>
-            <input type="email" placeholder="Email" id="email" name="email"autoComplete="on"/>
-            <input type="text" placeholder="Subject" id="subject" name="subject"autoComplete="on"/>
-            <textarea type="text" placeholder="Type Your Message Here" id="message" cols="40" rows="20" name="message"></textarea>
+        <div><h2>Contact Us</h2></div>
+         <form onSubmit={post}>
+            <input type="text" placeholder="  Name" id="name" name="name" autoComplete="on"/>
+            <input type="email" placeholder="  Email" id="email" name="email"autoComplete="on"/>
+            <input type="text" placeholder="  Subject" id="subject" name="subject"autoComplete="on"/>
+            <textarea type="text" placeholder=" Type Your Message Here" id="message" cols="40" rows="20" name="message"></textarea>
 
-            <button id="send">Send</button>
+            <button className={style.send}>Send</button>
 
-        </form>
+         </form>
        </div>
     )
 

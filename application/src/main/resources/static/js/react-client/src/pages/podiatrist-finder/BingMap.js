@@ -5,17 +5,68 @@ import style from "./style.module.scss";
 
 function MyMapApp() {
   const [bingMapReady, setBingMapReady] = useState(false)
-  
-  useEffect(() => {
-    if (bingMapReady) {
-      // addPushPin();
+
+  //pins for the map
+  const pushPinOne = {
+    center: {
+      latitude: 40.064849291475156,
+      longitude: -83.0702206254343,
+    },
+    options: {
+      title: "OSU Podiatry branch office"
     }
-  }, [bingMapReady]);
+  }
+
+  const pushPinTwo = {
+    center: {
+      latitude: 40.05374155134204,
+      longitude:  -83.02031051974569,
+    },
+    options: {
+      title: "Urban Podiatry LLC"
+    }
+  }
+  const pushPinThree = {
+    center: {
+      latitude: 40.03743101293974, 
+      longitude: -83.01777449133328,
+    },
+    options: {
+      title: "Clintonville Foot & Ankle Group"
+    }
+  }
   
+  const pushPinFour = {
+    center: {
+      latitude: 40.024848689130565, 
+      longitude: -83.05566873859135,
+    },
+    options: {
+      title: "Capital City Foot & Ankle LLC"
+    }
+  }
+  
+  const pushPinFive = {
+    center: {
+      latitude: 40.01893307582084, 
+      longitude: -83.03781595687464,
+    },
+    options: {
+      title: "Robin D. Kravitz DPM"
+    }
+  }
+  
+  
+
+  const pushPins = [pushPinOne, pushPinTwo, pushPinThree, pushPinFour, pushPinFive];
+  
+
+  //handles the map
   return (
     <div className={style.bingMap}>
+      <div><h2>Local Podiatrist Locator</h2></div>
       <form>
-        <label for="city">City</label>
+        {/* <label for="city">City</label>
         <br></br>
         <input type="text" id="city" name="city"/>
         <br></br>
@@ -24,7 +75,7 @@ function MyMapApp() {
         <br></br>
         <label for="zipCode">zipcode</label>
         <input type="text" id="zipCode" name="zipCode"/>
-        <button>Search</button>
+        <button>Search</button> */}
       </form>
     <BingMapsReact
       onMapReady = {
@@ -32,6 +83,7 @@ function MyMapApp() {
         setBingMapReady(true);
         }
       }
+      pushPins={pushPins}
       bingMapsKey="Ak_-nVsKEjzxTXWPi28M53qN1Pm6bwFSYms9Ix4EISh80YP36lu8THZknQFF_HdN"
       height="650px"
       mapOptions={
@@ -52,3 +104,14 @@ function MyMapApp() {
 }
 
 export default MyMapApp;
+
+//This is a blank copy of the pin code you can use to add more
+// const pushPin = {
+//   center: {
+//     latitude:, 
+//     longitude:,
+//   },
+//   options: {
+//     title: ""
+//   }
+// }

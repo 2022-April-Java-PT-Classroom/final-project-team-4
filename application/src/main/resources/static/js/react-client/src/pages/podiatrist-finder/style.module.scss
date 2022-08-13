@@ -1,5 +1,12 @@
 .bingMap{
     display: flex;
+    flex-direction: column;
     margin: 10px;
     justify-content: center;
+}
+
+.bingMap, h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  text-align: center;
 }

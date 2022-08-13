@@ -3,6 +3,7 @@
 
 .contactPage {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: 'Ubuntu', sans-serif;
@@ -11,23 +12,41 @@
     margin: 10px auto;
     font-family: 'Lora', serif; 
     font-size: 6px;
-    background-color: beige;
-    
+    background-color: #8ab1a0;
 
-    input,
+
+
+h2 {	
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  text-align: left;
+  
+}
+
+
+ input,
     textarea{
     width: 80%;
-    padding: 5px;
+    padding: 7px;
     outline: 1px;
     border-style: double;
-    margin: 6px 1px;
+    margin: 3px 1px;
+    border-radius: 4px;
+    box-shadow: #090e3f;
+    
   }
-  #send{
+}
+  .send {
    width: 80px;
    font-size: 20px;
    padding: 5px;
    cursor: pointer; 
+   background-color: rgb(127, 219, 104);
+   border-radius: 5px;
   }
+.send:hover{
+  background-color: #a7e7d7;
+  
 }
 
   
