@@ -69,18 +69,89 @@ function MyMapApp() {
         <img src={locatorimage} className={style.heroImage}></img>
         <div className={style.centered}>Local Podiatrist Locator</div>
       </div>
-      <form>
-        {/* <label for="city">City</label>
-        <br></br>
-        <input type="text" id="city" name="city"/>
-        <br></br>
-        <label for="state">State </label>
-        <input type="text" id="state" name="state"/>
-        <br></br>
-        <label for="zipCode">zipcode</label>
-        <input type="text" id="zipCode" name="zipCode"/>
-        <button>Search</button> */}
-      </form>
+      <h2>Columbus Locations</h2>
+      <div className={style.addresses}>    
+        <table>
+          <th>
+            <tr>
+              <td>OSU Podiatry</td>
+            </tr>
+          </th>
+          <tbody>
+            <tr>
+              <td>1980 Crown Park Ct, Columbus, OH 43235</td>
+            </tr>
+            <tr>
+              <td>(614)-293-2663</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table>
+          <th>
+            <tr>
+              <td>Urban Podiatry</td>
+            </tr>
+          </th>
+          <tbody>
+            <tr>
+              <td>4485 N High St, Columbus, OH 43214</td>
+            </tr>
+            <tr>
+              <td>(614)-824-5336</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table>
+          <th>
+            <tr>
+              <td>Clintonville Foot & Ankle Group</td>
+            </tr>
+          </th>
+          <tbody>
+            <tr>
+              <td>3695 N High St, Columbus, OH 43214</td>
+            </tr>
+            <tr>
+              <td>(614)-267-8387</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table>
+          <th>
+            <tr>
+              <td>Capital City Foot & Ankle LLC</td>
+            </tr>
+          </th>
+          <tbody>
+            <tr>
+              <td>1570 Fishinger Rd, Columbus, OH 43221</td>
+            </tr>
+            <tr>
+              <td>(614)-451-7033</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table>
+          <th>
+            <tr>
+              <td>Robin D. Kravitz, DPM</td>
+            </tr>
+          </th>
+          <tbody>
+            <tr>
+              <td>941 Chatham Ln, Columbus, OH 43221</td>
+            </tr>
+            <tr>
+              <td>(614)-457-3894</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div className={style.map}>
     <BingMapsReact
       onMapReady = {
         ({ map }) => {
@@ -103,6 +174,7 @@ function MyMapApp() {
         }
       }
     />
+    </div>
     </div>
   );
 }
