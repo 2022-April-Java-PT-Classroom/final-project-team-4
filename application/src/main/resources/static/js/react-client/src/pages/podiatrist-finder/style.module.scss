@@ -1,12 +1,30 @@
 .bingMap{
     display: flex;
     flex-direction: column;
-    margin: 10px;
     justify-content: center;
-}
-
-.bingMap, h2{
+    
+  h2 {
     font-family:Georgia, 'Times New Roman', Times, serif;
-  font-size: 30px;
-  text-align: center;
+    font-size: 30px;
+    text-align: center;
+  }
+    .heroImage{
+      width:100%;
+      position: relative;
+      object-fit: cover;
+      height: 500px;
+    }
+  
+    .centered {
+      font-family: 'Ubuntu', sans-serif;
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 60px;
+      font-weight: bolder;
+      color:#000;
+      text-shadow: 2px 2px #fff;
+      background-color: transparent;
+    }
 }

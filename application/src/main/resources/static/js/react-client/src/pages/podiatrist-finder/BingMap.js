@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import BingMapsReact from "bingmaps-react";
 import style from "./style.module.scss";
+import locatorimage from "../../assets/images/locatorimage.jpg";
 
 function MyMapApp() {
   const [bingMapReady, setBingMapReady] = useState(false)
@@ -64,7 +65,10 @@ function MyMapApp() {
   //handles the map
   return (
     <div className={style.bingMap}>
-      <div><h2>Local Podiatrist Locator</h2></div>
+      <div >
+        <img src={locatorimage} className={style.heroImage}></img>
+        <div className={style.centered}>Local Podiatrist Locator</div>
+      </div>
       <form>
         {/* <label for="city">City</label>
         <br></br>

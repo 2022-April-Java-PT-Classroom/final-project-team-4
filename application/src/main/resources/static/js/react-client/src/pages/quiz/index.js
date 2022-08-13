@@ -3,7 +3,7 @@ import Quiz from "../../components/quiz/quiz";
 import quizQuestions from "../../components/quiz/quizQuestions";
 import Result from "../../components/quiz/result";
 import style from "./style.module.scss";
-import waterfeet from "../../assets/images/waterfeet.jpg"
+import airfeet from "../../assets/images/airfeet.jpg"
 
 class quizPage extends Component {
   constructor(props) {
@@ -100,7 +100,7 @@ class quizPage extends Component {
     return (
       <div className={style.quiz}>
         <div >
-          <img src={waterfeet} className={style.heroImage}></img>
+          <img src={airfeet} className={style.heroImage}></img>
           <div className={style.centered}>Foot Ailment Quiz</div>
         </div>
         <div className={style.header}>
