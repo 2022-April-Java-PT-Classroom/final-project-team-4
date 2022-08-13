@@ -1,19 +1,14 @@
 .footer {
   text-align: center;
   margin-top: 10px;
-  background-color: #aaa;
-  background-image: url("../../assets/images/header.jpg"); 
-  border-top: 5px solid #3e3a3c;
+  background-color: #3e3a3c;
   font-family: 'Playfair Display', sans-serif;
-  position: fixed;
+  position: absolute;
   left: 0;
   bottom: 0;
   right: 0;
-  z-index: 1;
 
   .small {
-    border-left: 2px solid #3e3a3c;
-    border-right: 2px solid #3e3a3c;
     background-color: transparent;
     color: #f1f1f1;
     display: inline-block;

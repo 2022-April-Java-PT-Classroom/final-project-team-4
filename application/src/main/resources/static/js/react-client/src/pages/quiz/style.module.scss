@@ -1,86 +1,29 @@
-// .quizContainer {
-//   background-color: #442235;
-//   background: radial-gradient(ellipse at bottom, #442235, transparent),
-//               radial-gradient(ellipse at top, #8ab1a0, transparent);
-//   margin-top: -30px;
-//   margin-bottom: -13px;
-//   padding: 0;
-// }
-
-// .quiz {
-//   font-family: 'Ubuntu', sans-serif;
-//   max-width: 40%;
-//   margin: 0 auto;
-//   padding: 10px;
-//   background-color: #fff;
-//   background: repeating-linear-gradient(to right, #f8f7f7, #f8f7f7 10px, #fff 10px, #fff 20px);
-//   opacity: .9;
-//   border-right: 3px double #3e3a3c;
-//   border-left: 3px double #3e3a3c;
-//   outline: 1px solid #3e3a3c;
+.quiz {
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
   
-//   h2 {
-//     font-family: 'Cormorant SC', serif;
-//     font-size: 36px;
-//     color: #f1f1f1;
-//     text-align: center;
-//     text-shadow: 1px 1px #000;
-//     background-color: #3e3a3c;
-//     margin-left: -11px;
-//     margin-right: -11px;
-//   }
+  .heroImage{
+    width:100%;
+    position: relative;
+    object-fit: cover;
+    height: 500px;
+  }
 
-//   img {
-//     max-width: 40%;
-//     border: 3px double #3e3a3c;
-//     outline: 1px solid #3e3a3c;
-//   }
+  .centered {
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    font-weight: bolder;
+    color:#000;
+    text-shadow: 2px 2px #fff;
+    background-color: transparent;
+  }
 
-//   .centerImg, .ailmentsList, .note {
-//     text-align: center;
-//   }
-
-//   .note {
-//     font-size: 16px;
-//   }
-
-//   p, label, button {
-//     font-size: 20px;
-//   }
-
-//   button {
-//     font-family: 'Ubuntu', sans-serif;
-//     border: 3px double #3e3a3c;
-//     outline: 1px solid #3e3a3c;
-//     background-color: #fff;
-//     font-weight: bold;
-//     margin: 5px;
-//   }
-
-//   button:hover {
-//     border: 3px double #fff;
-//     outline: 1px solid #fff;
-//     background-color: #3e3a3c;
-//     color: #fff;
-//     transition: .25s;
-//     cursor: pointer;
-//   }
-
-//   .submit {
-//     text-align: center;
-//   }
-
-//   .results {
-//     margin: 0 auto;
-//     padding: 20px;
-//   }
-
-//   .ailmentsList {
-//     p {
-//       background-color: #3e3a3c;
-//       color: #f1f1f1;
-//       margin-left: -30px;
-//       margin-right: -30px;
-//     }
-//   }
-// }
+  .quizText {
+    margin: 0 auto;
+  }
+}

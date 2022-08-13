@@ -1,12 +1,14 @@
 .treatment{
     font-family: 'Ubuntu', sans-serif;
-    width: 80%;
     margin: 0 auto;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    height: 100vh;
 
 .treatmentTitle {
     display:flex;
     justify-content: center;
     padding-bottom:40px;
+    margin-top: 0px;
 }
 .image {
     display:flex;
@@ -33,7 +35,7 @@ p {
     text-align:center;
     padding-top:20px;
     padding-bottom:20px;
-    background-color: #8ab1a0;   
+    background-color: #97D9E1;
 }
 
 h2{
@@ -44,7 +46,7 @@ h2{
     text-align:center;
     padding-top:20px;
     padding-bottom:20px;
-    background-color: #b0cabf;
+    background-color: #D9AFD9;
 }
 }
 

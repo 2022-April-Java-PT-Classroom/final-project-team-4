@@ -1,12 +1,52 @@
 .bingMap{
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
     display: flex;
     flex-direction: column;
-    margin: 10px;
     justify-content: center;
-}
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    
+  h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    text-align: center;
+  }
+    .heroImage{
+      width:100%;
+      position: relative;
+      object-fit: cover;
+      height: 500px;
+    }
+  
+    .centered {
+      font-family: 'Ubuntu', sans-serif;
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 80px;
+      font-weight: bolder;
+      color:#000;
+      text-shadow: 2px 2px #fff;
+      background-color: transparent;
+    }
 
-.bingMap, h2{
-    font-family:Georgia, 'Times New Roman', Times, serif;
-  font-size: 30px;
-  text-align: center;
+    .map {
+      margin: 0 auto;
+    }
+
+    .addresses {
+      margin: 0 auto;
+      display: flex;
+      width: 70%;
+      padding-bottom: 20px;
+
+      table {
+        text-align: center;
+      }
+
+      .bold {
+        font-weight: bold;
+      }
+    }
 }
