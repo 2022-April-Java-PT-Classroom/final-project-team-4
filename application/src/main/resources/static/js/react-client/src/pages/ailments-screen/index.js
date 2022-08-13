@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import shoesbanner from '../../assets/images/shoesbanner.jpg';
+import sandfeet from '../../assets/images/sandfeet.jpg';
 import Axios from "axios";
 import style from './style.module.scss';
 import {Link} from 'react-router-dom'
@@ -45,8 +45,8 @@ const AilmentScreen = () => {
     return (
         <div className={style.ailmentsBody}>
             <div >
-                <img src={shoesbanner} className={style.heroImage}></img>
-                <div className={style.centered}>Click A Condition Or Treatment To Learn More!</div>
+                <img src={sandfeet} className={style.heroImage}></img>
+                <div className={style.centered}>Ailments & Treatments</div>
             </div>
             
         <div>
