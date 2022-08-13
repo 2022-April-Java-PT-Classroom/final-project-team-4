@@ -72,83 +72,64 @@ function MyMapApp() {
       <h2>Columbus Locations</h2>
       <div className={style.addresses}>    
         <table>
-          <th>
-            <tr>
+            <tr className={style.bold}>
               <td>OSU Podiatry</td>
             </tr>
-          </th>
-          <tbody>
             <tr>
               <td>1980 Crown Park Ct, Columbus, OH 43235</td>
             </tr>
             <tr>
               <td>(614)-293-2663</td>
             </tr>
-          </tbody>
         </table>
 
         <table>
-          <th>
-            <tr>
+            <tr className={style.bold}>
               <td>Urban Podiatry</td>
             </tr>
-          </th>
-          <tbody>
             <tr>
               <td>4485 N High St, Columbus, OH 43214</td>
             </tr>
             <tr>
               <td>(614)-824-5336</td>
             </tr>
-          </tbody>
         </table>
 
         <table>
-          <th>
-            <tr>
+            <tr className={style.bold}>
               <td>Clintonville Foot & Ankle Group</td>
             </tr>
-          </th>
-          <tbody>
             <tr>
               <td>3695 N High St, Columbus, OH 43214</td>
             </tr>
             <tr>
               <td>(614)-267-8387</td>
             </tr>
-          </tbody>
         </table>
 
         <table>
-          <th>
-            <tr>
+            <tr className={style.bold}>
               <td>Capital City Foot & Ankle LLC</td>
             </tr>
-          </th>
-          <tbody>
             <tr>
               <td>1570 Fishinger Rd, Columbus, OH 43221</td>
             </tr>
             <tr>
               <td>(614)-451-7033</td>
             </tr>
-          </tbody>
+
         </table>
 
         <table>
-          <th>
             <tr>
-              <td>Robin D. Kravitz, DPM</td>
+              <td className={style.bold}>Robin D. Kravitz, DPM</td>
             </tr>
-          </th>
-          <tbody>
             <tr>
               <td>941 Chatham Ln, Columbus, OH 43221</td>
             </tr>
             <tr>
               <td>(614)-457-3894</td>
             </tr>
-          </tbody>
         </table>
       </div>
       <div className={style.map}>

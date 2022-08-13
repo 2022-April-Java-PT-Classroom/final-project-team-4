@@ -40,5 +40,13 @@
       display: flex;
       width: 70%;
       padding-bottom: 20px;
+
+      table {
+        text-align: center;
+      }
+
+      .bold {
+        font-weight: bold;
+      }
     }
 }
