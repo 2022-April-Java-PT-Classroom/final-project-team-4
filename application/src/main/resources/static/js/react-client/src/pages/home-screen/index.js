@@ -1,6 +1,7 @@
 import React from 'react';
 import feet from '../../assets/images/feet.jpg';
 import podiatrist from '../../assets/images/podiatrist.jpg';
+import sixFeet from '../../assets/images/sixfeet.jpg'
 import quiz from '../../assets/images/quiz.jpg';
 import style from './style.module.scss';
 
@@ -8,7 +9,10 @@ const HomeScreen = () => {
 
   return (
     <div className={style.homeScreen}>
-      <h2>Welcome to Footopolis</h2>
+      <div>
+        <img src={sixFeet} className={style.heroImage}></img>
+        <div className={style.centered}>Welcome to Footopolis</div>
+      </div>
       <p>
         At Footpolis, our aim is to provide information and recommendations to help relieve various foot ailments. 
         Our feet are the driving force to get us from point A to point B, so it is important that they are in tip-top 
