@@ -8,9 +8,6 @@
   
   .heroImage{
     width:100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
     object-fit: cover;
     height: 500px;
@@ -22,7 +19,7 @@
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 60px;
+    font-size: 80px;
     font-weight: bolder;
     color:#000;
     text-shadow: 2px 2px #fff;
