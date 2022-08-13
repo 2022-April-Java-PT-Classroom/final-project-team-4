@@ -1,7 +1,7 @@
 import React from "react";
 import emailjs from "emailjs-com";
 import style from "./style.module.scss";
-
+import phone from '../../assets/images/phone.jpg';
 
 const ContactPage = () => {
    
@@ -19,7 +19,10 @@ const ContactPage = () => {
 
     return (
       <div className={style.contactPage}>
-        <div><h2>Contact Us</h2></div>
+        <div>
+        <img src={phone} className={style.heroImage}></img>
+        <div className={style.centered}>Contact Us</div>
+      </div>
          <form onSubmit={post}>
             <input type="text" placeholder="  Name" id="name" name="name" autoComplete="on"/>
             <input type="email" placeholder="  Email" id="email" name="email"autoComplete="on"/>
