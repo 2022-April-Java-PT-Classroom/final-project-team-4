@@ -14,7 +14,7 @@ const Header = () => {
         <div className={style.headerNav}>
         <div className={style.dropdown}>
           <button className={style.dropbtn} id={style.firstBtn}>Ailments & Treatments</button>
-          <div className={style.dropdownContent} id={style.purple}>
+          <div className={style.dropdownContent} id={style.green}>
             <NavLink to={'/ailment'}>Ailments & Suggested Treatment Options</NavLink>
             <NavLink to={'/massage'}>Foot Massage Techniques</NavLink> 
           </div>
@@ -30,7 +30,7 @@ const Header = () => {
 
         <div className={style.dropdown}>
           <button className={style.dropbtn} id={style.lastBtn}>About Us</button>
-          <div className={style.dropdownContent} id={style.lastDropdown}>
+          <div className={style.dropdownContent} id={style.green}>
             <NavLink to={'/contact'}>Contact Us</NavLink>
             <NavLink to={'/about-us'}>Meet the Developers</NavLink>
           </div>
