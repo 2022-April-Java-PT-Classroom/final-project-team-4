@@ -13,7 +13,7 @@ const App = () => {
       <div>
         <AppRouter />
       </div>
-      {/* <Joke /> */}
+      <Joke />
       <Footer />
       </BrowserRouter>
     </div>
