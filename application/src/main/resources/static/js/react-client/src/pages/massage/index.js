@@ -12,16 +12,17 @@ const Massage = () => {
 <div>
 {/* <img src={} height="200" width="200"></img> */}
 <h3>Plantar Fasciitis</h3> 
-<div class="videos">   
+<div class="videos">  
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0RdOFprqVHU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+</div> 
 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in augue neque. Maecenas fermentum facilisis neque, congue 
     ullamcorper mauris mattis at. Phasellus dictum sollicitudin arcu in elementum. Suspendisse ornare porttitor neque, vel 
     viverra erat interdum mattis. Nunc elementum at libero ac aliquam. Donec nibh diam, facilisis at tincidunt eu, tincidunt 
     quis nulla. Nam et tristique nulla. Mauris eget magna sed mi consequat porta. Sed suscipit mi sed neque ullamcorper posuere.
      Aenean viverra, eros ac fringilla blandit, libero justo placerat urna, eu ultrices dui ligula at enim. Nunc elementum et 
-     lacus ac laoreet.</p>
-     </div>
+     lacus ac laoreet.</p> 
+      </div> 
 
      <div>
 
@@ -123,11 +124,11 @@ const Massage = () => {
     </div>
 </div>
 </div>
-</div>
+ </div> 
 
 
 );
-}
+  } 
 
                    
 export default Massage;
