@@ -23,20 +23,24 @@ const TreatmentPage = () => {
     console.log(treatment)
     return (
     <div className={style.treatment}>
-        <div className={style.head}>
-           <h1 className={style.treatmentTitle}> {treatment.name}</h1>
-           <div className={style.image}>
-           <img className={style.treatmentImage} src={treatment.image} />
-           </div>
-        </div>
-        <div className={style.description}>
-            <h2 className={style.descriptionTitle}>Description of Treatment</h2>
-            <p className={style.descriptionText}>{treatment.description}</p>
-        </div>
+      <div className={style.head}>
+        <h1 className={style.treatmentTitle}> {treatment.name}</h1>
+          <div className={style.image}>
+            <img className={style.treatmentImage} src={treatment.image} />
+          </div>
+      </div>
+        
+      <div className={style.information}>  
+      <div className={style.description}>
+        <h2 className={style.descriptionTitle}>Description of Treatment</h2>
+        <p className={style.descriptionText}>{treatment.description}</p>
+        
         <div className={style.benefits}>
             <h2 className={style.benefits}>Benefits of Treatment</h2>
             <p className={style.benefitsText}>{treatment.benefits}</p>
         </div>
+      </div>
+      </div>
     </div>
     )
 
