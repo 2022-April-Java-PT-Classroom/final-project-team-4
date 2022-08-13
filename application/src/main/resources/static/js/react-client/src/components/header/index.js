@@ -1,13 +1,16 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
 import style from './style.module.scss';
+import footIcon from '../../assets/images/footprint-icon.png';
 
 const Header = () => {
   return (
     <div className={style.header}>
       <nav>
         <div className={style.title}>
-          <NavLink to={'/'}>Footopolis
+          <NavLink to={'/'}>
+          <img src={footIcon} />
+            Footopolis
           </NavLink>
         </div>
 
