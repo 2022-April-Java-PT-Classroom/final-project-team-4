@@ -3,6 +3,7 @@ import Quiz from "../../components/quiz/quiz";
 import quizQuestions from "../../components/quiz/quizQuestions";
 import Result from "../../components/quiz/result";
 import style from "./style.module.scss";
+import airfeet from "../../assets/images/airfeet.jpg"
 
 class quizPage extends Component {
   constructor(props) {
@@ -98,10 +99,15 @@ class quizPage extends Component {
   render() {
     return (
       <div className={style.quiz}>
-        <div className={style.header}>
-          <h2>Foot Ailment Quiz</h2>
+        <div >
+          <img src={airfeet} className={style.heroImage}></img>
+          <div className={style.centered}>Foot Ailment Quiz</div>
         </div>
+        <div className={style.header}>
+        </div>
+        <div className={style.quizText}>
         {this.state.result ? this.renderResult() : this.renderQuiz()}
+        </div>
       </div>
     );
   }

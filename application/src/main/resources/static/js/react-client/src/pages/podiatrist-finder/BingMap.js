@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import BingMapsReact from "bingmaps-react";
 import style from "./style.module.scss";
+import locatorimage from "../../assets/images/locatorimage.jpg";
 
 function MyMapApp() {
   const [bingMapReady, setBingMapReady] = useState(false)
@@ -64,19 +65,74 @@ function MyMapApp() {
   //handles the map
   return (
     <div className={style.bingMap}>
-      <div><h2>Local Podiatrist Locator</h2></div>
-      <form>
-        {/* <label for="city">City</label>
-        <br></br>
-        <input type="text" id="city" name="city"/>
-        <br></br>
-        <label for="state">State </label>
-        <input type="text" id="state" name="state"/>
-        <br></br>
-        <label for="zipCode">zipcode</label>
-        <input type="text" id="zipCode" name="zipCode"/>
-        <button>Search</button> */}
-      </form>
+      <div >
+        <img src={locatorimage} className={style.heroImage}></img>
+        <div className={style.centered}>Local Podiatrist Locator</div>
+      </div>
+      <h2>Columbus Locations</h2>
+      <div className={style.addresses}>    
+        <table>
+            <tr className={style.bold}>
+              <td>OSU Podiatry</td>
+            </tr>
+            <tr>
+              <td>1980 Crown Park Ct, Columbus, OH 43235</td>
+            </tr>
+            <tr>
+              <td>(614)-293-2663</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr className={style.bold}>
+              <td>Urban Podiatry</td>
+            </tr>
+            <tr>
+              <td>4485 N High St, Columbus, OH 43214</td>
+            </tr>
+            <tr>
+              <td>(614)-824-5336</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr className={style.bold}>
+              <td>Clintonville Foot & Ankle Group</td>
+            </tr>
+            <tr>
+              <td>3695 N High St, Columbus, OH 43214</td>
+            </tr>
+            <tr>
+              <td>(614)-267-8387</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr className={style.bold}>
+              <td>Capital City Foot & Ankle LLC</td>
+            </tr>
+            <tr>
+              <td>1570 Fishinger Rd, Columbus, OH 43221</td>
+            </tr>
+            <tr>
+              <td>(614)-451-7033</td>
+            </tr>
+
+        </table>
+
+        <table>
+            <tr>
+              <td className={style.bold}>Robin D. Kravitz, DPM</td>
+            </tr>
+            <tr>
+              <td>941 Chatham Ln, Columbus, OH 43221</td>
+            </tr>
+            <tr>
+              <td>(614)-457-3894</td>
+            </tr>
+        </table>
+      </div>
+      <div className={style.map}>
     <BingMapsReact
       onMapReady = {
         ({ map }) => {
@@ -99,6 +155,7 @@ function MyMapApp() {
         }
       }
     />
+    </div>
     </div>
   );
 }

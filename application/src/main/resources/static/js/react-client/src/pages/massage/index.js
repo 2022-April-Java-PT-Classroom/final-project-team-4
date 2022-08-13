@@ -1,12 +1,16 @@
 import React from 'react';
 import style from './style.module.scss';
+import massagefoot from '../../assets/images/massagefoot.jpg';
 
 
 const Massage = () => {
     return (
 
         <div className ={style.Massage}>
-                    <h2>Massage Techniques</h2>
+                <div>
+        <img src={massagefoot} className={style.heroImage}></img>
+        <div className={style.centered}>Massage Techniques</div>
+      </div>
                     <div>
 <div className={style.techniques}>
 <div>
