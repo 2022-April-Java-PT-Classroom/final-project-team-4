@@ -64,6 +64,7 @@ function MyMapApp() {
   //handles the map
   return (
     <div className={style.bingMap}>
+      <div><h2>Local Podiatrist Locator</h2></div>
       <form>
         {/* <label for="city">City</label>
         <br></br>
