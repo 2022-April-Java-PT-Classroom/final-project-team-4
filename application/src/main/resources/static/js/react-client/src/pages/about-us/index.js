@@ -5,6 +5,7 @@ import sade from '../../assets/images/Sade.jpg';
 import jason from '../../assets/images/Jason.jpg';
 import zach from '../../assets/images/Zach.jpg';
 import CM from '../../assets/images/CM.jpg';
+import developers from '../../assets/images/developers.jpg';
 
 import Github from '../../assets/images/Github.png';
 import LinkedIn from '../../assets/images/LinkedIn.png';
@@ -18,7 +19,10 @@ const AboutUs = () => {
     return (
 
                 <div className ={style.aboutUs}>
-                    <h2>Meet the Developers</h2>
+                  <div className={style.banner}>
+        <img src={developers} className={style.heroImage}></img>
+        <div className={style.centered}>Meet the Developers</div>
+      </div>
                     <div className={style.bios}>
                     <div>
                     <img src={aisha} height="200" width="200"></img>
