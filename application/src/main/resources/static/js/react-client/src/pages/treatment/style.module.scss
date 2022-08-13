@@ -22,8 +22,9 @@
 }
 
 h1{
+  padding-top: 20px;
     font-family: 'Cormorant SC', serif;
-    font-size: 36px;
+    font-size: 60px;
     color: #442235;
 }
 
@@ -31,11 +32,17 @@ p {
     font-size: 20px;
   }
 
+.information {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .description{
     text-align:center;
     padding-top:20px;
     padding-bottom:20px;
-    background-color: #97D9E1;
+    background-color: #f1f1f1;
+    border: solid black;
 }
 
 h2{
@@ -46,7 +53,7 @@ h2{
     text-align:center;
     padding-top:20px;
     padding-bottom:20px;
-    background-color: #D9AFD9;
+    background-color: #f1f1f1;
 }
 }
 
