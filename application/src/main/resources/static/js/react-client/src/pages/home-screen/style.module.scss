@@ -58,7 +58,6 @@
   img {
     width: 300px;
     height: 200px;
-    // filter: grayscale(100%);
   }
 
   table {
@@ -72,7 +71,7 @@
       vertical-align: top;
     }
 
-    background-color: #8ab1a0;
+    background-color: #f1f1f1;
   }
 
   .imgRight {
@@ -83,7 +82,7 @@
     img {
       float: right;
     }
-    background-color: #b0cabf;
+    background-color: #fff;
   }
 
   button {
@@ -93,5 +92,13 @@
     border: 1px solid #000;
     background-color: #d7e4df;
     padding: 5px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: #000;
   }
 }
