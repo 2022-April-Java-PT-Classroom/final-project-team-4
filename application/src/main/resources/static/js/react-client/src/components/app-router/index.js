@@ -8,6 +8,7 @@ import AilmentsScreen from '../../pages/ailments-screen';
 import AboutUs from '../../pages/about-us';
 import Massage from '../../pages/massage';
 import quizPage from '../../pages/quiz/index';
+import SingleAilmentScreen from '../../pages/singleailment-screen';
 
 
 const AppRouter = () => {
@@ -22,6 +23,7 @@ const AppRouter = () => {
           <Route exact path={'/about-us'} component={AboutUs} />
           <Route exact path={'/quiz'} component={quizPage} />
           <Route exact path={'/massage'} component={Massage} />
+          <Route exact path={'/ailment/:id'} component={SingleAilmentScreen} />
 
       </Switch>
   );
