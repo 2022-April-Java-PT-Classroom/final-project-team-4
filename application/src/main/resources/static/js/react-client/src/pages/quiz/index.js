@@ -105,7 +105,9 @@ class quizPage extends Component {
         </div>
         <div className={style.header}>
         </div>
+        <div className={style.quizText}>
         {this.state.result ? this.renderResult() : this.renderQuiz()}
+        </div>
       </div>
     );
   }
