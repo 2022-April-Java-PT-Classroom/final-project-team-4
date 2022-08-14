@@ -23,6 +23,10 @@ background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
   color:#000;
   text-shadow: 2px 2px #fff;
   background-color: transparent;
+  clear: both;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 h2 {	

@@ -29,6 +29,10 @@
       color:#000;
       text-shadow: 2px 2px #fff;
       background-color: transparent;
+      clear: both;
+      display: inline-block;
+      overflow: hidden;
+      white-space: nowrap;
     }
 
     .map {
