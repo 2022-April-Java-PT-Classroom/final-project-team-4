@@ -55,33 +55,42 @@ public class populator implements CommandLineRunner {
         treatmentRepo.save(rest);
         treatmentRepo.save(decompressionSurgery);
 
+//        ADD PRODUCT RECOMMENDATIONS TO AILMENTS
         Ailment plantarFisciitis = new Ailment("Plantar Fasciitis","https://i0.wp.com/post.healthline.com/wp-content/uploads/2022/01/plantar-fasciitis-1296x1000-body-1-1296x1004.png?w=1155&h=2137","An inflammation of a thick band of tissue that connects the heel bone to the toes. The inflamed tissue runs across the bottom of the foot.","An inflammation of a thick band of tissue that connects the heel bone to the toes.\n" +
                 "The inflamed tissue runs across the bottom of the foot.\n" +
                 "Symptoms include stabbing pain near the heel. Pain might be worst in the morning.\n" +
                 "Treatments include physical therapy, shoe inserts, steroid injections, and surgery." ,painRelieverNsaid, nightSplints, physicalTherapy, ice);
+//Product Recs: Hoka One One Bondi 7, New Balance 990, Brooks Adrenaline GTS 21
         Ailment diabeticNeuropathy = new Ailment("Diabetic Neuropathy","https://cacvi.org/wp-content/uploads/2021/10/diagram-of-Diabetic-neuropathy.jpg","A type of nerve damage that can occur with diabetes. The condition most often affects the legs and feet. This is a problem that occurs when diabetes goes uncontrolled.", "A type of nerve damage that can occur with diabetes.\n" +
                 "The condition most often affects the legs and feet. For some people, symptoms are mild. For others, symptoms can be painful, debilitating, and even fatal.\n" +
                 "Symptoms include pain and numbness in the legs. In more severe cases, symptoms include issues with digestion, the bladder, and controlling heart rate.\n" +
                 "Treatment includes managing blood sugar and using medications to control symptoms.",diabetesManagement, antiSeizureDrugs, physicalTherapy, weightLoss);
+//Product Recs: Brooks Addiction Walker 2, New Balance 840 v4, SAS Journey
         Ailment supination = new Ailment("Supination","https://boneandspine.com/wp-content/uploads/2014/12/normal-supination.gif" ,"Supination (or under-pronation) is the outward roll of the foot during normal motion. A natural amount of supination occurs during the push-off phase of running.","Supination of the foot occurs when your weight rolls onto the outer edges of your feet. Another name for supination is underpronation.\n" +
                 "\n" + "In a normal stride, your foot should roll inward a bit (pronate) so that your weight is on the ball of your foot. Then you push off the big toe. If you supinate, most of your weight falls on the outside of your foot and you push off from your outer toes instead. Supination is usually a result of an inherited problem with the structure of your foot. In other words, it may run in families. Supination may also be caused by weakness in certain muscles of your foot, ankle, and leg. " ,orthoticInsoles, physicalTherapy, fittedShoes);
+//Product Recs: New Balance 847, New Balance 1540, New Balance 990
         Ailment pronation = new Ailment("Pronation","https://www.precisionmovement.coach/wp-content/uploads/2019/01/pronation-definition.gif","Pronation is a natural inward movement of the foot that occurs during running or walking. This creates some shock absorption as your foot hits the ground. ", "When your foot rolls more than the 15\n" +
                 "percent inward or downward,\n" +
                 "it’s called overpronation. People with this condition colloquially are considered to\n" +
                 "have “flat feet.” This can cause iliotibial band syndrome, which hurts the outside of the knee.",orthoticInsoles, physicalTherapy, fittedShoes);
+//Product Recs: New Balance 860, Hoka One One Gaviota, Brooks Adrenaline GTS 21
         Ailment heelSpur = new Ailment("Heel Spur","https://sa1s3optim.patientpop.com/assets/images/provider/photos/2169293.jpg","A bony growth that develops around the heel bone, often caused by ill-fitting shoes. The outgrowth, which is a calcium deposit, can take months to develop. ","A heel spur is a calcium deposit causing a bony protrusion on the underside of the heel bone. Although heel spurs are often painless, they can cause heel pain. They are frequently associated with plantar fasciitis, a painful inflammation of the fibrous band of connective tissue (plantar fascia) that runs along the bottom of the foot and connects the heel bone to the ball of the foot." ,spurSurgery, ice, fittedShoes, orthoticInsoles, weightLoss, rest);
+//Product Recs: Altra Olympus 4, Hoka One One Clifton 8, Asics Gel-Contend 5
         Ailment hammerToe = new Ailment("Hammer Toe","https://www.afacc.net/wp-content/uploads/2019/03/hammer-toe.jpg","A foot condition in which the toe has an abnormal bend in the middle joint. A hammer toe is usually caused by wearing shoes with high heels or narrow toe boxes.","A foot condition in which the toe has an abnormal bend in the middle joint.\n" +
                 "A hammer toe is usually caused by wearing shoes with high heels or narrow toe boxes. It often affects the toe next to the big toe.\n" +
                 "The affected toe may be painful or hard to move, and may develop corns or calluses.\n" +
                 "Treatment can include wearing roomier shoes and using shoe inserts or pads. Surgery might be needed." ,toeSplint, fittedShoes, hammertoePads);
+//Product Recs: NAOT Galaxy, Vionic Classic Walker, Allbirds Wool Runners
         Ailment bunions = new Ailment("Bunions", "https://www.knowyourdoctor.com.cy/wp-content/uploads/2020/05/BUNIONS-1.jpg","A bony bump that forms on the joint at the base of the big toe. A bunion is formed when the big toe pushes against the next toe. They occur after years of pressure and are often painful.","A bony bump that forms on the joint at the base of the big toe.\n" +
                 "A bunion is formed when the big toe pushes against the next toe. Tight shoes, foot stress, and arthritis are causes.\n" +
                 "The main symptoms are bone deformity, pain, and stiffness.\n" +
                 "Treatments include changing shoes, padding the foot, and pain medications. Painful bunions can be removed surgically." ,bunionPads, painRelieverNsaid, ice, fittedShoes);
+// Product Recs: Skechers GOwalk Joy, Saucony Echelon Walker 3, Kuru Atom
         Ailment mortonNeuroma = new Ailment("Morton's Neuroma","https://sportsfootankle.com/wp-content/uploads/2017/12/Mortons-Neuroma.jpg","A relatively common condition. It is a thickening of the tissue around a nerve leading to the toes that results from pressure or injury, such as from running or use of high heels.", "A thickening of the tissue around a nerve leading to the toes.\n" +
                 "Morton's neuroma may be caused by pressure or injury, such as from running or use of high heels.\n" +
                 "Morton's neuroma may feel like a pebble in a shoe or a fold in a sock. There may be sharp, burning pain or numbness in the ball of the foot or toes.\n" +
                 "Treatment might include arch supports and foot pads, corticosteroid injections, strength exercises, wide-toe shoes, or surgery.", decompressionSurgery, physicalTherapy, fittedShoes, painRelieverNsaid, steroidInjections);
+//Product Recs: Brooks Addiction Walker 2, Asics Gel-Cumulus, New Balance 840 v4
         ailmentRepo.save(plantarFisciitis);
         ailmentRepo.save(diabeticNeuropathy);
         ailmentRepo.save(supination);

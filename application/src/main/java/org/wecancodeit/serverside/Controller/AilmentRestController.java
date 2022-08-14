@@ -17,7 +17,6 @@ public class AilmentRestController {
 
     @Resource
     private AilmentRepository ailmentRepo;
-    @Resource
     private TreatmentRepository treatmentRepo;
 
     @GetMapping("/ailment")
@@ -25,10 +24,10 @@ public class AilmentRestController {
 
 
     @GetMapping ("/ailment/{id}")
-//    public Ailment singleAilment(@PathVariable Long id) throws JSONException {
-//        Optional<Ailment> ailment = ailmentRepo.findById(id);
-//        return ailment.get();
-//    }
-    public Ailment getAilment(@PathVariable Long id){return ailmentRepo.findById(id).get();}
+    public Ailment singleAilment(@PathVariable Long id) throws JSONException {
+        Optional<Ailment> ailment = ailmentRepo.findById(id);
+        return ailment.get();
+    }
+//    public Ailment getAilment(@PathVariable Long id){return ailmentRepo.findById(id).get();}
 
 }
