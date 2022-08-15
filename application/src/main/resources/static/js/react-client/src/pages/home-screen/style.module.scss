@@ -93,9 +93,19 @@
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
     font-weight: bold;
-    border: 1px solid #000;
-    background-color: #d7e4df;
+    border: none;
+    border: 3px solid #97D9E1;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background-color: #3e3a3c;
+    color: #f1f1f1;
     padding: 5px;
+  }
+
+  button:hover {
+    border: 3px solid #D9AFD9;
+    cursor: pointer;
+    transition: .25s;
   }
 
   a {
@@ -103,7 +113,7 @@
   }
 
   a:visited {
-    color: #000;
+    color: #f1f1f1;
   }
 
   .popularPages {
