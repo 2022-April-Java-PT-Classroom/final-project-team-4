@@ -1,6 +1,6 @@
 import React from 'react';
 import feet from '../../assets/images/feet.jpg';
-import podiatrist from '../../assets/images/podiatrist.jpg';
+import massagehands from '../../assets/images/massagehands.jpg';
 import sixFeet from '../../assets/images/sixfeet.jpg'
 import quiz from '../../assets/images/quiz.jpg';
 import style from './style.module.scss';
@@ -75,14 +75,14 @@ const HomeScreen = () => {
             <table className={style.imgLeft}>
               <tr>
                 <td>
-                  <img src={podiatrist} />
+                  <img src={massagehands} />
                 </td>
                 <td>
-                  <h3>Find Podiatrists Near You</h3>
+                  <h3>Learn Foot Massage Techniques</h3>
                   <p>
-                    We list a lot of information here, but 
-                    it's always important to consult your 
-                    doctor (and we are not doctors). Find one near you here.
+                    You'd be surprised how much a foot massage 
+                    can help various foot ailments. We have video 
+                    demonstrations for each kind of ailment.
                   </p>
                   <button><a href='/map'>Learn More</a></button>
                 </td>
