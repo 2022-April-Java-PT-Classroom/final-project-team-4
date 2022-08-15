@@ -4,6 +4,7 @@ import massagehands from '../../assets/images/massagehands.jpg';
 import sixFeet from '../../assets/images/sixfeet.jpg'
 import quiz from '../../assets/images/quiz.jpg';
 import style from './style.module.scss';
+import { NavLink } from 'react-router-dom';
 
 const HomeScreen = () => {
 
@@ -46,7 +47,7 @@ const HomeScreen = () => {
                     Something more unusual? Visit the foot ailments page 
                     for more information.
                   </p>
-                  <button><a href='/ailment'>Learn More</a></button>
+                  <button><NavLink to={'/ailment'}>Learn More</NavLink></button>
                 </td>
               </tr>
             </table>
@@ -62,7 +63,7 @@ const HomeScreen = () => {
                     a foot injury listed here? Take our quiz 
                     to help you learn about your problem.
                   </p>
-                  <button>Learn More</button>
+                  <button><NavLink to={'/quiz'}>Learn More</NavLink></button>
                 </td>
                 <td>
                   <img src={quiz} />
@@ -84,7 +85,7 @@ const HomeScreen = () => {
                     can help various foot ailments. We have video 
                     demonstrations for each kind of ailment.
                   </p>
-                  <button><a href='/map'>Learn More</a></button>
+                  <button><NavLink to={'/massage'}>Learn More</NavLink></button>
                 </td>
               </tr>
             </table>
