@@ -1,7 +1,7 @@
 import React from 'react';
 import feet from '../../assets/images/feet.jpg';
 import massagehands from '../../assets/images/massagehands.jpg';
-import sixFeet from '../../assets/images/sixfeet.jpg'
+import sixFeet from '../../assets/images/sixfeet.jpg';
 import quiz from '../../assets/images/quiz.jpg';
 import style from './style.module.scss';
 import { NavLink } from 'react-router-dom';
@@ -34,13 +34,8 @@ const HomeScreen = () => {
         </p>
 
         <section className={style.popularPages}>
-          <div className={style.footAilments}>
-            <table className={style.imgLeft}>
-              <tr>
-                <td>
-                  <img src={feet} />
-                </td>
-                <td>
+          <div className={style.popularPageRight}>
+                  <img src={feet} className={style.right} />
                   <h3>Foot Ailments</h3>
                   <p>
                     Having pain in your foot? Bumps on your feet? 
@@ -48,15 +43,10 @@ const HomeScreen = () => {
                     for more information.
                   </p>
                   <button><NavLink to={'/ailment'}>Learn More</NavLink></button>
-                </td>
-              </tr>
-            </table>
           </div>
 
-          <div className={style.quiz}>
-            <table className={style.imgRight}>
-              <tr>
-                <td>
+          <div className={style.popularPageLeft}>
+          <img src={quiz} className={style.left} />
                   <h3>Take a Quiz</h3>
                   <p>
                     Not sure if what you're experiencing is 
@@ -64,21 +54,10 @@ const HomeScreen = () => {
                     to help you learn about your problem.
                   </p>
                   <button><NavLink to={'/quiz'}>Learn More</NavLink></button>
-                </td>
-                <td>
-                  <img src={quiz} />
-                </td>
-              </tr>
-            </table>
           </div>
 
-          <div className={style.podiatrists}>
-            <table className={style.imgLeft}>
-              <tr>
-                <td>
-                  <img src={massagehands} />
-                </td>
-                <td>
+          <div className={style.popularPageRight}>
+                  <img src={massagehands} className={style.right} />
                   <h3>Learn Foot Massage Techniques</h3>
                   <p>
                     You'd be surprised how much a foot massage 
@@ -86,9 +65,6 @@ const HomeScreen = () => {
                     demonstrations for each kind of ailment.
                   </p>
                   <button><NavLink to={'/massage'}>Learn More</NavLink></button>
-                </td>
-              </tr>
-            </table>
           </div>
         </section>
       </div>
