@@ -25,6 +25,10 @@
     color:#000;
     text-shadow: 2px 2px #fff;
     background-color: transparent;
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
   }
   
   
@@ -41,7 +45,11 @@
   .ailment_block {
     border: black solid;
     background-color: #f1f1f1;
+  }
 
+  .ailment_description {
+    height: 75px;
+    overflow-y: scroll;
   }
   
   .dropdownButton {
@@ -51,6 +59,7 @@
     padding: 16px;
     font-size: 20px;
     border: none;
+    margin-bottom: 10px;
   }
   .dropdown {
     position: relative;
