@@ -1,9 +1,10 @@
 import React from 'react';
 import feet from '../../assets/images/feet.jpg';
-import podiatrist from '../../assets/images/podiatrist.jpg';
-import sixFeet from '../../assets/images/sixfeet.jpg'
+import massagehands from '../../assets/images/massagehands.jpg';
+import sixFeet from '../../assets/images/sixfeet.jpg';
 import quiz from '../../assets/images/quiz.jpg';
 import style from './style.module.scss';
+import { NavLink } from 'react-router-dom';
 
 const HomeScreen = () => {
 
@@ -33,61 +34,37 @@ const HomeScreen = () => {
         </p>
 
         <section className={style.popularPages}>
-          <div className={style.footAilments}>
-            <table className={style.imgLeft}>
-              <tr>
-                <td>
-                  <img src={feet} />
-                </td>
-                <td>
+          <div className={style.popularPageRight}>
+                  <img src={feet} className={style.right} />
                   <h3>Foot Ailments</h3>
                   <p>
                     Having pain in your foot? Bumps on your feet? 
                     Something more unusual? Visit the foot ailments page 
                     for more information.
                   </p>
-                  <button><a href='/ailment'>Learn More</a></button>
-                </td>
-              </tr>
-            </table>
+                  <button><NavLink to={'/ailment'}>Learn More</NavLink></button>
           </div>
 
-          <div className={style.quiz}>
-            <table className={style.imgRight}>
-              <tr>
-                <td>
+          <div className={style.popularPageLeft}>
+          <img src={quiz} className={style.left} />
                   <h3>Take a Quiz</h3>
                   <p>
                     Not sure if what you're experiencing is 
                     a foot injury listed here? Take our quiz 
                     to help you learn about your problem.
                   </p>
-                  <button>Learn More</button>
-                </td>
-                <td>
-                  <img src={quiz} />
-                </td>
-              </tr>
-            </table>
+                  <button><NavLink to={'/quiz'}>Learn More</NavLink></button>
           </div>
 
-          <div className={style.podiatrists}>
-            <table className={style.imgLeft}>
-              <tr>
-                <td>
-                  <img src={podiatrist} />
-                </td>
-                <td>
-                  <h3>Find Podiatrists Near You</h3>
+          <div className={style.popularPageRight}>
+                  <img src={massagehands} className={style.right} />
+                  <h3>Learn Foot Massage Techniques</h3>
                   <p>
-                    We list a lot of information here, but 
-                    it's always important to consult your 
-                    doctor (and we are not doctors). Find one near you here.
+                    You'd be surprised how much a foot massage 
+                    can help various foot ailments. We have video 
+                    demonstrations for each kind of ailment.
                   </p>
-                  <button><a href='/map'>Learn More</a></button>
-                </td>
-              </tr>
-            </table>
+                  <button><NavLink to={'/massage'}>Learn More</NavLink></button>
           </div>
         </section>
       </div>
