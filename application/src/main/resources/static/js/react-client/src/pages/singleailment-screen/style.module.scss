@@ -1,9 +1,9 @@
 .ailment{
-    ffont-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     width: 100%;
     background-color: #8ab1a0;
     background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
-    height:1400px;
+    height:1900px;
 
 .ailmentTitle {
     display:flex;
@@ -15,6 +15,7 @@
     display:flex;
     justify-content: center;
 }
+
 .ailmentImage{
     max-width: 200px;
     display:flex;
@@ -56,5 +57,44 @@ h2{
     padding-bottom:20px;
     background-color: #f1f1f1;
 }
+
+.ailmentImage1{
+    max-width: 200px;
+    display:flex;
+    justify-content: center;
+    padding:40px;
 }
+
+.ailmentImage2{
+    max-width: 200px;
+    display:flex;
+    justify-content: center;
+    padding:40px;
+}
+
+.ailmentImage3{
+    max-width: 200px;
+    display:flex;
+    justify-content: center;
+    padding:40px;
+}
+
+.treatmentLink {
+    text-decoration: none;
+    color:black;
+    font-weight:bold;
+  }
+
+.prodImage {
+    display:flex;
+    justify-content: center;
+   
+}
+
+
+}
+
+
+
+
 

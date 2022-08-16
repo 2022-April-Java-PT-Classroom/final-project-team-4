@@ -48,13 +48,29 @@ const SingleAilmentScreen = () => {
                         </div>
                         )}   
                         </div>
-                    </div>
+                        
+              <div className={style.recommendations}>
+             <h2 className={style.recommendations}>Product Recommendations </h2>
+             <div className={style.prodImage}>
+            <img className={style.ailmentImage1} src={ailment.prodImg1} />
+          </div>
+             <a href="https://github.com/jalynjenkins"><p className={style.productRec1}>{ailment.productRec1}</p></a>
+             <div className={style.prodImage}>
+            <img className={style.ailmentImage2} src={ailment.prodImg2} />
+          </div>
+             <p className={style.productRec2}>{ailment.productRec2}</p>
+             <div className={style.prodImage}>
+            <img className={style.ailmentImage3} src={ailment.prodImg3} />
+          </div>
+             <p className={style.productRec3}>{ailment.productRec3}</p>
+        
+            </div>          
+
+
+          </div>
         </div>
 
-         <div className={style.recommendations}>
-             <h2 className={style.recommendations}>Product Recommendations </h2>
-        
-        </div>          
+                 
       </div>
       </div>
     </div>
