@@ -73,6 +73,8 @@ class quizPage extends Component {
   setResults (result) {
     if (result.length === 1) {
       this.setState({ result: result[0] });
+    } else if (result.length === 0) {
+      this.setState({ result: 'None' });
     } else {
       const renderTieList = result.map((ailment) => <p>{ailment}</p>);
       this.setState({ result: 
