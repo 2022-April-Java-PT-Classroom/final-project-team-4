@@ -117,8 +117,9 @@ const AboutUs = () => {
                     2009. Zach is enthusiastic about growing and gaining new skills as a software developer and is
                     looking forward to a future in the field of IT!</p>
                         </div>
-                </div>
-                </div>
+            
+                   </div>
+                   </div>
               
 
 
