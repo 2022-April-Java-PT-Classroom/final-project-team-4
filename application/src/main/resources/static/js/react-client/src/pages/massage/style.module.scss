@@ -51,6 +51,7 @@
         -webkit-text-fill-color: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);;
         text-align: center;
         margin: 0;
+
         
       }
 
@@ -60,7 +61,7 @@
     margin-bottom: 50px;
         display:flex;
         flex-direction:row;
-        overflow:scroll;
+//         overflow:scroll;
        
     // //     // grid-template-columns: repeat(2, 1fr);
         gap: 20px;
