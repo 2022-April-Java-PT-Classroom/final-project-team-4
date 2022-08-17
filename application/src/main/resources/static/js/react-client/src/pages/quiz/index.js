@@ -63,17 +63,28 @@ class quizPage extends Component {
   getResults() {
     const answersCount = this.state.answersCount;
     const answersCountKeys = Object.keys(answersCount);
-    const answersCountValues = answersCountKeys.map((key) => answersCount[key]);
+    const filteredAnswersCountKeys = answersCountKeys.filter(answer => answer !== 'None');
+    const answersCountValues = filteredAnswersCountKeys.map((key) => answersCount[key]);
     const maxAnswerCount = Math.max.apply(null, answersCountValues);
 
     return answersCountKeys.filter((key) => answersCount[key] === maxAnswerCount);
+  }
+
+  listTieAilments(result) {
+    let tieResult = '';
+    for (let i = 1; i < result.length; i + 1) {
+      tieResult += result[i] + ', ';
+    }
+    return tieResult;
   }
 
   setResults (result) {
     if (result.length === 1) {
       this.setState({ result: result[0] });
     } else {
-      this.setState({ result: 'Undetermined' });
+      this.setState({ result: 
+        JSON.stringify(result, null, 4)
+      });
     }
   }
 

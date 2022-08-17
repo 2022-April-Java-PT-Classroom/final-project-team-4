@@ -6,16 +6,16 @@ function Result(props) {
   return (
     <div className={style.result}>
       <p className={style.diagnosis}>
-        Your symptoms match closest with the ailment called <strong>{props.quizResult}</strong>.
+        Your result is: 
+        <br />
+        <strong>{props.quizResult}</strong>
       </p>
       <p>
-        If you received an ailment as a result, you can check out the 
-        Ailments link at the top of the page to learn more about that condition.
+        For any ailment result, please head on over to the ailments page to learn more about it.
       </p>
       <p>
-        If you received "Undetermined" as a result, that means we could not definitively 
-        conclude a possible ailment you may have and/or you do not have an issue listed on 
-        this website.
+        If you received more than one ailment, then your answers resulted in a <strong>tie </strong>
+        and is not as conclusive as a single result.
       </p>
       <p>
         As always, please consult your own doctor as this is not an official diagnosis.
