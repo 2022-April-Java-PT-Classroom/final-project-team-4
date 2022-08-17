@@ -16,9 +16,15 @@ public class Ailment {
     private String name;
     private String image;
     private String description;
-//    private String productRec1;
-//    private String productRec2;
-//    private String productRec3;
+    private String productRec1;
+    private String productRec2;
+    private String productRec3;
+    @Lob
+    private String prodImg1;
+    @Lob
+    private String prodImg2;
+    @Lob
+    private String prodImg3;
     @Lob
     private String longDescription;
     @ManyToMany
@@ -32,11 +38,15 @@ public class Ailment {
 
     public String getDescription() {return description;}
 
-//    public String getProductRec1() {return  productRec1;}
-//
-//    public String getProductRec2() {return  productRec2;}
-//
-//    public String getProductRec3() {return  productRec3;}
+    public String getProductRec1() {return  productRec1;}
+
+    public String getProductRec2() {return  productRec2;}
+
+    public String getProductRec3() {return  productRec3;}
+
+    public String getProdImg1() {return prodImg1;}
+    public String getProdImg2() {return prodImg2;}
+    public String getProdImg3() {return prodImg3;}
 
     public String getLongDescription() {return longDescription;}
 
@@ -45,14 +55,17 @@ public class Ailment {
     public Ailment(){}
 
 
-//String productRec1, String productRec2, String productRec3
-    public Ailment(String name,String image, String description,String longDescription, Treatment... treatments){
+//String prodImg1, String prodImg2, String prodImg3
+    public Ailment(String name,String image, String description,String productRec1, String productRec2, String productRec3,String prodImg1, String prodImg2, String prodImg3,String longDescription, Treatment... treatments){
         this.name = name;
         this.image = image;
         this.description = description;
-//        this.productRec1 = productRec1;
-//        this,productRec2 = productRec2;
-//        this.productRec3 = productRec3;
+        this.productRec1 = productRec1;
+        this.productRec2 = productRec2;
+        this.productRec3 = productRec3;
+        this.prodImg1 = prodImg1;
+        this.prodImg2 = prodImg2;
+        this.prodImg3 = prodImg3;
         this.longDescription = longDescription;
         this.treatments=new ArrayList<>(Arrays.asList(treatments));
     }
