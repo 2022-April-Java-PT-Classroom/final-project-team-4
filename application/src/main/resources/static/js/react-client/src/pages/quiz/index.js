@@ -70,20 +70,13 @@ class quizPage extends Component {
     return answersCountKeys.filter((key) => answersCount[key] === maxAnswerCount);
   }
 
-  listTieAilments(result) {
-    let tieResult = '';
-    for (let i = 1; i < result.length; i + 1) {
-      tieResult += result[i] + ', ';
-    }
-    return tieResult;
-  }
-
   setResults (result) {
     if (result.length === 1) {
       this.setState({ result: result[0] });
     } else {
+      const renderTieList = result.map((ailment) => <p>{ailment}</p>);
       this.setState({ result: 
-        JSON.stringify(result, null, 4)
+        renderTieList
       });
     }
   }
