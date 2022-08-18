@@ -31,7 +31,7 @@ const quizQuestions = [
         content: "Yes, the pain is all over my foot"
       },
       {
-        type: "A",
+        type: "None",
         content: "No"
       }
     ]
@@ -60,7 +60,7 @@ const quizQuestions = [
         content: "Yes, between my toes"
       },
       {
-        type: "B", 
+        type: "None", 
         content: "No"
       }
     ]
@@ -81,7 +81,7 @@ const quizQuestions = [
         content: "Yes, on my toes"
       },
       {
-        type: "C",
+        type: "None",
         content: "No"
       }
     ]
@@ -106,7 +106,7 @@ const quizQuestions = [
         content: "Yes, on the joint at the base of the big toe"
       },
       {
-        type: "D",
+        type: "None",
         content: "No"
       }
     ]
@@ -123,7 +123,7 @@ const quizQuestions = [
         content: "Yes, and I have a bump on the joint at the base of the big toe"
       },
       {
-        type: "E",
+        type: "None",
         content: "No"
       }
     ]
@@ -140,7 +140,7 @@ const quizQuestions = [
         content: "Yes, but it's very little"
       },
       {
-        type: "F",
+        type: "None",
         content: "No"
       }
     ]
@@ -157,7 +157,7 @@ const quizQuestions = [
         content: "Yes, in my heel"
       },
       {
-        type: "G",
+        type: "None",
         content: "No"
       }
     ]
@@ -170,7 +170,7 @@ const quizQuestions = [
         content: "Yes"
       },
       {
-        type: "H",
+        type: "None",
         content: "No"
       }
     ]
@@ -183,7 +183,7 @@ const quizQuestions = [
         content: "Yes"
       },
       {
-        type: "I",
+        type: "None",
         content: "No"
       }
     ]
@@ -196,7 +196,7 @@ const quizQuestions = [
         content: "Yes"
       },
       {
-        type: "J",
+        type: "None",
         content: "No"
       }
     ]
@@ -209,7 +209,7 @@ const quizQuestions = [
         content: "Yes"
       },
       {
-        type: "K",
+        type: "None",
         content: "No"
       }
     ]
@@ -222,7 +222,7 @@ const quizQuestions = [
         content: "Yes"
       },
       {
-        type: "L",
+        type: "None",
         content: "No"
       }
     ]
@@ -235,7 +235,7 @@ const quizQuestions = [
         content: "Yes"
       },
       {
-        type: "M",
+        type: "None",
         content: "No"
       }
     ]

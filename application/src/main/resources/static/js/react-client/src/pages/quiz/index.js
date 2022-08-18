@@ -63,7 +63,8 @@ class quizPage extends Component {
   getResults() {
     const answersCount = this.state.answersCount;
     const answersCountKeys = Object.keys(answersCount);
-    const answersCountValues = answersCountKeys.map((key) => answersCount[key]);
+    const filteredAnswersCountKeys = answersCountKeys.filter(answer => answer !== 'None');
+    const answersCountValues = filteredAnswersCountKeys.map((key) => answersCount[key]);
     const maxAnswerCount = Math.max.apply(null, answersCountValues);
 
     return answersCountKeys.filter((key) => answersCount[key] === maxAnswerCount);
@@ -72,8 +73,13 @@ class quizPage extends Component {
   setResults (result) {
     if (result.length === 1) {
       this.setState({ result: result[0] });
+    } else if (result.length === 0) {
+      this.setState({ result: 'None' });
     } else {
-      this.setState({ result: 'Undetermined' });
+      const renderTieList = result.map((ailment) => <p>{ailment}</p>);
+      this.setState({ result: 
+        renderTieList
+      });
     }
   }
 
