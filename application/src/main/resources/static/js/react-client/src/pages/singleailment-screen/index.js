@@ -35,16 +35,20 @@ const SingleAilmentScreen = () => {
         
       <div className={style.information}>  
       <div className={style.description}>
-        <h2 className={style.descriptionTitle}>Description</h2>
+        {/* <h2 className={style.descriptionTitle}>Description</h2> */}
         <p className={style.longDescriptionText}>{ailment.longDescription}</p>
         
         <div className={style.treatments}>
-            <h2 className={style.treatments}>Types of Treatments</h2>
+            <h2 className={style.treatments}>Common Treatments</h2>
             <div className={style.dropdown}>
              <div className={style.individualTreatment}>  
                 {ailment.treatments.map(treatment =>
-                        <div >
+                        <div className={style.benefitsTitle} >
                             <Link to={`/treatment/${treatment.id}`} className={style.treatmentLink}>{treatment.name}</Link>
+                            
+                       
+                            <p className={style.treatmentInfo}>{treatment.benefits}</p>
+                            
                         </div>
                         )}   
                         </div>

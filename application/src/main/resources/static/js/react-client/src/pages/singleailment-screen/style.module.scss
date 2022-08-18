@@ -16,14 +16,15 @@
 .image {
     display:flex;
     justify-content: center;
+    
 }
 
-.ailmentImage{
-    max-width: 200px;
-    display:flex;
-    justify-content: center;
-    padding:20px;
-}
+// .ailmentImage{
+//     max-width: 200px;
+//     display:flex;
+//     justify-content: center;
+//     padding:20px;
+// }
 
 h1{
   padding-top: 20px;
@@ -40,9 +41,15 @@ p {
 
 
 .information {
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
   
+}
+
+link.information{
+    width: 10%;
+    margin: 0 auto;
+
 }
 
 p.longDescriptionText{
@@ -51,6 +58,14 @@ p.longDescriptionText{
     padding-bottom:20px;
     border: solid black;
     background-color: white;
+}
+
+p.treatmentInfo{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    font-weight:bold;
+    padding: 0;
+
 }
 
 
@@ -143,7 +158,7 @@ h2 {
 }
 
  .individualTreatment{
-     padding: 40px;
+     padding: 20px;
      border: solid black;
      background-color: white;
      
