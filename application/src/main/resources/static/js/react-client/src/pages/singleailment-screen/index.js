@@ -35,7 +35,7 @@ const SingleAilmentScreen = () => {
         
       <div className={style.information}>  
       <div className={style.description}>
-        <h2 className={style.descriptionTitle}>Description of Ailment</h2>
+        <h2 className={style.descriptionTitle}>Description</h2>
         <p className={style.longDescriptionText}>{ailment.longDescription}</p>
         
         <div className={style.treatments}>

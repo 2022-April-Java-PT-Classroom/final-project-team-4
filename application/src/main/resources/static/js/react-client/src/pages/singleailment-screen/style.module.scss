@@ -22,7 +22,7 @@
     max-width: 200px;
     display:flex;
     justify-content: center;
-    padding:40px;
+    padding:20px;
 }
 
 h1{
@@ -33,20 +33,24 @@ h1{
 }
 
 p {
+    font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
+    padding: 20px;
 }
+
 
 .information {
   width: 80%;
   margin: 0 auto;
+  
 }
 
-.longDescription{
+p.longDescriptionText{
     text-align:center;
     padding-top:20px;
     padding-bottom:20px;
-    background-color: #f1f1f1;
     border: solid black;
+    background-color: white;
 }
 
 
@@ -54,7 +58,6 @@ p {
     text-align:center;
     padding-top:20px;
     padding-bottom:20px;
-    background-color: #f1f1f1;
 }
 
 .ailmentImage{
@@ -76,17 +79,19 @@ p {
     text-decoration: none;
     color:black;
     font-weight:bold;
-}
+    font-family: 'Ubuntu', sans-serif;
+    font-size: larger;
+    
+}  
 
 
 h2 {	
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Cormorant SC', serif;
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
     line-height: 1;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    
 }
 
 .productRec{
@@ -94,7 +99,7 @@ h2 {
     color:black;
     font-weight:bold;
     flex: 33.33%;
-    
+    font-family: 'Ubuntu', sans-serif;
 }
 
 
@@ -122,21 +127,32 @@ h2 {
 //   }
 
   
-  .recommendations {
+.recommendations {
     display: flex;
     justify-content: center;
-  }
+}
   
-  .prodImage {
+.prodImage {
     flex: 33.33%;
-    // padding: 5px;
     width: 3000px;
     height: 400px;
-    padding:40px;
+    padding: 20px;
+    border: solid black;
+    margin: 5px;
+    background-color: white;
+}
 
-  }
+ .individualTreatment{
+     padding: 40px;
+     border: solid black;
+     background-color: white;
+     
+ }
 
- 
+ .recommendationsTitle{
+     padding: 30px;
+    
+ }
 
 
 
