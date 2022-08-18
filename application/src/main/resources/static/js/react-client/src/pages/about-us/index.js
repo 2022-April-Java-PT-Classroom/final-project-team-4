@@ -5,6 +5,7 @@ import sade from '../../assets/images/Sade.jpg';
 import jason from '../../assets/images/Jason.jpg';
 import zach from '../../assets/images/Zach.jpg';
 import CM from '../../assets/images/CM.jpg';
+import blankprofile from '../../assets/images/blankprofile.png';
 import developers from '../../assets/images/developers.jpg';
 
 import Github from '../../assets/images/Github.png';
@@ -25,7 +26,7 @@ const AboutUs = () => {
       </div>
                     <div className={style.bios}>
                     <div>
-                    <img src={aisha} height="200" width="200"></img>
+                    <img src={aisha} height="300" width="300"></img>
                     <h3>Aisha Bluem</h3>
                     <div class="socials">   
 <a href="https://github.com/acbluem"><img src={Github} width="40"></img></a>
@@ -40,7 +41,7 @@ const AboutUs = () => {
 
                          <div>
                
-                    <img src={sade} height="200" width="200"></img>
+                    <img src={sade} height="300" width="300"></img>
                     <h3> Andera Fells</h3>
                     <div class="socials">   
 <a href="https://github.com/anderafells"><img src={Github} width="40"></img></a>
@@ -54,7 +55,7 @@ const AboutUs = () => {
                     </div>
 
                    <div>
-                   <img src={CM} height="200" width="200"></img>
+                   <img src={CM} height="300" width="300"></img>
                    <h3>C.M Rimal</h3>
                    <div class="socials">   
 <a href="https://github.com/cmsrimsson"><img src={Github} width="40"></img></a>
@@ -72,7 +73,7 @@ const AboutUs = () => {
                     </div>
 
                     <div>
-                    <img src={jason} height="200" width="200"></img>
+                    <img src={jason} height="300" width="300"></img>
                     <h3>Jason Mirwald</h3>
                     <div class="socials">   
 <a href="https://github.com/jjmirwaldjr"><img src={Github} width="40"></img></a>
@@ -89,7 +90,7 @@ const AboutUs = () => {
                        </div>
 
                        <div>
-
+                    <img src={blankprofile} height="300" width="300"></img>
                     <h3>Jalyn Jenkins</h3>
                     <div class="socials">   
 <a href="https://github.com/jalynjenkins"><img src={Github} width="40"></img></a>
@@ -102,7 +103,7 @@ const AboutUs = () => {
                        </div>
 
                     <div>
-                    <img src={zach} height="200" width="200"></img>
+                    <img src={zach} height="300" width="300"></img>
                     <h3>Zachary Martin</h3>
                     <div class="socials">   
 <a href="https://github.com/zm102905"><img src={Github} width="40"></img></a>
@@ -116,8 +117,9 @@ const AboutUs = () => {
                     2009. Zach is enthusiastic about growing and gaining new skills as a software developer and is
                     looking forward to a future in the field of IT!</p>
                         </div>
-                </div>
-                </div>
+            
+                   </div>
+                   </div>
               
 
 
