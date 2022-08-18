@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&family=Lora:ital,wght@1,600&family=Playfair+Display&family=Ubuntu:wght@300&display=swap');
 
+
 .Massage {
     background-color: #D9AFD9;
     background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
@@ -23,87 +24,47 @@
       text-shadow: 2px 2px #fff;
       background-color: transparent;
     }
-
-    .techniques {
-      img {
-        margin: 80px 0 40px 0;
-        max-width: fit-content;
-        margin: auto;
-        object-fit: cover;
-        margin-top: 30px;
-    }
-    
-    h2 {	
-        font-family: 'Ubuntu', sans-serif;
-        text-transform: uppercase;
-        font-size: 5vw;
-        text-align: center;
-        line-height: 1;
-        margin: 0;
-        margin-bottom: 20px;
-    }
     
     h3 {
         
-        font-family: 'Ubuntu', sans-serif;
-        font-size: 30px;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);;
+        font-family: 'Lora', serif;
+        font-size: 50px;
         text-align: center;
-        margin: 0;
-
+        margin: 20;
         
       }
 
       div {
-        // text-align: center;
-    // margin-top: 35px;
-    margin-bottom: 50px;
-        display:flex;
-        flex-direction:row;
-//         overflow:scroll;
-       
-    // //     // grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+        text-align: center;
         
-       
-       
-    
-    // //     -webkit-column-count: 8;
-    // //     -webkit-column-gap: 10px;
-    // //      font-size: auto;
-    
-         @media(max-width: 710px){
-    // //        display: flex;
-    // //        flex-direction: column;
+        }  
 
-    }
-    
       p {
         font-family: 'Lora', serif;
-        text-align:center;
+        text-align:center; 
         letter-spacing: 1px;
         line-height: 35px;
         margin: 0;
-        // margin-bottom: 70px;
+        margin-top: 30px;
+        font-size: 30px;
       }
 
-      a:visited {
-        text-decoration:none;
-        color: #444;
+      button{
+        color: blueviolet;
+        border: none;
+        // border-color: #97D9E1;
+        padding: 20px;
+        font-family: 'Lora', san-serif;
+        font-size: medium;
         text-align: center;
-        align-content:space-between;
+        margin-top: 20px;
+       
       }
       
-      a:active {
-        text-decoration:none;
-        
+      button:hover{
+        background-color: #D9AFD9;
+      
       }
-
     }
-}
-}
     
-    
-    
-    
+   
