@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import style from './style.module.scss';
+import { NavLink } from 'react-router-dom';
 
 function Result(props) {
   return (
@@ -11,7 +12,8 @@ function Result(props) {
         <strong>{props.quizResult}</strong>
       </p>
       <p>
-        For any ailment result, please head on over to the ailments page to learn more about it.
+        For any ailment result, please head on over to the 
+        <NavLink to={'/ailment'}> ailments</NavLink> page to learn more about it.
       </p>
       <p>
         If you received more than one ailment, then your answers resulted in a <strong>tie </strong>

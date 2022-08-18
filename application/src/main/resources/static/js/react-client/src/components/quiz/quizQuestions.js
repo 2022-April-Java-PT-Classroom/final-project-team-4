@@ -66,7 +66,7 @@ const quizQuestions = [
     ]
   }, 
   {
-    question: "Are you experiencing any numbness or tingling sensation in your feet?",
+    question: "Are you experiencing numbness or tingling?",
     answers: [
       {
         type: "Plantar Fasciitis",
@@ -87,7 +87,7 @@ const quizQuestions = [
     ]
   },
   {
-    question: "Do you have any corns or calluses on your feet?",
+    question: "Do you have any corns or calluses?",
     answers: [
       {
         type: "Supination",
@@ -112,7 +112,7 @@ const quizQuestions = [
     ]
   },
   {
-    question: "Do you have a protrusion on your foot?",
+    question: "Do you have a protrusion?",
     answers: [
       {
         type: "Heel Spur", 
@@ -146,7 +146,7 @@ const quizQuestions = [
     ]
   },
   {
-    question: "Do you have a burning sensation in your feet?",
+    question: "Do you have a burning sensation?",
     answers: [
       {
         type: "Diabetic Neuropathy", 
@@ -215,7 +215,7 @@ const quizQuestions = [
     ]
   },
   {
-    question: "Do you experience a sensation of having a rock under your foot when standing?",
+    question: "Do you feel like you're stepping on a rock?",
     answers: [
       {
         type: "Morton Neuroma",
