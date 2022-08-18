@@ -26,6 +26,13 @@ public class Ailment {
     @Lob
     private String prodImg3;
     @Lob
+    private String prodLink1;
+    @Lob
+    private String prodLink2;
+    @Lob
+    private String prodLink3;
+
+    @Lob
     private String longDescription;
     @ManyToMany
     private Collection<Treatment> treatments;
@@ -48,6 +55,12 @@ public class Ailment {
     public String getProdImg2() {return prodImg2;}
     public String getProdImg3() {return prodImg3;}
 
+    public String getProdLink1() {return prodLink1;}
+    public String getProdLink2() {return prodLink2;}
+    public String getProdLink3() {return prodLink3;}
+
+
+
     public String getLongDescription() {return longDescription;}
 
     public Collection<Treatment> getTreatments() {return treatments;}
@@ -55,8 +68,8 @@ public class Ailment {
     public Ailment(){}
 
 
-//String prodImg1, String prodImg2, String prodImg3
-    public Ailment(String name,String image, String description,String productRec1, String productRec2, String productRec3,String prodImg1, String prodImg2, String prodImg3,String longDescription, Treatment... treatments){
+//String prodLink1, String prodLink2, String prodLink3
+    public Ailment(String name,String image, String description,String productRec1, String productRec2, String productRec3,String prodImg1, String prodImg2, String prodImg3, String prodLink1, String prodLink2, String prodLink3,String longDescription, Treatment... treatments){
         this.name = name;
         this.image = image;
         this.description = description;
@@ -66,6 +79,9 @@ public class Ailment {
         this.prodImg1 = prodImg1;
         this.prodImg2 = prodImg2;
         this.prodImg3 = prodImg3;
+        this.prodLink1 = prodLink1;
+        this.prodLink2 = prodLink2;
+        this.prodLink3 = prodLink3;
         this.longDescription = longDescription;
         this.treatments=new ArrayList<>(Arrays.asList(treatments));
     }

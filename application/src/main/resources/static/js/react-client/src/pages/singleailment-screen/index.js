@@ -54,15 +54,15 @@ const SingleAilmentScreen = () => {
              <div className={style.prodImage}>
             <img className={style.ailmentImage1} src={ailment.prodImg1} />
           </div>
-             <a href="https://github.com/jalynjenkins"><p className={style.productRec1}>{ailment.productRec1}</p></a>
+             <a href={ailment.prodLink1}><p className={style.productRec1}>{ailment.productRec1}</p></a>
              <div className={style.prodImage}>
             <img className={style.ailmentImage2} src={ailment.prodImg2} />
           </div>
-             <p className={style.productRec2}>{ailment.productRec2}</p>
+              <a href={ailment.prodLink2}><p className={style.productRec2}>{ailment.productRec2}</p></a>
              <div className={style.prodImage}>
             <img className={style.ailmentImage3} src={ailment.prodImg3} />
           </div>
-             <p className={style.productRec3}>{ailment.productRec3}</p>
+          <a href={ailment.prodLink3}><p className={style.productRec3}>{ailment.productRec3}</p></a>
         
             </div>          
 
