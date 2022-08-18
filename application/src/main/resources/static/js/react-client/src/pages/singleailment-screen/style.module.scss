@@ -11,6 +11,8 @@
     padding-bottom:40px;
     margin-top: 0px;
 }
+
+
 .image {
     display:flex;
     justify-content: center;
@@ -32,7 +34,7 @@ h1{
 
 p {
     font-size: 20px;
-  }
+}
 
 .information {
   width: 80%;
@@ -47,9 +49,6 @@ p {
     border: solid black;
 }
 
-h2{
-    font-size: 25px;
-}
 
 .treatments{
     text-align:center;
@@ -58,43 +57,95 @@ h2{
     background-color: #f1f1f1;
 }
 
-.ailmentImage1{
+.ailmentImage{
     max-width: 200px;
-    display:flex;
-    justify-content: center;
     padding:40px;
 }
 
-.ailmentImage2{
-    max-width: 200px;
-    display:flex;
-    justify-content: center;
-    padding:40px;
-}
+// .ailmentImage2{
+//     max-width: 200px;
+//     padding:40px;
+// }
 
-.ailmentImage3{
-    max-width: 200px;
-    display:flex;
-    justify-content: center;
-    padding:40px;
-}
+// .ailmentImage3{
+//     max-width: 200px;
+//     padding:40px;
+// }
 
 .treatmentLink {
     text-decoration: none;
     color:black;
     font-weight:bold;
+}
+
+
+h2 {	
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    font-size: 25px;
+    text-align: center;
+    line-height: 1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.productRec{
+    text-decoration: none;
+    color:black;
+    font-weight:bold;
+    flex: 33.33%;
+    
+}
+
+
+// .prodImage{
+//     display:grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     gap: 0px;
+//     padding: 0 40px;
+
+    
+
+// }
+
+// .prodImage {
+//     float: left;
+//     width: 33.33%;
+//     padding: 5px;
+//   }
+  
+//   /* Clear floats after image containers */
+// .recommendations {
+//     content: "";
+//     clear: both;
+//     display: table;
+//   }
+
+  
+  .recommendations {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .prodImage {
+    flex: 33.33%;
+    // padding: 5px;
+    width: 3000px;
+    height: 400px;
+    padding:40px;
+
   }
 
-.prodImage {
-    display:flex;
-    justify-content: center;
-   
+ 
+
+
+
+
+
+
+
+
+
 }
-
-
-}
-
-
-
 
 

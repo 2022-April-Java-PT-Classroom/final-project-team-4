@@ -49,20 +49,22 @@ const SingleAilmentScreen = () => {
                         )}   
                         </div>
                         
+              <h2 className={style.recommendationsTitle}>Product Recommendations </h2>
               <div className={style.recommendations}>
-             <h2 className={style.recommendations}>Product Recommendations </h2>
+             
              <div className={style.prodImage}>
-            <img className={style.ailmentImage1} src={ailment.prodImg1} />
+            <img className={style.ailmentImage} src={ailment.prodImg1} />
+            <a href={ailment.prodLink1}><p className={style.productRec}>{ailment.productRec1}</p></a>
           </div>
-             <a href={ailment.prodLink1}><p className={style.productRec1}>{ailment.productRec1}</p></a>
-             <div className={style.prodImage}>
-            <img className={style.ailmentImage2} src={ailment.prodImg2} />
+              <div className={style.prodImage}>
+            <img className={style.ailmentImage} src={ailment.prodImg2} />
+            <a href={ailment.prodLink2}><p className={style.productRec}>{ailment.productRec2}</p></a>
+            </div>
+            <div className={style.prodImage}>
+            <img className={style.ailmentImage} src={ailment.prodImg3} />
+            <a href={ailment.prodLink3}><p className={style.productRec}>{ailment.productRec3}</p></a>
           </div>
-              <a href={ailment.prodLink2}><p className={style.productRec2}>{ailment.productRec2}</p></a>
-             <div className={style.prodImage}>
-            <img className={style.ailmentImage3} src={ailment.prodImg3} />
-          </div>
-          <a href={ailment.prodLink3}><p className={style.productRec3}>{ailment.productRec3}</p></a>
+          
         
             </div>          
 
