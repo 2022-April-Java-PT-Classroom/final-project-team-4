@@ -5,7 +5,7 @@ import sade from '../../assets/images/Sade.jpg';
 import jason from '../../assets/images/Jason.jpg';
 import zach from '../../assets/images/Zach.jpg';
 import CM from '../../assets/images/CM.jpg';
-import blankprofile from '../../assets/images/blankprofile.png';
+import jalyn from '../../assets/images/JalynHeadshot.PNG';
 import developers from '../../assets/images/developers.jpg';
 
 import Github from '../../assets/images/Github.png';
@@ -90,7 +90,7 @@ const AboutUs = () => {
                        </div>
 
                        <div>
-                    <img src={blankprofile} height="300" width="300"></img>
+                    <img src={jalyn} height="300" width="300"></img>
                     <h3>Jalyn Jenkins</h3>
                     <div class="socials">   
 <a href="https://github.com/jalynjenkins"><img src={Github} width="40"></img></a>
