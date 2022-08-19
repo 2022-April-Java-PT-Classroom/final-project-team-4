@@ -29,8 +29,8 @@ const AboutUs = () => {
                     <img src={aisha} height="300" width="300"></img>
                     <h3>Aisha Bluem</h3>
                     <div class="socials">   
-<a href="https://github.com/acbluem"><img src={Github} width="40"></img></a>
-<a href="https://www.linkedin.com/in/aishabluem/"><img src={LinkedIn} width="40"></img></a>
+<a href="https://github.com/acbluem" target="_blank"><img src={Github} width="40"></img></a>
+<a href="https://www.linkedin.com/in/aishabluem/" target="_blank"><img src={LinkedIn} width="40"></img></a>
 </div>
                     <p> Aisha (phonetic spelling: ay-zhuh).
                        Aisha is a junior full-stack software developer pursuing her passion in coding, reigniting the
@@ -44,8 +44,8 @@ const AboutUs = () => {
                     <img src={sade} height="300" width="300"></img>
                     <h3> Andera Fells</h3>
                     <div class="socials">   
-<a href="https://github.com/anderafells"><img src={Github} width="40"></img></a>
-<a href="https://www.linkedin.com/in/anderafells/"><img src={LinkedIn} width="40"></img></a>
+<a href="https://github.com/anderafells" target="_blank"><img src={Github} width="40"></img></a>
+<a href="https://www.linkedin.com/in/anderafells/" target="_blank"><img src={LinkedIn} width="40"></img></a>
 </div>
                     <p> Andera is a full stack developer currently located in Columbus, OH. Her love for learning,and taking
                     on challenging task has set her on the path of coding. She loves to see projects come "alive". Andera is a
@@ -58,8 +58,8 @@ const AboutUs = () => {
                    <img src={CM} height="300" width="300"></img>
                    <h3>C.M Rimal</h3>
                    <div class="socials">   
-<a href="https://github.com/cmsrimsson"><img src={Github} width="40"></img></a>
-<a href="https://www.linkedin.com/in/chuda-rimal-318b33201/"><img src={LinkedIn} width="40"></img></a>
+<a href="https://github.com/cmsrimsson" target="_blank"><img src={Github} width="40"></img></a>
+<a href="https://www.linkedin.com/in/chuda-rimal-318b33201/" target="_blank"><img src={LinkedIn} width="40"></img></a>
 </div>
                     <p> Chuda Rimal is a Full-Stack web developer and he is mostly passionate on web coding. He is quite
                     expert in using coding and markup languages like:
@@ -76,8 +76,8 @@ const AboutUs = () => {
                     <img src={jason} height="300" width="300"></img>
                     <h3>Jason Mirwald</h3>
                     <div class="socials">   
-<a href="https://github.com/jjmirwaldjr"><img src={Github} width="40"></img></a>
-<a href="https://www.linkedin.com/in/jason-mirwald-jr-8694a1236/"><img src={LinkedIn} width="40"></img></a>
+<a href="https://github.com/jjmirwaldjr" target="_blank"><img src={Github} width="40"></img></a>
+<a href="https://www.linkedin.com/in/jason-mirwald-jr-8694a1236/" target="_blank"><img src={LinkedIn} width="40"></img></a>
 </div>
                     <p>Jason is a Military Veteran who served in the US navy as a Logistic Specialist. He was Honorably
                        Discharged. Jason spent the next few years working in the customer service industry and
@@ -93,8 +93,8 @@ const AboutUs = () => {
                     <img src={jalyn} height="300" width="300"></img>
                     <h3>Jalyn Jenkins</h3>
                     <div class="socials">   
-<a href="https://github.com/jalynjenkins"><img src={Github} width="40"></img></a>
-<a href="https://www.linkedin.com/in/jalynjenkins"><img src={LinkedIn} width="40"></img></a>
+<a href="https://github.com/jalynjenkins" target="_blank"><img src={Github} width="40"></img></a>
+<a href="https://www.linkedin.com/in/jalynjenkins" target="_blank"><img src={LinkedIn} width="40"></img></a>
 </div>
                     <p>Jalyn is a fullstack software developer from Columbus, Ohio. He enjoys taking complex problems
                     and turning them into simple and beautiful digital designs and concepts. When not coding Jalyn
@@ -106,8 +106,8 @@ const AboutUs = () => {
                     <img src={zach} height="300" width="300"></img>
                     <h3>Zachary Martin</h3>
                     <div class="socials">   
-<a href="https://github.com/zm102905"><img src={Github} width="40"></img></a>
-<a href="https://www.linkedin.com/in/zachary-d-martin/"><img src={LinkedIn} width="40"></img></a>
+<a href="https://github.com/zm102905" target="_blank"><img src={Github} width="40"></img></a>
+<a href="https://www.linkedin.com/in/zachary-d-martin/" target="_blank"><img src={LinkedIn} width="40"></img></a>
 </div>
                     <p>Zachary Martin is a Columbus-based full-stack software developer with a passion for travel, the
                     outdoors, gardening, and technology. His passion for technology started very early, when he took an
