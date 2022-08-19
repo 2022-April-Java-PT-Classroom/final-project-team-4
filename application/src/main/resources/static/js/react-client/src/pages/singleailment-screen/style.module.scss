@@ -8,7 +8,6 @@
 .ailmentTitle {
     display:flex;
     justify-content: center;
-    padding-bottom:40px;
     margin-top: 0px;
 }
 
@@ -54,10 +53,10 @@ link.information{
 
 p.longDescriptionText{
     text-align:center;
-    padding-top:20px;
-    padding-bottom:20px;
+    padding:20px;
     border: solid black;
     background-color: white;
+
 }
 
 p.treatmentInfo{
@@ -71,8 +70,7 @@ p.treatmentInfo{
 
 .treatments{
     text-align:center;
-    padding-top:20px;
-    padding-bottom:20px;
+    padding: 10px;
 }
 
 .ailmentImage{
