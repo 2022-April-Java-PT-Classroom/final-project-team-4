@@ -1,10 +1,9 @@
 import React, {useEffect, useState} from "react";
+
+import {Link} from 'react-router-dom'
+import axios from 'axios';
 import style from './style.module.scss';
 import {useParams} from "react-router-dom";
-import axios from 'axios';
-import {Link} from 'react-router-dom'
-
-
 
 const SingleAilmentScreen = () => {
     
@@ -41,30 +40,43 @@ const SingleAilmentScreen = () => {
         <div className={style.treatments}>
             <h2 className={style.treatments}>Types of Treatments</h2>
             <div className={style.dropdown}>
-             <div className={style.individualTreatment}>  
+            <div className={style.individualTreatment}>  
                 {ailment.treatments.map(treatment =>
                         <div >
                             <Link to={`/treatment/${treatment.id}`} className={style.treatmentLink}>{treatment.name}</Link>
+                            
                         </div>
                         )}   
-                        </div>
+                       
+            </div>
+          
                         
-              <div className={style.recommendations}>
-             <h2 className={style.recommendations}>Product Recommendations </h2>
-             <div className={style.prodImage}>
-            <img className={style.ailmentImage1} src={ailment.prodImg1} />
-          </div>
-             <a href={ailment.prodLink1}><p className={style.productRec1}>{ailment.productRec1}</p></a>
-             <div className={style.prodImage}>
-            <img className={style.ailmentImage2} src={ailment.prodImg2} />
-          </div>
-              <a href={ailment.prodLink2}><p className={style.productRec2}>{ailment.productRec2}</p></a>
-             <div className={style.prodImage}>
-            <img className={style.ailmentImage3} src={ailment.prodImg3} />
-          </div>
-          <a href={ailment.prodLink3}><p className={style.productRec3}>{ailment.productRec3}</p></a>
-        
-            </div>          
+          <div className={style.recommendations}>
+             <h2 className={style.prodRecommendations}>Product Recommendations </h2>
+            <div className={style.productAilnment}>
+              
+              <div className={style.prodImage}>
+                <img className={style.ailmentImage1} src={ailment.prodImg1} />
+                <a href={ailment.prodLink1}>
+                  <p className={style.productRec}>{ailment.productRec1}</p>
+                </a>
+              </div>
+              
+              <div className={style.prodImage}>
+                <img className={style.ailmentImage2} src={ailment.prodImg2} />
+                <a href={ailment.prodLink2}>
+                  <p className={style.productRec}>{ailment.productRec2}</p>
+                </a>
+              </div>
+              
+              <div className={style.prodImage}>
+                <img className={style.ailmentImage3} src={ailment.prodImg3} />
+                <a href={ailment.prodLink3}>
+                  <p className={style.productRec}>{ailment.productRec3}</p>
+                </a>
+              </div>
+            </div>
+          </div>      
 
 
           </div>

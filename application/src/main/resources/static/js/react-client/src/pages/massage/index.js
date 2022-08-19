@@ -29,7 +29,10 @@ const Massage = () => {
                         <div class="videos">
                             <iframe width="560" height="315" src={massageTechniques[massageListIndex].videoUrl} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
+                        <div className={style.spacer}>
                         <p> {massageTechniques[massageListIndex].text}</p>
+                        <br></br>
+                        </div>
                     </div>
                 </div>
             </div>
